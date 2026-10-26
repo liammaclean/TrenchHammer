@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Battlekits" id="f044-03b4-6607-1152" battleScribeVersion="2.03" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="16" library="true" revision="3" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Battlekits" id="f044-03b4-6607-1152" battleScribeVersion="2.03" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="16" library="true" revision="4" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry name="Trench Shield" id="ab45-1e00-df56-dbda" hidden="false" import="true" type="upgrade">
       <constraints>
@@ -509,7 +509,7 @@
         <infoLink name="+/- Injury Modifier" id="b898-dca4-3696-bfd3" hidden="false" targetId="3f79-aee7-2c3d-828f" type="rule"/>
       </infoLinks>
       <modifiers>
-        <modifier affects="unit.profiles.Unit" field="5de9-d70e-9021-6f71" position="0" scope="unit" type="increment" value="-2"/>
+        <modifier affects="profiles.Unit" field="5de9-d70e-9021-6f71" position="1" scope="model-or-unit" type="increment" value="-2"/>
       </modifiers>
       <profiles>
         <profile name="Power Armour" id="aaa2-5dee-5014-ac07" hidden="false" typeId="7079-589c-df69-fa7e" typeName="Battlekit">
