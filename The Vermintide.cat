@@ -34,10 +34,10 @@
       </costs>
       <entryLinks>
         <entryLink name="Advancement" id="b445-7a67-e66e-f910" collapsible="true" hidden="true" import="true" targetId="bc33-e591-8f2e-a847" type="selectionEntryGroup"/>
-        <entryLink name="Weapons" id="57f9-f64b-54cb-ecf0" hidden="false" import="true" targetId="24ae-224b-0680-a9bd" type="selectionEntryGroup"/>
-        <entryLink name="Grenades" id="8f3b-934f-4e67-fcd3" hidden="false" import="true" targetId="9c37-58de-3fa2-bfd2" type="selectionEntryGroup"/>
+        <entryLink name="Weapons" id="57f9-f64b-54cb-ecf0" hidden="false" import="true" targetId="435b-0524-27c1-11d8" type="selectionEntryGroup"/>
+        <entryLink name="Thrown" id="8f3b-934f-4e67-fcd3" hidden="false" import="true" targetId="daaa-bcc1-8cfa-d6e4" type="selectionEntryGroup"/>
         <entryLink name="Armour" id="213a-b847-8cb0-2f10" hidden="false" import="true" targetId="e3f9-e0ed-7137-41f1" type="selectionEntryGroup"/>
-        <entryLink name="Equipment" id="6caa-0cab-4f0a-69d3" hidden="false" import="true" targetId="d5c6-bf28-709b-7286" type="selectionEntryGroup"/>
+        <entryLink name="Equipment" id="6caa-0cab-4f0a-69d3" hidden="false" import="true" targetId="bfbf-d3ef-8caf-c06c" type="selectionEntryGroup"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Leader" id="7cb7-252f-b201-4c69" hidden="false" targetId="9130-09e0-3351-8c4c" type="rule"/>
