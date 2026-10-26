@@ -530,7 +530,7 @@
         <infoLink name="+/- Injury Modifier" id="6193-570d-0200-6529" hidden="false" targetId="3f79-aee7-2c3d-828f" type="rule"/>
       </infoLinks>
       <modifiers>
-        <modifier affects="profiles.Unit" field="5de9-d70e-9021-6f71" position="0" scope="model" type="increment" value="-1"/>
+        <modifier affects="profiles.Unit" field="5de9-d70e-9021-6f71" position="1" scope="model" type="increment" value="-1"/>
       </modifiers>
       <profiles>
         <profile name="Standard Armour" id="784e-81e3-cc8c-5ca3" hidden="false" typeId="7079-589c-df69-fa7e" typeName="Battlekit">

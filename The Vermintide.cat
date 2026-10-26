@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="The Vermintide" id="12f6-3e46-28a9-c0c8" battleScribeVersion="2.03" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="18" library="false" revision="3" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="The Vermintide" id="12f6-3e46-28a9-c0c8" battleScribeVersion="2.03" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="18" library="false" revision="4" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink name="Campaign Rules" id="a2ae-418c-f2bf-d502" targetId="ba52-3616-d7f9-8d0c" type="catalogue"/>
     <catalogueLink name="Battlekits" id="77f8-fb82-7c0a-00dd" targetId="f044-03b4-6607-1152" type="catalogue"/>
@@ -11,6 +11,7 @@
     <categoryEntry name="Skaven" id="1312-011c-42a3-09b0" hidden="false"/>
     <categoryEntry name="Beast" id="e7b2-3073-3afd-6203" hidden="false"/>
     <categoryEntry name="Large" id="bd72-3973-d1cd-5ccc" hidden="false"/>
+    <categoryEntry name="Psyker 1" id="f1af-fa19-88a0-9766" hidden="false"/>
   </categoryEntries>
   <selectionEntries>
     <selectionEntry name="Clawlord" id="d712-1bac-a3c5-9d64" hidden="false" import="true" type="unit">
@@ -122,6 +123,96 @@
           </characteristics>
         </profile>
       </profiles>
+    </selectionEntry>
+    <selectionEntry name="Warlock" id="159c-f6f3-55e0-6963" hidden="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink name="Master" id="d0df-4178-0361-eb7a" hidden="false" primary="false" targetId="0f60-83a1-92c7-0ba8"/>
+        <categoryLink name="Elite" id="6100-174d-bd0b-01f4" hidden="false" primary="false" targetId="3de0-192c-3ec2-51be"/>
+        <categoryLink name="Psyker 1" id="9aee-4a78-e094-fe71" hidden="false" primary="false" targetId="f1af-fa19-88a0-9766"/>
+        <categoryLink name="Skaven" id="2baf-1a3f-2277-1c58" hidden="false" primary="false" targetId="1312-011c-42a3-09b0"/>
+      </categoryLinks>
+      <constraints>
+        <constraint id="fe08-b339-a3cc-18d4" field="selections" includeChildSelections="true" scope="roster" shared="true" type="max" value="1"/>
+      </constraints>
+      <entryLinks>
+        <entryLink name="Equipment" id="623f-3138-5cff-425d" hidden="false" import="true" targetId="d5c6-bf28-709b-7286" type="selectionEntryGroup"/>
+        <entryLink name="Grenades" id="ea2c-0628-6b91-2626" hidden="false" import="true" targetId="9c37-58de-3fa2-bfd2" type="selectionEntryGroup"/>
+        <entryLink name="Weapons" id="dd37-e924-d833-ac8c" hidden="false" import="true" targetId="24ae-224b-0680-a9bd" type="selectionEntryGroup"/>
+        <entryLink name="Advancement" id="81d5-7a89-d61a-0fa9" collapsible="true" hidden="true" import="true" targetId="bc33-e591-8f2e-a847" type="selectionEntryGroup"/>
+        <entryLink name="Armour" id="233c-fe9d-23c3-a3b6" hidden="false" import="true" targetId="e3f9-e0ed-7137-41f1" type="selectionEntryGroup"/>
+        <entryLink name="Ruin Psychic Discipline" id="2f4b-c565-7917-710d" hidden="false" import="true" targetId="55a9-ea83-e815-8a18" type="selectionEntryGroup">
+          <constraints>
+            <constraint id="64ed-96c5-0232-ae38" field="selections" scope="parent" shared="true" type="max" value="3"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Psyker X" id="2183-672e-d5ac-3f12" hidden="false" targetId="5141-eae5-0a55-80c4" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Scurry Away" id="cfa3-b044-6b72-8d84" hidden="false" typeId="058c-866b-6487-ccc4" typeName="Ability">
+          <characteristics>
+            <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">Enemies do not get to make a free attack when the Clawlord Retreats.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Warlock" id="319c-2375-1aa3-feb1" hidden="false" typeId="b3af-94f9-2e35-d1c5" typeName="Unit">
+          <characteristics>
+            <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2">6&quot;</characteristic>
+            <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">+1</characteristic>
+            <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5">+0</characteristic>
+            <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
+            <characteristic name="Base" typeId="73ae-cc17-596e-0481">25-32mm</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="4d78-103e-e226-8b42" hidden="false">
+          <constraints>
+            <constraint id="dd6f-5234-6657-8a13" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry name="Arch-Warlock" id="abb3-0b8a-d3a8-edac" hidden="false" import="true" type="upgrade">
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Arch-Warlock" id="6faa-365c-7d07-5056" hidden="false" typeId="058c-866b-6487-ccc4" typeName="Ability">
+                  <characteristics>
+                    <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">The Arch-Warlock can purchase up to five powers, and it has the PSYKER 2 Keyword instead of PSYKER 1.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry name="Warlock Bombardier" id="436c-c90e-5391-5aff" hidden="false" import="true" type="upgrade">
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Warlock Engineer" id="e643-5baf-193e-5961" hidden="false" typeId="058c-866b-6487-ccc4" typeName="Ability">
+                  <characteristics>
+                    <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">The Warlock Bombardier can ignore the HEAVY Keyword of up to one ranged weapon it wields, and it can ignore the HELD Keyword of up to one PSYCHIC weapon it wields.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry name="Warlock Engineer" id="54bc-25c1-7c7a-a6d8" hidden="false" import="true" type="upgrade">
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Warlock Engineer" id="32eb-7d63-6168-00c0" hidden="false" typeId="058c-866b-6487-ccc4" typeName="Ability">
+                  <characteristics>
+                    <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">Warp-Power Accumulator. Injuries caused by the Warlock Engineer’s psychic powers, including attacks, have +1 INJURY DICE.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntryGroups>
@@ -834,7 +925,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Grenades" id="daaa-bcc1-8cfa-d6e4" hidden="false">
+    <selectionEntryGroup name="Thrown" id="daaa-bcc1-8cfa-d6e4" hidden="false">
       <constraints>
         <constraint id="2672-5e09-8c09-a77d" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
       </constraints>
@@ -1438,105 +1529,335 @@ For the purpose of Battle Demolition on Combat Engineers, this item counts as a 
           </modifiers>
         </entryLink>
       </entryLinks>
+      <selectionEntries>
+        <selectionEntry name="Warpfire Gauntlet" id="9dee-fe0e-4795-3061" hidden="false" import="true" type="upgrade">
+          <infoLinks>
+            <infoLink name="Held" id="1db7-86ab-5e2e-b91c" hidden="false" targetId="1220-c65a-89ed-96a7" type="rule"/>
+            <infoLink name="Flamethrower" id="757b-3518-290b-5bf9" hidden="false" targetId="78ca-3b42-f65a-3db6" type="rule"/>
+            <infoLink name="Ignore Armour" id="89eb-1101-10db-d810" hidden="false" targetId="f745-3388-e51a-0637" type="rule"/>
+            <infoLink name="+/- Injury Dice" id="e7fd-a5b5-9e64-1819" hidden="false" targetId="9880-1ec6-9767-4698" type="rule"/>
+            <infoLink name="Fire" id="6c24-2bbe-f6bf-74a1" hidden="false" targetId="3f12-9eb3-07f7-03bb" type="rule"/>
+            <infoLink name="Pistol" id="888d-5652-7c72-7e85" hidden="false" targetId="845a-d3e1-69b8-687e" type="rule"/>
+            <infoLink name="Psychic" id="d5cc-0048-ed40-1669" hidden="false" targetId="20bd-18d1-0018-6723" type="rule"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Warpfire Gauntlet" id="0a1d-9665-d126-eaf8" hidden="false" typeId="090c-b12e-592a-9874" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Type" typeId="f90e-171a-4ca6-3845"/>
+                <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">8&quot;</characteristic>
+                <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">HELD, FLAMETHROWER, IGNORE ARMOUR, -1 INJURY DICE, FIRE, PISTOL, PSYCHIC, loses FLAMETHROWER when attacking in melee</characteristic>
+                <characteristic name="Rules" typeId="87f0-637b-734a-22eb"/>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry name="Warpfuel Pistol" id="f9c6-e50c-9d90-03b3" hidden="false" import="true" type="upgrade">
+          <infoLinks>
+            <infoLink name="+/- Dice" id="176e-bb4f-3c51-7809" hidden="false" targetId="8b7a-8f2d-dda6-b671" type="rule"/>
+            <infoLink name="Pistol" id="13a1-b05a-6fd0-67e3" hidden="false" targetId="845a-d3e1-69b8-687e" type="rule"/>
+            <infoLink name="Dangerous (X)" id="d935-2ce4-4201-6db8" hidden="false" targetId="589e-07fa-d952-96da" type="rule"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Warpfuel Pistol" id="5ba8-89be-9d9f-101d" hidden="false" typeId="090c-b12e-592a-9874" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Type" typeId="f90e-171a-4ca6-3845"/>
+                <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">12&quot;</characteristic>
+                <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">+1 DICE, PISTOL, DANGEROUS</characteristic>
+                <characteristic name="Rules" typeId="87f0-637b-734a-22eb"/>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup name="Ranged (Two-Handed)" id="ecff-d3ae-1ab7-0372" hidden="false">
+      <entryLinks>
+        <entryLink name="Arc Rifle" id="780a-c3b8-baa8-5fd8" hidden="false" import="true" targetId="0b88-104a-6e54-9f5d" type="selectionEntry">
+          <constraints>
+            <constraint id="795c-0f4a-ed3e-13db-min" field="selections" includeChildSelections="true" scope="roster" shared="true" type="min" value="2"/>
+            <constraint id="795c-0f4a-ed3e-13db-max" field="selections" includeChildSelections="true" scope="roster" shared="true" type="max" value="2"/>
+          </constraints>
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="25"/>
+          </costs>
+        </entryLink>
+        <entryLink name="Flamer" id="397c-05e1-6056-9746" hidden="false" import="true" targetId="985f-e0c3-b0e9-5f89" type="selectionEntry">
+          <constraints>
+            <constraint id="8719-eb97-79fa-a720" field="selections" includeChildSelections="true" scope="roster" shared="true" type="max" value="2"/>
+          </constraints>
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="30"/>
+          </costs>
+        </entryLink>
+        <entryLink name="Grav Gun" id="32fc-54b5-2856-e45e" hidden="false" import="true" targetId="5b02-7bfa-c1cc-9e11" type="selectionEntry">
+          <constraints>
+            <constraint id="567e-fea8-5774-b360" field="selections" includeChildSelections="true" scope="roster" shared="true" type="max" value="1"/>
+          </constraints>
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="20"/>
+          </costs>
+        </entryLink>
+        <entryLink name="Grenade Launcher" id="c559-df98-f110-f1a3" hidden="false" import="true" targetId="65c0-a52a-03c8-575a" type="selectionEntry">
+          <constraints>
+            <constraint id="5b01-71c3-26d0-9860" field="selections" includeChildSelections="true" scope="roster" shared="true" type="max" value="1"/>
+          </constraints>
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="40"/>
+          </costs>
+        </entryLink>
+        <entryLink name="Hotshot Lasgun" id="c618-a680-afb6-ce8e" hidden="false" import="true" targetId="7ba4-8446-8bf6-56c7" type="selectionEntry">
+          <constraints>
+            <constraint id="0a43-f8bd-e54f-3889" field="selections" includeChildSelections="true" scope="roster" shared="true" type="max" value="2"/>
+          </constraints>
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="30"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry name="Warpfuel Rifle" id="6f10-b39a-3d1d-8b6d" hidden="false" import="true" type="upgrade">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="7"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <entryLinks>
+            <entryLink name="Sniper Scope" id="7676-aa89-39ca-0ce8" hidden="false" import="true" targetId="e639-5100-6786-414f" type="selectionEntry"/>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="+/- Dice" id="2a2b-8e17-4653-4cf3" hidden="false" targetId="8b7a-8f2d-dda6-b671" type="rule"/>
+            <infoLink name="Dangerous (X)" id="247e-3673-3504-a6b1" hidden="false" targetId="589e-07fa-d952-96da" type="rule"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Warpfuel Rifle" id="2f10-1c55-4aef-88ea" hidden="false" typeId="090c-b12e-592a-9874" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Type" typeId="f90e-171a-4ca6-3845"/>
+                <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">24&quot;</characteristic>
+                <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">+1 DICE, TWO-HANDED, DANGEROUS, Scope Capable</characteristic>
+                <characteristic name="Rules" typeId="87f0-637b-734a-22eb"/>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry name="Warpvolt Obliterator" id="f286-98e0-e36d-1069" hidden="false" import="true" type="upgrade">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="25"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="+/- Injury Dice" id="d730-948a-b931-ceb7" hidden="false" targetId="9880-1ec6-9767-4698" type="rule"/>
+            <infoLink name="Automatic" id="5f6c-b8cf-8385-5da5" hidden="false" targetId="c435-c893-2c72-e7c6" type="rule"/>
+            <infoLink name="Risky" id="85d1-c75c-6cac-eed3" hidden="false" targetId="df23-62bc-775e-fca1" type="rule"/>
+            <infoLink name="Stun" id="5941-fb4b-4d41-9b20" hidden="false" targetId="07dd-07e7-d909-339a" type="rule"/>
+          </infoLinks>
+          <modifiers>
+            <modifier field="hidden" type="set" value="true">
+              <localConditionGroups>
+                <localConditionGroup field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" scope="parent" type="atLeast" value="1">
+                  <conditions>
+                    <condition childId="any" field="selections" includeChildSelections="false" scope="self" shared="true" type="notInstanceOf" value="1"/>
+                  </conditions>
+                </localConditionGroup>
+              </localConditionGroups>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Warpvolt Obliterator" id="f2d1-63c7-eb3e-4188" hidden="false" typeId="090c-b12e-592a-9874" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Type" typeId="f90e-171a-4ca6-3845"/>
+                <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">16&quot;</characteristic>
+                <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede"> -1 INJURY DICE, AUTOMATIC 2, RISKY, STUN, TWO-HANDED</characteristic>
+                <characteristic name="Rules" typeId="87f0-637b-734a-22eb"/>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry name="Doomrocket" id="1871-6e2f-92b7-547b" hidden="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink name="Heavy" id="4ee9-aa64-d2fd-b969" hidden="false" primary="false" targetId="70c9-988d-71a7-7654"/>
+          </categoryLinks>
+          <infoLinks>
+            <infoLink name="+/- Dice" id="2fdc-70d4-9854-0ff5" hidden="false" targetId="8b7a-8f2d-dda6-b671" type="rule"/>
+            <infoLink name="+/- Injury Dice" id="6830-d2b4-7793-a50c" hidden="false" targetId="9880-1ec6-9767-4698" type="rule"/>
+            <infoLink name="Ignore [Modifier]" id="a3d6-b65a-dc77-0e12" hidden="false" targetId="fd2f-4a14-7db4-8ec9" type="rule"/>
+            <infoLink name="Blast" id="abae-ede0-51e1-b5d8" hidden="false" targetId="263d-6520-5629-c027" type="rule"/>
+            <infoLink name="Scatter" id="a285-eb21-264f-b409" hidden="false" targetId="9ee3-1276-01cc-fefb" type="rule"/>
+            <infoLink name="Shrapnel" id="9ab8-d605-74c2-6f34" hidden="false" targetId="200f-a7a6-f8a7-8232" type="rule"/>
+            <infoLink name="Heavy" id="e7fa-405d-12bd-a14a" hidden="false" targetId="fbac-638f-ff95-d704" type="rule"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Doomrocket" id="6562-29ef-9be4-8f2f" hidden="false" typeId="090c-b12e-592a-9874" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Type" typeId="f90e-171a-4ca6-3845"/>
+                <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">24&quot;</characteristic>
+                <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede"> -1 DICE, +1 INJURY DICE, IGNORE COVER, BLAST 2”, SCATTER, SHRAPNEL, HEAVY, TWO-HANDED</characteristic>
+                <characteristic name="Rules" typeId="87f0-637b-734a-22eb">On a roll of 2, the attack hits the attacker’s location instead of normal scatter</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry name="Ratling Cannons" id="bc8f-8118-c0cd-72f5" hidden="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink name="Heavy" id="6066-20b0-aa66-f5f8" hidden="false" primary="false" targetId="70c9-988d-71a7-7654"/>
+          </categoryLinks>
+          <infoLinks>
+            <infoLink name="Automatic" id="b436-bd93-66aa-a754" hidden="false" targetId="c435-c893-2c72-e7c6" type="rule"/>
+            <infoLink name="+/- Dice" id="d499-41dc-6d0e-6841" hidden="false" targetId="8b7a-8f2d-dda6-b671" type="rule"/>
+            <infoLink name="Held" id="895c-40ec-1022-9218" hidden="false" targetId="1220-c65a-89ed-96a7" type="rule"/>
+            <infoLink name="Risky" id="e180-dafc-5b67-5823" hidden="false" targetId="df23-62bc-775e-fca1" type="rule"/>
+            <infoLink name="Heavy" id="37f1-6d43-eccc-ebce" hidden="false" targetId="fbac-638f-ff95-d704" type="rule"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Ratling Cannons" id="9609-edb4-1c9c-00fe" hidden="false" typeId="090c-b12e-592a-9874" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Type" typeId="f90e-171a-4ca6-3845"/>
+                <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">16&quot;</characteristic>
+                <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">HELD, +1 DICE, AUTOMATIC 3, RISKY, HEAVY, TWO-HANDED</characteristic>
+                <characteristic name="Rules" typeId="87f0-637b-734a-22eb"/>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry name="Ratling Gun" id="a66e-deb4-4787-2a8c" hidden="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink name="Heavy" id="1822-af94-8337-acd3" hidden="false" primary="false" targetId="70c9-988d-71a7-7654"/>
+          </categoryLinks>
+          <infoLinks>
+            <infoLink name="Automatic" id="b518-673a-9e26-1800" hidden="false" targetId="c435-c893-2c72-e7c6" type="rule"/>
+            <infoLink name="Risky" id="cd89-850a-2e5b-4f74" hidden="false" targetId="df23-62bc-775e-fca1" type="rule"/>
+            <infoLink name="Heavy" id="b210-1dc8-a98e-a6af" hidden="false" targetId="fbac-638f-ff95-d704" type="rule"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Ratling Gun" id="e580-8653-3314-5e84" hidden="false" typeId="090c-b12e-592a-9874" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Type" typeId="f90e-171a-4ca6-3845"/>
+                <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">36&quot;</characteristic>
+                <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">AUTOMATIC 3, RISKY, HEAVY, TWO-HANDED</characteristic>
+                <characteristic name="Rules" typeId="87f0-637b-734a-22eb"/>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry name="Warpfire Projectors" id="7c87-f1d9-4bfd-90a0" hidden="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink name="Heavy" id="a5f6-1d95-8c7c-29dc" hidden="false" primary="false" targetId="70c9-988d-71a7-7654"/>
+          </categoryLinks>
+          <infoLinks>
+            <infoLink name="Held" id="9179-4f55-781a-d552" hidden="false" targetId="1220-c65a-89ed-96a7" type="rule"/>
+            <infoLink name="Flamethrower" id="dc6d-fad3-36ff-b2e5" hidden="false" targetId="78ca-3b42-f65a-3db6" type="rule"/>
+            <infoLink name="Ignore Armour" id="bd3b-8ea4-5085-1d5c" hidden="false" targetId="f745-3388-e51a-0637" type="rule"/>
+            <infoLink name="Fire" id="75d2-305b-187e-fe5a" hidden="false" targetId="3f12-9eb3-07f7-03bb" type="rule"/>
+            <infoLink name="Heavy" id="e615-9fd4-7b35-72d0" hidden="false" targetId="fbac-638f-ff95-d704" type="rule"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Warpfire Projectors" id="dfba-5729-fe45-844c" hidden="false" typeId="090c-b12e-592a-9874" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Type" typeId="f90e-171a-4ca6-3845"/>
+                <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">10&quot;</characteristic>
+                <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">HELD, FLAMETHROWER, IGNORE ARMOUR, FIRE, HEAVY, TWO-HANDED, HEAVY, TWO-HANDED</characteristic>
+                <characteristic name="Rules" typeId="87f0-637b-734a-22eb"/>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry name="Warpvolt Scourger" id="c74f-95f4-cf47-2156" hidden="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink name="Heavy" id="a07f-30a5-1e81-b142" hidden="false" primary="false" targetId="70c9-988d-71a7-7654"/>
+          </categoryLinks>
+          <infoLinks>
+            <infoLink name="Automatic" id="de17-cf97-f737-bbb3" hidden="false" targetId="c435-c893-2c72-e7c6" type="rule"/>
+            <infoLink name="Heavy" id="5a02-914e-b9f3-6c2e" hidden="false" targetId="fbac-638f-ff95-d704" type="rule"/>
+            <infoLink name="Risky" id="e5c2-dfba-ec99-d535" hidden="false" targetId="df23-62bc-775e-fca1" type="rule"/>
+            <infoLink name="Stun" id="11c7-e6e5-4c35-4af3" hidden="false" targetId="07dd-07e7-d909-339a" type="rule"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Warpvolt Scourger" id="c383-5146-a17c-0401" hidden="false" typeId="090c-b12e-592a-9874" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Type" typeId="f90e-171a-4ca6-3845"/>
+                <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">18&quot;</characteristic>
+                <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">AUTOMATIC 2, HEAVY, RISKY, STUN, TWO-HANDED</characteristic>
+                <characteristic name="Rules" typeId="87f0-637b-734a-22eb"/>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry name="Windlaunchers" id="675c-2d18-f4ea-5008" hidden="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink name="Heavy" id="1b3f-c1d8-69f4-1ecf" hidden="false" primary="false" targetId="70c9-988d-71a7-7654"/>
+          </categoryLinks>
+          <infoLinks>
+            <infoLink name="Held" id="90bc-25fa-f033-8748" hidden="false" targetId="1220-c65a-89ed-96a7" type="rule"/>
+            <infoLink name="+/- Dice" id="ccc8-a7e6-6225-0593" hidden="false" targetId="8b7a-8f2d-dda6-b671" type="rule"/>
+            <infoLink name="+/- Injury Dice" id="7e9b-c6d2-26b9-f2e8" hidden="false" targetId="9880-1ec6-9767-4698" type="rule"/>
+            <infoLink name="Blast" id="b93a-dcae-6a91-cfe2" hidden="false" targetId="263d-6520-5629-c027" type="rule"/>
+            <infoLink name="Gas" id="5bfc-7208-d75c-1360" hidden="false" targetId="2c6e-81c8-6c20-b5b7" type="rule"/>
+            <infoLink name="Ignore Armour" id="dfb9-74dc-3a35-229f" hidden="false" targetId="f745-3388-e51a-0637" type="rule"/>
+            <infoLink name="Ignore [Modifier]" id="ad1c-f753-0756-cb94" hidden="false" targetId="fd2f-4a14-7db4-8ec9" type="rule"/>
+            <infoLink name="Heavy" id="35d1-3505-7888-028f" hidden="false" targetId="fbac-638f-ff95-d704" type="rule"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Windlaunchers" id="d132-6213-e2f2-3077" hidden="false" typeId="090c-b12e-592a-9874" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Type" typeId="f90e-171a-4ca6-3845"/>
+                <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">36&quot;</characteristic>
+                <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">HELD, +1 DICE, -1 INJURY DICE, BLAST 3”, GAS, IGNORE ARMOUR, IGNORE COVER, HEAVY, TWO-HANDED</characteristic>
+                <characteristic name="Rules" typeId="87f0-637b-734a-22eb"/>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup name="Shield Combo" id="bdda-83e0-8c19-107c" hidden="false" sortIndex="9">
-          <entryLinks>
-            <entryLink name="Shotgun" id="279d-5f65-3709-fee7" hidden="false" import="true" sortIndex="1" targetId="b5a3-faec-7613-ef0f" type="selectionEntry">
-              <costs>
-                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
-              </costs>
-            </entryLink>
-            <entryLink name="Automatic Shotgun" id="8135-4112-738b-96e6" hidden="false" import="true" targetId="f8bd-481c-8364-3eb3" type="selectionEntry">
+          <selectionEntries>
+            <selectionEntry name="Warpfuel Shotgun" id="67ba-b752-5aca-4adb" hidden="false" import="true" type="upgrade">
               <constraints>
-                <constraint id="77ec-f02c-daff-a9b0" field="selections" includeChildSelections="true" scope="roster" shared="true" type="max" value="2"/>
+                <constraint id="d47d-78dc-c370-c246" field="selections" includeChildSelections="true" scope="roster" shared="true" type="max" value="2"/>
               </constraints>
               <costs>
                 <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
               </costs>
-              <modifiers>
-                <modifier field="77ec-f02c-daff-a9b0" type="set" value="1">
-                  <conditions>
-                    <condition childId="c92f-74bc-9acb-69b4" field="selections" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
-                  </conditions>
-                </modifier>
-                <modifier field="hidden" type="set" value="true">
-                  <conditions>
-                    <condition childId="a911-0ba3-a9f7-17b7" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
-                  </conditions>
-                </modifier>
-                <modifier field="77ec-f02c-daff-a9b0" type="increment" value="1">
-                  <repeats>
-                    <repeat childId="68ec-2a15-281d-5d8b" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="roster" shared="true" value="1"/>
-                    <repeat childId="6ef1-51b6-9a26-cc36" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="roster" shared="true" value="1"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-            </entryLink>
-            <entryLink name="Heavy Shotgun" id="95fe-af5d-89c4-c4f2" hidden="false" import="true" targetId="d16f-f704-d17a-ebc6" type="selectionEntry">
-              <constraints>
-                <constraint id="1300-a21f-6fb2-0a9f" field="selections" includeChildSelections="true" scope="roster" shared="true" type="max" value="2"/>
-              </constraints>
-              <costs>
-                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="20"/>
-              </costs>
-              <modifiers>
-                <modifier field="hidden" type="set" value="true">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition childId="3133-240a-a0cc-9cb4" field="selections" scope="model" shared="true" type="notInstanceOf" value="1"/>
-                        <condition childId="6aa4-b38b-5146-4106" field="selections" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-                <modifier field="1300-a21f-6fb2-0a9f" type="increment" value="1">
-                  <repeats>
-                    <repeat childId="0f3a-e237-c06b-2cae" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="roster" shared="true" value="1"/>
-                    <repeat childId="d523-deea-cb75-403e" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="roster" shared="true" value="1"/>
-                  </repeats>
-                </modifier>
-                <modifier field="8d43-33fd-332d-17a6" type="decrement" value="5">
-                  <conditions>
-                    <condition childId="c2f2-d6ba-3f54-d80c" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </entryLink>
-            <entryLink name="Submachine Gun" id="ca84-2d10-1bed-9e1e" hidden="false" import="true" targetId="0754-f896-3f97-65c7" type="selectionEntry">
-              <constraints>
-                <constraint id="66bd-f873-bc7c-8d0b" field="selections" includeChildSelections="true" scope="roster" shared="true" type="max" value="2"/>
-              </constraints>
-              <costs>
-                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="30"/>
-              </costs>
-              <modifiers>
-                <modifier field="66bd-f873-bc7c-8d0b" type="set" value="1">
-                  <conditions>
-                    <condition childId="c92f-74bc-9acb-69b4" field="selections" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
-                  </conditions>
-                </modifier>
-                <modifier field="66bd-f873-bc7c-8d0b" type="set" value="4">
-                  <conditions>
-                    <condition childId="440a-e3aa-60d7-7d9c" field="selections" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
-                  </conditions>
-                </modifier>
-                <modifier field="66bd-f873-bc7c-8d0b" type="increment" value="1">
-                  <repeats>
-                    <repeat childId="d5a9-62eb-50db-8c1e" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="roster" shared="true" value="1"/>
-                    <repeat childId="4cf3-bdfa-9260-a828" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="roster" shared="true" value="1"/>
-                  </repeats>
-                </modifier>
-                <modifier field="8d43-33fd-332d-17a6" type="decrement" value="5">
-                  <conditions>
-                    <condition childId="c2f2-d6ba-3f54-d80c" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </entryLink>
-          </entryLinks>
+              <infoLinks>
+                <infoLink name="+/- Dice" id="52cb-e7b3-5248-4504" hidden="false" targetId="8b7a-8f2d-dda6-b671" type="rule"/>
+                <infoLink name="Assault" id="56e3-a80f-1263-3600" hidden="false" targetId="3136-7aab-4bde-9583" type="rule"/>
+                <infoLink name="Shotgun" id="b536-febe-23da-b884" hidden="false" targetId="d313-4a6e-389b-eb38" type="rule"/>
+                <infoLink name="Dangerous (X)" id="fd26-4283-cf51-fdac" hidden="false" targetId="589e-07fa-d952-96da" type="rule"/>
+              </infoLinks>
+              <profiles>
+                <profile name="Warpfuel Shotgun" id="5454-a943-e056-f829" hidden="false" typeId="090c-b12e-592a-9874" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Type" typeId="f90e-171a-4ca6-3845"/>
+                    <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">12&quot;</characteristic>
+                    <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">+2 DICE, ASSAULT, SHOTGUN, TWO-HANDED, DANGEROUS, Shield Combo</characteristic>
+                    <characteristic name="Rules" typeId="87f0-637b-734a-22eb"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry name="Warpfuel Jezzail" id="3b53-77db-ca63-c173" hidden="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink name="Heavy" id="195c-230a-8f2a-8ce2" hidden="false" primary="false" targetId="70c9-988d-71a7-7654"/>
+              </categoryLinks>
+              <infoLinks>
+                <infoLink name="+/- Dice" id="8d7d-591d-a6b8-9087" hidden="false" targetId="8b7a-8f2d-dda6-b671" type="rule"/>
+                <infoLink name="+/- Injury Dice" id="6771-4e08-6b28-6907" hidden="false" targetId="9880-1ec6-9767-4698" type="rule"/>
+                <infoLink name="Critical" id="03a1-c6d7-7be9-66fb" hidden="false" targetId="7c40-254f-6d33-854c" type="rule"/>
+                <infoLink name="Heavy" id="b997-2c4c-1083-c5eb" hidden="false" targetId="fbac-638f-ff95-d704" type="rule"/>
+                <infoLink name="Risky" id="5009-4c80-b28f-ff29" hidden="false" targetId="df23-62bc-775e-fca1" type="rule"/>
+                <infoLink name="Dangerous (X)" id="7121-f7aa-1519-3187" hidden="false" targetId="589e-07fa-d952-96da" type="rule"/>
+              </infoLinks>
+              <profiles>
+                <profile name="Warpfuel Jezzail" id="e4f0-d5fb-7bc4-46e4" hidden="false" typeId="090c-b12e-592a-9874" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Type" typeId="f90e-171a-4ca6-3845"/>
+                    <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">36&quot;</characteristic>
+                    <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">+2 DICE, +1 INJURY DICE, CRITICAL, HEAVY, RISKY, TWO-HANDED, DANGEROUS, Shield Combo, Scope Capable</characteristic>
+                    <characteristic name="Rules" typeId="87f0-637b-734a-22eb"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntryGroup>
@@ -2046,6 +2367,127 @@ For the purpose of Battle Demolition on Combat Engineers, this item counts as a 
           </conditions>
         </modifier>
       </modifiers>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Ruin Psychic Discipline" id="55a9-ea83-e815-8a18" hidden="false">
+      <selectionEntries>
+        <selectionEntry name="Bile-Torrent" id="db6d-eb9d-50db-0117" hidden="false" import="true" type="upgrade">
+          <constraints>
+            <constraint id="8de3-b5d4-8a6e-98b5" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="5"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Automatic" id="3295-79e7-bb7d-9813" hidden="false" targetId="c435-c893-2c72-e7c6" type="rule"/>
+            <infoLink name="Infection Markers" id="441f-dbbe-ac88-538c" hidden="false" targetId="884b-d2e7-31a6-f0b7" type="rule"/>
+            <infoLink name="Psychic" id="e6d9-27e2-3603-abb0" hidden="false" targetId="20bd-18d1-0018-6723" type="rule"/>
+            <infoLink name="Risky" id="9df9-905f-ebb3-1970" hidden="false" targetId="df23-62bc-775e-fca1" type="rule"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Bile-Torrent" id="7daa-b1bd-0765-c3bf" hidden="false" typeId="090c-b12e-592a-9874" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Type" typeId="f90e-171a-4ca6-3845"/>
+                <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">12&quot;</characteristic>
+                <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede"> AUTOMATIC 2, INFECTION MARKERS, PSYCHIC, RISKY</characteristic>
+                <characteristic name="Rules" typeId="87f0-637b-734a-22eb"/>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry name="Filth-Crust" id="41a7-5414-ba87-14f0" hidden="false" import="true" type="upgrade">
+          <constraints>
+            <constraint id="7350-97da-cc8d-9dd5" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="5"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Filth-Crust" id="2372-0674-85c4-d667" hidden="false" typeId="058c-866b-6487-ccc4" typeName="Ability">
+              <characteristics>
+                <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">12”, Self or One Ally, End of Turn, the target has an additional -1 to Injury rolls, stacking with armour and shields only up to a total of -3.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry name="Rabid-Rabid!" id="e613-1d7f-a650-f280" hidden="false" import="true" type="upgrade">
+          <constraints>
+            <constraint id="51ab-6e87-e796-b5c4" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="0"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="3"/>
+          </costs>
+          <profiles>
+            <profile name="Rabid-Rabid!" id="0706-87c5-d791-a76e" hidden="false" typeId="058c-866b-6487-ccc4" typeName="Ability">
+              <characteristics>
+                <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">12”, Self or One Ally, Target Activation, the target has +1 DICE to Dash Success Rolls, and it can make an additional melee attack when it takes the Fight Action.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry name="Skitterleap" id="1e25-1cad-fb2e-f625" hidden="false" import="true" type="upgrade">
+          <constraints>
+            <constraint id="e54b-1a9a-21d5-e054" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="5"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Skitterleap" id="0b6d-1839-3ced-fb11" hidden="false" typeId="058c-866b-6487-ccc4" typeName="Ability">
+              <characteristics>
+                <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">12”, Up to Three between Self and Allies, Target Activation, the target has FLYING.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry name="Warp Lightning" id="5afc-cfd6-419d-8ef1" hidden="false" import="true" type="upgrade">
+          <constraints>
+            <constraint id="59b5-e335-deba-3869" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Automatic" id="1cb8-4045-7158-6d01" hidden="false" targetId="c435-c893-2c72-e7c6" type="rule"/>
+            <infoLink name="Psychic" id="95b7-b732-cff9-791e" hidden="false" targetId="20bd-18d1-0018-6723" type="rule"/>
+            <infoLink name="Risky" id="abb2-3b5f-4f34-806b" hidden="false" targetId="df23-62bc-775e-fca1" type="rule"/>
+            <infoLink name="Stun" id="9a92-b2ec-85a8-c73b" hidden="false" targetId="07dd-07e7-d909-339a" type="rule"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Warp Lightning" id="1a03-3ddd-0109-fbab" hidden="false" typeId="090c-b12e-592a-9874" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Type" typeId="f90e-171a-4ca6-3845"/>
+                <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">18&quot;</characteristic>
+                <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">AUTOMATIC 2, PSYCHIC, RISKY, STUN</characteristic>
+                <characteristic name="Rules" typeId="87f0-637b-734a-22eb"/>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry name="Wither" id="750e-d9ac-d39f-b5e5" hidden="false" import="true" type="upgrade">
+          <constraints>
+            <constraint id="323a-c494-2d8c-33e1" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="+/- Dice" id="f5d9-df06-4d2a-5c34" hidden="false" targetId="8b7a-8f2d-dda6-b671" type="rule"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Wither" id="b5d7-5b38-6de7-89ca" hidden="false" typeId="058c-866b-6487-ccc4" typeName="Ability">
+              <characteristics>
+                <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2"> -1 DICE, 12”, One Enemy, Immediate, the target gains D3 BLOOD MARKERS.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
 </catalogue>
