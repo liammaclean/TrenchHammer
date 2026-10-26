@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Ranged Weapons" id="8ef4-3a38-8adb-53ba" battleScribeVersion="2.03" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="16" library="true" revision="2" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Ranged Weapons" id="8ef4-3a38-8adb-53ba" battleScribeVersion="2.03" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="16" library="true" revision="3" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink name="Melee Weapons" id="11d7-c183-f9d4-980e" targetId="7595-974a-7451-6c2e" type="catalogue"/>
     <catalogueLink name="Campaign Rules" id="4038-1c50-6932-e1a6" targetId="ba52-3616-d7f9-8d0c" type="catalogue"/>
     <catalogueLink name="Battlekits" id="7b47-3254-65c1-5f1b" targetId="f044-03b4-6607-1152" type="catalogue"/>
   </catalogueLinks>
+  <categoryEntries>
+    <categoryEntry name="Two-Handed" id="1fdb-761f-7278-c8fb" hidden="false"/>
+  </categoryEntries>
   <sharedSelectionEntries>
     <selectionEntry name="Autopistol" id="f294-f3b2-5577-bc17" hidden="false" import="true" type="upgrade">
       <costs>
@@ -159,7 +162,10 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry name="Heavy Flamethrower" id="b754-bcf6-152f-69e7" hidden="false" import="true" type="upgrade">
+    <selectionEntry name="Heavy Flamer" id="b754-bcf6-152f-69e7" hidden="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink name="Heavy" id="992e-9e9c-415a-5b05" hidden="false" primary="false" targetId="70c9-988d-71a7-7654"/>
+      </categoryLinks>
       <infoLinks>
         <infoLink name="+/- Injury Dice" id="8f42-9627-900c-77aa" hidden="false" targetId="9880-1ec6-9767-4698" type="rule"/>
         <infoLink name="Fire" id="18b8-2f76-2ce8-3c69" hidden="false" targetId="3f12-9eb3-07f7-03bb" type="rule"/>
@@ -169,7 +175,7 @@
         <infoLink name="Flamethrower" id="5a1f-d5f4-b26c-075e" hidden="false" targetId="78ca-3b42-f65a-3db6" type="rule"/>
       </infoLinks>
       <profiles>
-        <profile name="Heavy Flamethrower" id="b8e5-9d0c-ebd4-8208" hidden="false" typeId="090c-b12e-592a-9874" typeName="Weapon">
+        <profile name="Heavy Flamer" id="b8e5-9d0c-ebd4-8208" hidden="false" typeId="090c-b12e-592a-9874" typeName="Weapon">
           <characteristics>
             <characteristic name="Type" typeId="f90e-171a-4ca6-3845">2-Handed</characteristic>
             <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">10&quot;</characteristic>
@@ -503,6 +509,277 @@
             <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">12&quot;</characteristic>
             <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">VICIOUS 11, CRITICAL, PISTOL, Scope Capable</characteristic>
             <characteristic name="Rules" typeId="87f0-637b-734a-22eb"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Arc Rifle" id="0b88-104a-6e54-9f5d" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Armour Piercing X" id="d759-c696-2f7d-c355" hidden="false" targetId="cea1-4ce3-6aba-aab3" type="rule"/>
+        <infoLink name="Stun" id="133f-07e0-202d-fd6d" hidden="false" targetId="07dd-07e7-d909-339a" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Arc Rifle" id="7cec-3203-c298-37a0" hidden="false" typeId="090c-b12e-592a-9874" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Type" typeId="f90e-171a-4ca6-3845"/>
+            <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">30&quot;</characteristic>
+            <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">ARMOUR PIERCING 1, STUN, TWO-HANDED</characteristic>
+            <characteristic name="Rules" typeId="87f0-637b-734a-22eb"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Grav Gun" id="5b02-7bfa-c1cc-9e11" hidden="false" import="true" type="upgrade">
+      <entryLinks>
+        <entryLink name="Sniper Scope" id="0bde-99f7-f112-e83a" hidden="false" import="true" targetId="e639-5100-6786-414f" type="selectionEntry"/>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="+/- Injury Dice" id="14e7-2a69-27b4-2499" hidden="false" targetId="9880-1ec6-9767-4698" type="rule"/>
+        <infoLink name="Ignore Armour" id="cade-3c28-d3d9-251d" hidden="false" targetId="f745-3388-e51a-0637" type="rule"/>
+        <infoLink name="Stun" id="6fbf-701e-b507-8093" hidden="false" targetId="07dd-07e7-d909-339a" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Grav Gun" id="4290-18e4-3979-75b9" hidden="false" typeId="090c-b12e-592a-9874" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Type" typeId="f90e-171a-4ca6-3845"/>
+            <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">24&quot;</characteristic>
+            <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">-1 INJURY DICE, IGNORE ARMOUR, STUN, TWO-HANDED, Scope Capable</characteristic>
+            <characteristic name="Rules" typeId="87f0-637b-734a-22eb"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Hotshot Lasgun" id="7ba4-8446-8bf6-56c7" hidden="false" import="true" type="upgrade">
+      <entryLinks>
+        <entryLink name="Sniper Scope" id="1c1b-2519-a4f3-b4c8" hidden="false" import="true" targetId="e639-5100-6786-414f" type="selectionEntry"/>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="+/- Injury Modifier" id="cb88-1f7b-3595-7ad1" hidden="false" targetId="3f79-aee7-2c3d-828f" type="rule"/>
+        <infoLink name="Risky" id="077f-f2de-0439-6a24" hidden="false" targetId="df23-62bc-775e-fca1" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Hotshot Lasgun" id="5231-3d5b-3543-a960" hidden="false" typeId="090c-b12e-592a-9874" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Type" typeId="f90e-171a-4ca6-3845"/>
+            <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">24&quot;</characteristic>
+            <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">+1 INJURY MODIFIER, RISKY, TWO-HANDED, Scope Capable</characteristic>
+            <characteristic name="Rules" typeId="87f0-637b-734a-22eb"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Plasma Gun" id="8bce-4968-f619-a781" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Armour Piercing X" id="58ed-b011-24aa-4098" hidden="false" targetId="cea1-4ce3-6aba-aab3" type="rule"/>
+        <infoLink name="+/- Injury Dice" id="bb8e-6d77-1e7e-66b9" hidden="false" targetId="9880-1ec6-9767-4698" type="rule"/>
+        <infoLink name="Risky" id="fbb1-e243-d6f3-eade" hidden="false" targetId="df23-62bc-775e-fca1" type="rule"/>
+        <infoLink name="Dangerous (X)" id="9970-e66b-673a-bb02" hidden="false" targetId="589e-07fa-d952-96da" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Plasma Gun" id="356b-e12e-fc4b-8604" hidden="false" typeId="090c-b12e-592a-9874" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Type" typeId="f90e-171a-4ca6-3845"/>
+            <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">24&quot;</characteristic>
+            <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede"/>
+            <characteristic name="Rules" typeId="87f0-637b-734a-22eb">Normal Shot: 24”, ARMOUR PIERCING 1
+
+
+Overload: 24”, +1 INJURY DICE, ARMOUR PIERCING 2, RISKY, DANGEROUS
+
+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Grav Pistol" id="81ae-547e-f0fd-f735" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="+/- Injury Dice" id="4600-c337-8506-874b" hidden="false" targetId="9880-1ec6-9767-4698" type="rule"/>
+        <infoLink name="Ignore Armour" id="dddd-3dc0-ea24-ed9b" hidden="false" targetId="f745-3388-e51a-0637" type="rule"/>
+        <infoLink name="Stun" id="2a19-5101-27f5-ccea" hidden="false" targetId="07dd-07e7-d909-339a" type="rule"/>
+        <infoLink name="Pistol" id="d6ae-bb9f-8eaa-994a" hidden="false" targetId="845a-d3e1-69b8-687e" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Grav Pistol" id="dcdf-3c4f-5cd7-b8e9" hidden="false" typeId="090c-b12e-592a-9874" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Type" typeId="f90e-171a-4ca6-3845"/>
+            <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">12&quot;</characteristic>
+            <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">-1 INJURY DICE, IGNORE ARMOUR, STUN, PISTOL, Scope Capable</characteristic>
+            <characteristic name="Rules" typeId="87f0-637b-734a-22eb"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Hand Flamer" id="3349-fa5b-8b87-9b3b" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Flamethrower" id="a7fa-950a-fce2-8151" hidden="false" targetId="78ca-3b42-f65a-3db6" type="rule"/>
+        <infoLink name="Ignore Armour" id="f45c-c1e7-deac-ef8e" hidden="false" targetId="f745-3388-e51a-0637" type="rule"/>
+        <infoLink name="+/- Injury Dice" id="ffb6-aa26-7a90-ec0f" hidden="false" targetId="9880-1ec6-9767-4698" type="rule"/>
+        <infoLink name="Fire" id="f09a-9b2a-1054-462c" hidden="false" targetId="3f12-9eb3-07f7-03bb" type="rule"/>
+        <infoLink name="Pistol" id="16d6-e41d-c6ea-fd1c" hidden="false" targetId="845a-d3e1-69b8-687e" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Hand Flamer" id="fe05-4ebd-c6af-7e8e" hidden="false" typeId="090c-b12e-592a-9874" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Type" typeId="f90e-171a-4ca6-3845"/>
+            <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">6&quot;</characteristic>
+            <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">FLAMETHROWER, IGNORE ARMOUR, -2 INJURY DICE, FIRE, PISTOL</characteristic>
+            <characteristic name="Rules" typeId="87f0-637b-734a-22eb">loses FLAMETHROWER when attacking in melee</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Hotshot Laspistol" id="e628-36a4-06f0-4edd" hidden="false" import="true" type="upgrade">
+      <entryLinks>
+        <entryLink name="Sniper Scope" id="ecee-c549-03a2-2235" hidden="false" import="true" targetId="e639-5100-6786-414f" type="selectionEntry"/>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="+/- Injury Dice" id="3c54-1471-7975-334d" hidden="false" targetId="9880-1ec6-9767-4698" type="rule"/>
+        <infoLink name="Vicious" id="8b7e-5a19-378c-f711" hidden="false" targetId="f157-c4ef-952e-8ae7" type="rule"/>
+        <infoLink name="Critical" id="b52d-2f34-4829-7217" hidden="false" targetId="7c40-254f-6d33-854c" type="rule"/>
+        <infoLink name="Heavy" id="18ea-009b-dd3f-b144" hidden="false" targetId="fbac-638f-ff95-d704" type="rule"/>
+        <infoLink name="Pistol" id="ce25-66c5-a1ff-fc87" hidden="false" targetId="845a-d3e1-69b8-687e" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Hotshot Laspistol" id="e1b9-36f4-aa84-0f2b" hidden="false" typeId="090c-b12e-592a-9874" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Type" typeId="f90e-171a-4ca6-3845"/>
+            <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">12&quot;</characteristic>
+            <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">+1 INJURY DICE, VICIOUS 11, TWO-HANDED for models without STRONG, CRITICAL, HEAVY, PISTOL</characteristic>
+            <characteristic name="Rules" typeId="87f0-637b-734a-22eb"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Plasma Pistol" id="f556-f8c4-b2eb-6896" hidden="false" import="true" type="upgrade">
+      <entryLinks>
+        <entryLink name="Sniper Scope" id="3083-46f4-c288-ce72" hidden="false" import="true" targetId="e639-5100-6786-414f" type="selectionEntry"/>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Pistol" id="c91e-f87c-03f8-1ea2" hidden="false" targetId="845a-d3e1-69b8-687e" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Plasma Pistol" id="1922-6bc8-5c79-6256" hidden="false" typeId="090c-b12e-592a-9874" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Type" typeId="f90e-171a-4ca6-3845"/>
+            <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">12&quot;</characteristic>
+            <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede"> PISTOL, Scope Capable</characteristic>
+            <characteristic name="Rules" typeId="87f0-637b-734a-22eb">Normal Shot: ARMOUR PIERCING 1
+
+
+Overload: +1 INJURY DICE, ARMOUR PIERCING 2, RISKY, DANGEROUS
+
+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Grav Cannon" id="4d58-3e20-99b8-8466" hidden="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink name="Heavy" id="e3b8-98df-c4ab-7ae9" hidden="false" primary="false" targetId="70c9-988d-71a7-7654"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Stun" id="5072-c792-b87e-6d34" hidden="false" targetId="07dd-07e7-d909-339a" type="rule"/>
+        <infoLink name="Ignore Armour" id="4f72-1995-1184-5afd" hidden="false" targetId="f745-3388-e51a-0637" type="rule"/>
+        <infoLink name="Heavy" id="394f-8ebe-df28-a955" hidden="false" targetId="fbac-638f-ff95-d704" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Grav Cannon" id="c701-2882-ffc2-cc05" hidden="false" typeId="090c-b12e-592a-9874" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Type" typeId="f90e-171a-4ca6-3845"/>
+            <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">30&quot;</characteristic>
+            <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">IGNORE ARMOUR, HEAVY, STUN, TWO-HANDED</characteristic>
+            <characteristic name="Rules" typeId="87f0-637b-734a-22eb"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Heavy Arc Rifle" id="b961-5255-1c84-869c" hidden="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink name="Heavy" id="1f29-71e1-58c2-77e7" hidden="false" primary="false" targetId="70c9-988d-71a7-7654"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="+/- Injury Dice" id="14ad-638a-f155-d1c6" hidden="false" targetId="9880-1ec6-9767-4698" type="rule"/>
+        <infoLink name="Heavy" id="b5ed-8586-9512-689e" hidden="false" targetId="fbac-638f-ff95-d704" type="rule"/>
+        <infoLink name="Stun" id="2208-b0e5-fde7-7b9b" hidden="false" targetId="07dd-07e7-d909-339a" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Heavy Arc Rifle" id="19f7-db2b-9f90-59d2" hidden="false" typeId="090c-b12e-592a-9874" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Type" typeId="f90e-171a-4ca6-3845"/>
+            <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">30&quot;</characteristic>
+            <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">+1 INJURY DICE, HEAVY, STUN, TWO-HANDED</characteristic>
+            <characteristic name="Rules" typeId="87f0-637b-734a-22eb"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Mining Laser" id="e2cd-6557-5767-0d3d" hidden="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink name="Heavy" id="eb11-18be-d747-36ed" hidden="false" primary="false" targetId="70c9-988d-71a7-7654"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="+/- Dice" id="3150-c368-a818-19f0" hidden="false" targetId="8b7a-8f2d-dda6-b671" type="rule"/>
+        <infoLink name="+/- Injury Dice" id="673b-533e-f03d-3f7a" hidden="false" targetId="9880-1ec6-9767-4698" type="rule"/>
+        <infoLink name="Heavy" id="43e6-ebbc-9076-0c30" hidden="false" targetId="fbac-638f-ff95-d704" type="rule"/>
+        <infoLink name="Armour Piercing X" id="7493-92ab-aa50-2253" hidden="false" targetId="cea1-4ce3-6aba-aab3" type="rule"/>
+        <infoLink name="Risky" id="f183-1e38-3bb5-8724" hidden="false" targetId="df23-62bc-775e-fca1" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Mining Laser" id="baa3-7604-93df-06ae" hidden="false" typeId="090c-b12e-592a-9874" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Type" typeId="f90e-171a-4ca6-3845"/>
+            <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">24&quot;</characteristic>
+            <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">-1 DICE, +1 INJURY DICE, HEAVY, ARMOUR PIERCING 2, RISKY</characteristic>
+            <characteristic name="Rules" typeId="87f0-637b-734a-22eb"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Mole Launcher" id="8294-27ef-2152-2c6d" hidden="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink name="Heavy" id="c629-6811-2505-d143" hidden="false" primary="false" targetId="70c9-988d-71a7-7654"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Blast" id="f70a-d833-3a78-264d" hidden="false" targetId="263d-6520-5629-c027" type="rule"/>
+        <infoLink name="Risky" id="b1d0-3052-1c9d-313d" hidden="false" targetId="df23-62bc-775e-fca1" type="rule"/>
+        <infoLink name="Shrapnel" id="d550-3119-6519-ea70" hidden="false" targetId="200f-a7a6-f8a7-8232" type="rule"/>
+        <infoLink name="Heavy" id="2da2-cdd4-f7f6-90c3" hidden="false" targetId="fbac-638f-ff95-d704" type="rule"/>
+        <infoLink name="Ignore [Modifier]" id="7c97-4081-ac28-94d7" hidden="false" targetId="fd2f-4a14-7db4-8ec9" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Mole Launcher" id="975e-f87b-0806-9d25" hidden="false" typeId="090c-b12e-592a-9874" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Type" typeId="f90e-171a-4ca6-3845"/>
+            <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">18&quot;</characteristic>
+            <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">BLAST 3”, RISKY, SHRAPNEL, HEAVY, TWO-HANDED, IGNORE LINE OF SIGHT.</characteristic>
+            <characteristic name="Rules" typeId="87f0-637b-734a-22eb">Cannot target any model with FLYING unless it is Down, nor a model on overhanging terrain or on top of any building with an interior (even if only imagined); essentially, the attack must come up from the ground. Has -1 DICE if the attacker cannot see the target.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Plasma Cannon" id="906c-7aac-38ea-16a1" hidden="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink name="Heavy" id="db29-f8f8-ae34-f2d6" hidden="false" primary="false" targetId="70c9-988d-71a7-7654"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Heavy" id="d1ee-d5a4-a733-fd60" hidden="false" targetId="fbac-638f-ff95-d704" type="rule"/>
+        <infoLink name="+/- Injury Dice" id="dd52-2149-8787-cd39" hidden="false" targetId="9880-1ec6-9767-4698" type="rule"/>
+        <infoLink name="Armour Piercing X" id="5522-f567-49ba-e240" hidden="false" targetId="cea1-4ce3-6aba-aab3" type="rule"/>
+        <infoLink name="Risky" id="c0c0-59e4-c341-8370" hidden="false" targetId="df23-62bc-775e-fca1" type="rule"/>
+        <infoLink name="Dangerous (X)" id="d84c-58d4-9591-da91" hidden="false" targetId="589e-07fa-d952-96da" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Plasma Cannon" id="f3f3-28a8-4aa6-0d39" hidden="false" typeId="090c-b12e-592a-9874" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Type" typeId="f90e-171a-4ca6-3845"/>
+            <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">36&quot;</characteristic>
+            <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">HEAVY, TWO-HANDED</characteristic>
+            <characteristic name="Rules" typeId="87f0-637b-734a-22eb">Normal Shot: 36”, +1 INJURY DICE, ARMOUR PIERCING 1
+
+
+Overload: 36”, +2 INJURY DICE, ARMOUR PIERCING 2, RISKY, DANGEROUS
+
+</characteristic>
           </characteristics>
         </profile>
       </profiles>

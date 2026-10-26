@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Battlekits" id="f044-03b4-6607-1152" battleScribeVersion="2.03" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="16" library="true" revision="1" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Battlekits" id="f044-03b4-6607-1152" battleScribeVersion="2.03" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="16" library="true" revision="2" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry name="Trench Shield" id="ab45-1e00-df56-dbda" hidden="false" import="true" type="upgrade">
       <constraints>
@@ -12,42 +12,6 @@
         <profile name="Trench Shield" id="0691-b648-ac01-3dc7" hidden="false" typeId="7079-589c-df69-fa7e" typeName="Battlekit">
           <characteristics>
             <characteristic name="Type" typeId="3f15-74a1-4d35-3642">Shield</characteristic>
-            <characteristic name="Range" typeId="2b32-2f45-9c06-7a77"/>
-            <characteristic name="Keywords" typeId="5093-5528-b08f-1496">-1 INJURY MODIFIER</characteristic>
-            <characteristic name="Rules" typeId="4834-43a9-1c93-9062"/>
-          </characteristics>
-        </profile>
-      </profiles>
-    </selectionEntry>
-    <selectionEntry name="Reinforced Armour" id="a535-4fb6-c587-691a" hidden="true" import="true" type="upgrade">
-      <constraints>
-        <constraint id="1d07-a4db-bb42-fcb0" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
-      </constraints>
-      <infoLinks>
-        <infoLink name="+/- Injury Modifier" id="e518-2d53-5326-d715" hidden="false" targetId="3f79-aee7-2c3d-828f" type="rule"/>
-      </infoLinks>
-      <profiles>
-        <profile name="Reinforced Armour" id="33ed-6314-e75f-8982" hidden="false" typeId="7079-589c-df69-fa7e" typeName="Battlekit">
-          <characteristics>
-            <characteristic name="Type" typeId="3f15-74a1-4d35-3642">Armour</characteristic>
-            <characteristic name="Range" typeId="2b32-2f45-9c06-7a77"/>
-            <characteristic name="Keywords" typeId="5093-5528-b08f-1496">-2 INJURY MODIFIER</characteristic>
-            <characteristic name="Rules" typeId="4834-43a9-1c93-9062"/>
-          </characteristics>
-        </profile>
-      </profiles>
-    </selectionEntry>
-    <selectionEntry name="Standard Armour" id="fc21-c383-cc54-c15c" hidden="false" import="true" type="upgrade">
-      <constraints>
-        <constraint id="9338-dd96-6c50-1cde" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
-      </constraints>
-      <infoLinks>
-        <infoLink name="+/- Injury Modifier" id="c32c-bbd0-ce4f-de7f" hidden="false" targetId="3f79-aee7-2c3d-828f" type="rule"/>
-      </infoLinks>
-      <profiles>
-        <profile name="Standard Armour" id="71ec-000e-5999-ba1c" hidden="false" typeId="7079-589c-df69-fa7e" typeName="Battlekit">
-          <characteristics>
-            <characteristic name="Type" typeId="3f15-74a1-4d35-3642">Armour</characteristic>
             <characteristic name="Range" typeId="2b32-2f45-9c06-7a77"/>
             <characteristic name="Keywords" typeId="5093-5528-b08f-1496">-1 INJURY MODIFIER</characteristic>
             <characteristic name="Rules" typeId="4834-43a9-1c93-9062"/>
@@ -512,6 +476,93 @@
         </modifier>
         <modifier affects="profiles.Weapon" field="8cd6-8018-f2da-5ede" join=", " scope="parent" type="append" value="ARMOUR-PIERCING"/>
       </modifiers>
+    </selectionEntry>
+    <selectionEntry name="Heavy Armour" id="a742-d5be-8c01-2018" hidden="true" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink name="Heavy" id="4eb6-3e7f-cfb3-de5c" hidden="false" primary="false" targetId="70c9-988d-71a7-7654"/>
+      </categoryLinks>
+      <constraints>
+        <constraint id="6307-d5d7-9058-6031" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="+/- Injury Modifier" id="c686-2a28-682d-69df" hidden="false" targetId="3f79-aee7-2c3d-828f" type="rule"/>
+      </infoLinks>
+      <modifiers>
+        <modifier affects="unit.profiles.Unit" field="5de9-d70e-9021-6f71" position="0" type="increment" value="-2"/>
+      </modifiers>
+      <profiles>
+        <profile name="Heavy Armour" id="504c-42b8-c5d1-d29c" hidden="false" typeId="7079-589c-df69-fa7e" typeName="Battlekit">
+          <characteristics>
+            <characteristic name="Type" typeId="3f15-74a1-4d35-3642">Armour</characteristic>
+            <characteristic name="Range" typeId="2b32-2f45-9c06-7a77"/>
+            <characteristic name="Keywords" typeId="5093-5528-b08f-1496">-2 INJURY MODIFIER, HEAVY</characteristic>
+            <characteristic name="Rules" typeId="4834-43a9-1c93-9062">The equipped model suffers the penalty of the HEAVY Keyword with all of its ranged attacks in addition to charge distance. A model that can ignore HEAVY for one melee weapon can instead reduce the charge distance penalty to D3, while a model that can ignore HEAVY for one ranged weapon can instead ignore the limit on firing ranged weapons, and a model that can ignore HEAVY for any one weapon can instead choose one to ignore when equipped. Due to its bulk, even a STRONG wearer rolls only a D3 for extra charge distance instead of a D6.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Power Armour" id="26b6-bca0-cad4-7ac2" hidden="false" import="true" type="upgrade">
+      <constraints>
+        <constraint id="daf2-d34a-dc7f-d0a5" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="+/- Injury Modifier" id="b898-dca4-3696-bfd3" hidden="false" targetId="3f79-aee7-2c3d-828f" type="rule"/>
+      </infoLinks>
+      <modifiers>
+        <modifier affects="unit.profiles.Unit" field="5de9-d70e-9021-6f71" position="0" type="increment" value="-2"/>
+      </modifiers>
+      <profiles>
+        <profile name="Power Armour" id="aaa2-5dee-5014-ac07" hidden="false" typeId="7079-589c-df69-fa7e" typeName="Battlekit">
+          <characteristics>
+            <characteristic name="Type" typeId="3f15-74a1-4d35-3642">Armour</characteristic>
+            <characteristic name="Range" typeId="2b32-2f45-9c06-7a77"/>
+            <characteristic name="Keywords" typeId="5093-5528-b08f-1496">-2 INJURY MODIFIER</characteristic>
+            <characteristic name="Rules" typeId="4834-43a9-1c93-9062"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Standard Armour" id="76d5-9a33-914c-ce7e" hidden="false" import="true" type="upgrade">
+      <constraints>
+        <constraint id="f966-ed46-d15d-0620" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="+/- Injury Modifier" id="6193-570d-0200-6529" hidden="false" targetId="3f79-aee7-2c3d-828f" type="rule"/>
+      </infoLinks>
+      <modifiers>
+        <modifier affects="unit.profiles.Unit" field="5de9-d70e-9021-6f71" position="0" type="increment" value="-1"/>
+      </modifiers>
+      <profiles>
+        <profile name="Standard Armour" id="784e-81e3-cc8c-5ca3" hidden="false" typeId="7079-589c-df69-fa7e" typeName="Battlekit">
+          <characteristics>
+            <characteristic name="Type" typeId="3f15-74a1-4d35-3642">Armour</characteristic>
+            <characteristic name="Range" typeId="2b32-2f45-9c06-7a77"/>
+            <characteristic name="Keywords" typeId="5093-5528-b08f-1496">-1 INJURY MODIFIER</characteristic>
+            <characteristic name="Rules" typeId="4834-43a9-1c93-9062"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Terminator Armour" id="c924-2791-70de-38d7" hidden="false" import="true" type="upgrade">
+      <constraints>
+        <constraint id="334e-c36d-6bc2-ab23" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="+/- Injury Modifier" id="61f8-51a7-16b9-393d" hidden="false" targetId="3f79-aee7-2c3d-828f" type="rule"/>
+      </infoLinks>
+      <modifiers>
+        <modifier affects="unit.profiles.Unit" field="5de9-d70e-9021-6f71" position="0" type="increment" value="-3"/>
+      </modifiers>
+      <profiles>
+        <profile name="Terminator Armour" id="ce0f-8946-51f2-1ff3" hidden="false" typeId="7079-589c-df69-fa7e" typeName="Battlekit">
+          <characteristics>
+            <characteristic name="Type" typeId="3f15-74a1-4d35-3642">Armour</characteristic>
+            <characteristic name="Range" typeId="2b32-2f45-9c06-7a77"/>
+            <characteristic name="Keywords" typeId="5093-5528-b08f-1496">-3 INJURY MODIFIER</characteristic>
+            <characteristic name="Rules" typeId="4834-43a9-1c93-9062">Model gains the DEEP STRIKE, STRONG, and VEHICLE Keywords, as well as LARGE if not already LARGE. It can wield a TWO-HANDED ranged weapon in one hand instead of a TWO-HANDED melee weapon due to its STRONG Keyword. Due to its bulk the wearer has -1” movement speed. Terminator Armour cannot be combined with a Shield, nor used with a Jump Pack.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
   </sharedSelectionEntries>
 </catalogue>

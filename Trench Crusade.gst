@@ -1239,9 +1239,7 @@ You can bring only up to a number of Mercenaries to a battle equal to one third 
       <description>A model with this Keyword does not suffer a STUN MARKER due to the STUN Keyword. It can still suffer STUN MARKERS from other sources, such as the STUN MARKERS Keyword, Abilities, etc.</description>
     </rule>
     <rule name="Nonlethal" id="5e11-98d6-45e8-c26a" hidden="false">
-      <description>Injury rolls caused by this weapon treat Out of Action results as Down results instead.
-
-</description>
+      <description>Injury rolls caused by this weapon treat Out of Action results as Down results instead.</description>
     </rule>
     <rule name="No Promotion" id="f920-f996-1f41-37ef" hidden="false">
       <description>Models with this Keyword cannot be promoted to Elite during a campaign.</description>

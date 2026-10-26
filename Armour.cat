@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue name="Armour" id="bbdf-3e0c-0ded-755c" battleScribeVersion="2.03" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="18" library="true" revision="1" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <catalogueLinks>
+    <catalogueLink name="Campaign Rules" id="f0d6-fce2-af0d-37c7" targetId="ba52-3616-d7f9-8d0c" type="catalogue"/>
+  </catalogueLinks>
+</catalogue>
