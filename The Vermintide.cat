@@ -1465,7 +1465,6 @@ For the purpose of Battle Demolition on Combat Engineers, this item counts as a 
       <entryLinks>
         <entryLink name="Grav Pistol" id="95ed-5599-eecb-c940" hidden="false" import="true" targetId="81ae-547e-f0fd-f735" type="selectionEntry">
           <constraints>
-            <constraint id="7c16-1462-f55e-42fc-min" field="selections" includeChildSelections="true" scope="roster" shared="true" type="min" value="1"/>
             <constraint id="7c16-1462-f55e-42fc-max" field="selections" includeChildSelections="true" scope="roster" shared="true" type="max" value="1"/>
           </constraints>
           <costs>
@@ -1474,7 +1473,6 @@ For the purpose of Battle Demolition on Combat Engineers, this item counts as a 
         </entryLink>
         <entryLink name="Hand Flamer" id="52ea-2245-6fbc-a519" hidden="false" import="true" targetId="3349-fa5b-8b87-9b3b" type="selectionEntry">
           <constraints>
-            <constraint id="633c-c122-579a-c9ed-min" field="selections" includeChildSelections="true" scope="roster" shared="true" type="min" value="1"/>
             <constraint id="633c-c122-579a-c9ed-max" field="selections" includeChildSelections="true" scope="roster" shared="true" type="max" value="1"/>
           </constraints>
           <costs>
@@ -1574,8 +1572,7 @@ For the purpose of Battle Demolition on Combat Engineers, this item counts as a 
       <entryLinks>
         <entryLink name="Arc Rifle" id="780a-c3b8-baa8-5fd8" hidden="false" import="true" targetId="0b88-104a-6e54-9f5d" type="selectionEntry">
           <constraints>
-            <constraint id="795c-0f4a-ed3e-13db-min" field="selections" includeChildSelections="true" scope="roster" shared="true" type="min" value="2"/>
-            <constraint id="795c-0f4a-ed3e-13db-max" field="selections" includeChildSelections="true" scope="roster" shared="true" type="max" value="2"/>
+            <constraint id="5335-0178-b7f5-16c8" field="selections" includeChildSelections="true" scope="roster" shared="true" type="max" value="2"/>
           </constraints>
           <costs>
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="25"/>
