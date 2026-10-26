@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue name="Battlekits" id="f044-03b4-6607-1152" battleScribeVersion="2.03" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="16" library="true" revision="1" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <sharedSelectionEntries>
+    <selectionEntry name="Trench Shield" id="ab45-1e00-df56-dbda" hidden="false" import="true" type="upgrade">
+      <constraints>
+        <constraint id="8a59-6ce2-41f3-94c5" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="+/- Injury Modifier" id="47d6-8d0d-b439-778a" hidden="false" targetId="3f79-aee7-2c3d-828f" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Trench Shield" id="0691-b648-ac01-3dc7" hidden="false" typeId="7079-589c-df69-fa7e" typeName="Battlekit">
+          <characteristics>
+            <characteristic name="Type" typeId="3f15-74a1-4d35-3642">Shield</characteristic>
+            <characteristic name="Range" typeId="2b32-2f45-9c06-7a77"/>
+            <characteristic name="Keywords" typeId="5093-5528-b08f-1496">-1 INJURY MODIFIER</characteristic>
+            <characteristic name="Rules" typeId="4834-43a9-1c93-9062"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Reinforced Armour" id="a535-4fb6-c587-691a" hidden="true" import="true" type="upgrade">
+      <constraints>
+        <constraint id="1d07-a4db-bb42-fcb0" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="+/- Injury Modifier" id="e518-2d53-5326-d715" hidden="false" targetId="3f79-aee7-2c3d-828f" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Reinforced Armour" id="33ed-6314-e75f-8982" hidden="false" typeId="7079-589c-df69-fa7e" typeName="Battlekit">
+          <characteristics>
+            <characteristic name="Type" typeId="3f15-74a1-4d35-3642">Armour</characteristic>
+            <characteristic name="Range" typeId="2b32-2f45-9c06-7a77"/>
+            <characteristic name="Keywords" typeId="5093-5528-b08f-1496">-2 INJURY MODIFIER</characteristic>
+            <characteristic name="Rules" typeId="4834-43a9-1c93-9062"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Standard Armour" id="fc21-c383-cc54-c15c" hidden="false" import="true" type="upgrade">
+      <constraints>
+        <constraint id="9338-dd96-6c50-1cde" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="+/- Injury Modifier" id="c32c-bbd0-ce4f-de7f" hidden="false" targetId="3f79-aee7-2c3d-828f" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Standard Armour" id="71ec-000e-5999-ba1c" hidden="false" typeId="7079-589c-df69-fa7e" typeName="Battlekit">
+          <characteristics>
+            <characteristic name="Type" typeId="3f15-74a1-4d35-3642">Armour</characteristic>
+            <characteristic name="Range" typeId="2b32-2f45-9c06-7a77"/>
+            <characteristic name="Keywords" typeId="5093-5528-b08f-1496">-1 INJURY MODIFIER</characteristic>
+            <characteristic name="Rules" typeId="4834-43a9-1c93-9062"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Armour Piercing Bullets" id="9f51-3782-6026-46a6" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Ammunition (Keyword)" id="dc7c-d3b7-17e3-49b1" hidden="false" targetId="9a05-7b7b-6023-5523" type="rule"/>
+        <infoLink name="Consumable" id="9ecc-d22a-0672-5503" hidden="false" targetId="e98d-4bd1-3870-27b9" type="rule"/>
+        <infoLink name="Armour Piercing" id="37da-3635-32d1-a1b4" hidden="false" targetId="ba7a-64b6-e87b-0ecd" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Armour Piercing Bullets" id="0327-358f-77be-d119" hidden="false" typeId="7079-589c-df69-fa7e" typeName="Battlekit">
+          <characteristics>
+            <characteristic name="Type" typeId="3f15-74a1-4d35-3642">Equipment</characteristic>
+            <characteristic name="Range" typeId="2b32-2f45-9c06-7a77"/>
+            <characteristic name="Keywords" typeId="5093-5528-b08f-1496">AMMUNITION (ARMOUR-PIERCING), CONSUMABLE</characteristic>
+            <characteristic name="Rules" typeId="4834-43a9-1c93-9062"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Binoculars" id="e1cb-6d32-6315-eb1b" hidden="false" import="true" type="upgrade">
+      <constraints>
+        <constraint id="37e4-a6ee-a1f1-a719" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Infiltrator" id="f851-a38a-074c-2b0f" hidden="false" targetId="154d-8072-ef87-e6c1" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Binoculars" id="d8ed-a44c-df74-d064" hidden="false" typeId="7079-589c-df69-fa7e" typeName="Battlekit">
+          <characteristics>
+            <characteristic name="Type" typeId="3f15-74a1-4d35-3642">Equipment</characteristic>
+            <characteristic name="Range" typeId="2b32-2f45-9c06-7a77"/>
+            <characteristic name="Keywords" typeId="5093-5528-b08f-1496"/>
+            <characteristic name="Rules" typeId="4834-43a9-1c93-9062">**Survey the Land**: Enemy models cannot use the INFILTRATOR Keyword to deploy within 16” of a model with this Keyword unless they are in their own side’s deployment zone.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Blessed Icon" id="2fb0-a298-d74c-a76a" hidden="false" import="true" type="upgrade">
+      <constraints>
+        <constraint id="d8bc-e85d-f1aa-6b31" field="selections" includeChildSelections="false" scope="model" shared="true" type="max" value="1"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Consumable" id="330f-58dc-290a-7af9" hidden="false" targetId="e98d-4bd1-3870-27b9" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Blessed Icon" id="3c35-dded-ffab-2e12" hidden="false" typeId="7079-589c-df69-fa7e" typeName="Battlekit">
+          <characteristics>
+            <characteristic name="Type" typeId="3f15-74a1-4d35-3642">Equipment</characteristic>
+            <characteristic name="Range" typeId="2b32-2f45-9c06-7a77"/>
+            <characteristic name="Keywords" typeId="5093-5528-b08f-1496">CONSUMABLE</characteristic>
+            <characteristic name="Rules" typeId="4834-43a9-1c93-9062">**Talisman**: Once during a game, when a Risky Success Roll for a model with a Blessed Icon is a Failure, you can say that the model will use its Talisman. If you do, the model’s Activation does not end.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Combat Helmet" id="dd63-2453-14d7-7e00" hidden="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink name="Negate Shrapnel" id="cc4e-bad7-d94a-2135" primary="false" targetId="baee-43b9-2e20-9755"/>
+      </categoryLinks>
+      <constraints>
+        <constraint id="59bb-c8af-9428-6d47" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+      </constraints>
+      <costs>
+        <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Negate [Keyword]" id="53e9-a5ba-8273-fd18" hidden="false" targetId="47f9-6914-172d-26a9" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Combat Helmet" id="f742-ff2c-671c-3e20" hidden="false" typeId="7079-589c-df69-fa7e" typeName="Battlekit">
+          <characteristics>
+            <characteristic name="Type" typeId="3f15-74a1-4d35-3642">Equipment</characteristic>
+            <characteristic name="Range" typeId="2b32-2f45-9c06-7a77"/>
+            <characteristic name="Keywords" typeId="5093-5528-b08f-1496">NEGATE SHRAPNEL</characteristic>
+            <characteristic name="Rules" typeId="4834-43a9-1c93-9062"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Dum-Dum Bullets" id="8b0b-b48b-c82a-f71e" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Ammunition (Keyword)" id="1ffc-680c-86d7-0f9b" hidden="false" targetId="9a05-7b7b-6023-5523" type="rule"/>
+        <infoLink name="Consumable" id="e6eb-c8ff-3279-b5cd" hidden="false" targetId="e98d-4bd1-3870-27b9" type="rule"/>
+        <infoLink name="Critical" id="157f-ad58-6b4c-e16e" hidden="false" targetId="7c40-254f-6d33-854c" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Dum-Dum Bullets" id="913c-4427-b470-9a6a" hidden="false" typeId="7079-589c-df69-fa7e" typeName="Battlekit">
+          <characteristics>
+            <characteristic name="Type" typeId="3f15-74a1-4d35-3642">Equipment</characteristic>
+            <characteristic name="Range" typeId="2b32-2f45-9c06-7a77"/>
+            <characteristic name="Keywords" typeId="5093-5528-b08f-1496">AMMUNITION (CRITICAL), CONSUMABLE</characteristic>
+            <characteristic name="Rules" typeId="4834-43a9-1c93-9062"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Field Shrine" id="b8e5-5657-f3fc-fd59" hidden="false" import="true" type="upgrade">
+      <constraints>
+        <constraint id="f22e-8077-3ae2-e1db" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Deployable" id="ad53-7aff-d55c-493d" hidden="false" targetId="c458-a331-5541-0ad9" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Field Shrine" id="5b7d-4bc2-5a44-43ce" hidden="false" typeId="7079-589c-df69-fa7e" typeName="Battlekit">
+          <characteristics>
+            <characteristic name="Type" typeId="3f15-74a1-4d35-3642">Equipment</characteristic>
+            <characteristic name="Range" typeId="2b32-2f45-9c06-7a77"/>
+            <characteristic name="Keywords" typeId="5093-5528-b08f-1496">DEPLOYABLE</characteristic>
+            <characteristic name="Rules" typeId="4834-43a9-1c93-9062">A Field Shrine is represented by a terrain piece that is at least ½” high and which is mounted on a 40mm base. It is Impassable terrain.
+- **Site of Worship**: After you deploy a model that has Field Shrine, you can also deploy their Field Shrine anywhere wholly within their deployment zone. In the Morale Phase, each friendly Field Shrine on the battlefield adds 3 to the number of models you have in your Warband that are not Down or Out of Action, up to a maximum bonus of 9 extra models. Once deployed, the model that had the Field Shrine is not considered to be carrying it for the rest of the game.
+- **Tear It Down!**: Models can attack a Field Shrine as if it were an enemy model. If it is hit by an attack or is in the blast radius of an attack made with a Weapon that has the BLAST Keyword, it is removed from the battlefield and is removed from the Warband Roster (no Injury Roll is required).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Gas Mask" id="8927-946d-c993-14ee" hidden="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink name="Negate Gas" id="2453-d19d-ef14-995b" primary="false" targetId="d935-8238-a3f7-8ab0"/>
+      </categoryLinks>
+      <constraints>
+        <constraint id="c887-179f-e3e3-9dbd" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Negate [Keyword]" id="e0ef-f022-b071-f32b" hidden="false" targetId="47f9-6914-172d-26a9" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Gas Mask" id="29d4-73f4-67aa-ecbb" hidden="false" typeId="7079-589c-df69-fa7e" typeName="Battlekit">
+          <characteristics>
+            <characteristic name="Type" typeId="3f15-74a1-4d35-3642">Equipment</characteristic>
+            <characteristic name="Range" typeId="2b32-2f45-9c06-7a77"/>
+            <characteristic name="Keywords" typeId="5093-5528-b08f-1496">NEGATE GAS</characteristic>
+            <characteristic name="Rules" typeId="4834-43a9-1c93-9062"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Hellbound Soul Contract" id="a2d4-cd33-46c4-3b81" hidden="false" import="true" type="upgrade">
+      <constraints>
+        <constraint id="4aa9-00fb-3e27-5d7b" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Ignore [Modifier]" id="aad3-def4-2f10-fdbc" hidden="false" targetId="fd2f-4a14-7db4-8ec9" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Hellbound Soul Contract" id="4fa4-3134-d167-8099" hidden="false" typeId="7079-589c-df69-fa7e" typeName="Battlekit">
+          <characteristics>
+            <characteristic name="Type" typeId="3f15-74a1-4d35-3642">Equipment</characteristic>
+            <characteristic name="Range" typeId="2b32-2f45-9c06-7a77"/>
+            <characteristic name="Keywords" typeId="5093-5528-b08f-1496"/>
+            <characteristic name="Rules" typeId="4834-43a9-1c93-9062">**Fiery Exodus**: If a model with a Hellbound Soul Contract is taken Out of Action, before removing it from the battlefield add 1 BLOOD MARKER to each enemy model that is within 1” of it. Models that have the NEGATE FIRE Keyword are not affected by this special rule.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Holy Relic" id="bf17-de3b-1272-3d4c" hidden="false" import="true" type="upgrade">
+      <constraints>
+        <constraint id="0ef9-334b-b026-d22f" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Blessed" id="3653-117d-79ae-39d2" hidden="false" targetId="269c-81bd-f64b-737f" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Holy Relic" id="0e24-838f-4297-c2b9" hidden="false" typeId="7079-589c-df69-fa7e" typeName="Battlekit">
+          <characteristics>
+            <characteristic name="Type" typeId="3f15-74a1-4d35-3642">Equipment</characteristic>
+            <characteristic name="Range" typeId="2b32-2f45-9c06-7a77"/>
+            <characteristic name="Keywords" typeId="5093-5528-b08f-1496">BLESSED 1</characteristic>
+            <characteristic name="Rules" typeId="4834-43a9-1c93-9062"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Incendiary Ammunition" id="c837-cb9f-bfbb-fabc" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Ammunition (Keyword)" id="ccae-e403-d97b-d0ab" hidden="false" targetId="9a05-7b7b-6023-5523" type="rule"/>
+        <infoLink name="Consumable" id="7f22-c9f2-a2ac-9187" hidden="false" targetId="e98d-4bd1-3870-27b9" type="rule"/>
+        <infoLink name="Fire" id="9d8f-7d3e-75f6-419c" hidden="false" targetId="3f12-9eb3-07f7-03bb" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Incendiary Ammunition" id="2eb8-75e4-b529-12ad" hidden="false" typeId="7079-589c-df69-fa7e" typeName="Battlekit">
+          <characteristics>
+            <characteristic name="Type" typeId="3f15-74a1-4d35-3642">Equipment</characteristic>
+            <characteristic name="Range" typeId="2b32-2f45-9c06-7a77"/>
+            <characteristic name="Keywords" typeId="5093-5528-b08f-1496">AMMUNITION (FIRE), CONSUMABLE</characteristic>
+            <characteristic name="Rules" typeId="4834-43a9-1c93-9062"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Infernal Brand" id="0198-2836-2591-f0ad" hidden="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink name="Negate Fire" id="330c-c477-7121-1b68" primary="false" targetId="f0ef-ba0d-8963-331a"/>
+      </categoryLinks>
+      <constraints>
+        <constraint id="6e9f-22ef-279c-71e7" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Negate [Keyword]" id="9104-fb90-0251-71e3" hidden="false" targetId="47f9-6914-172d-26a9" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Infernal Brand" id="e5d0-2e53-965c-1b78" hidden="false" typeId="7079-589c-df69-fa7e" typeName="Battlekit">
+          <characteristics>
+            <characteristic name="Type" typeId="3f15-74a1-4d35-3642">Equipment</characteristic>
+            <characteristic name="Range" typeId="2b32-2f45-9c06-7a77"/>
+            <characteristic name="Keywords" typeId="5093-5528-b08f-1496">NEGATE FIRE</characteristic>
+            <characteristic name="Rules" typeId="4834-43a9-1c93-9062"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Martyrdom Pills" id="6347-11b1-0c96-2803" hidden="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink name="Negate Fear" id="15f8-f557-51aa-b70c" primary="false" targetId="7877-788b-2d58-c844"/>
+      </categoryLinks>
+      <constraints>
+        <constraint id="d681-81a3-729f-73af" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Negate [Keyword]" id="f12b-9b18-4230-e868" hidden="false" targetId="47f9-6914-172d-26a9" type="rule"/>
+        <infoLink name="Consumable" id="21db-6ab4-8f96-6c13" hidden="false" targetId="e98d-4bd1-3870-27b9" type="rule"/>
+        <infoLink name="+/- Injury Dice" id="b3d1-1e42-a839-7006" hidden="false" targetId="9880-1ec6-9767-4698" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Martyrdom Pills" id="322c-cb76-719a-0cb9" hidden="false" typeId="7079-589c-df69-fa7e" typeName="Battlekit">
+          <characteristics>
+            <characteristic name="Type" typeId="3f15-74a1-4d35-3642">Equipment</characteristic>
+            <characteristic name="Range" typeId="2b32-2f45-9c06-7a77"/>
+            <characteristic name="Keywords" typeId="5093-5528-b08f-1496">CONSUMABLE</characteristic>
+            <characteristic name="Rules" typeId="4834-43a9-1c93-9062">**Inured to Pain**: When you deploy a model that has Martyrdom Pills you can say that they will consume them. If you do so, until the end of the game the model has the NEGATE FEAR Keyword. In addition, add -1 INJURY DICE to rolls for attacks that hit the model.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Medikit" id="05b0-3aaa-2e29-c69f" hidden="false" import="true" type="upgrade">
+      <constraints>
+        <constraint id="d245-5975-eb0d-7ccd" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+      </constraints>
+      <profiles>
+        <profile name="Medikit" id="cb36-de41-f960-6526" hidden="false" typeId="7079-589c-df69-fa7e" typeName="Battlekit">
+          <characteristics>
+            <characteristic name="Type" typeId="3f15-74a1-4d35-3642">Equipment</characteristic>
+            <characteristic name="Range" typeId="2b32-2f45-9c06-7a77"/>
+            <characteristic name="Keywords" typeId="5093-5528-b08f-1496"/>
+            <characteristic name="Rules" typeId="4834-43a9-1c93-9062">**Treat ACTION**: A model with this Keyword can take a Treat ACTION. If it does so, take a Risky Success Roll for the model. If the roll is a Failure, the model’s Activation ends immediately. If it is a Success or a Critical Success, you can do one of the following things:
+* Remove 1 BLOOD MARKER from the model or a friendly model within 1” of the model.
+* Stand up a friendly model that is Down and within 1” of the model.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Mountaineer Kit" id="46fc-c345-e21b-1df9" hidden="false" import="true" type="upgrade">
+      <constraints>
+        <constraint id="e89d-79d5-ec81-3aae" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="+/- Dice" id="2f5c-dfde-6d1d-22b7" hidden="false" targetId="8b7a-8f2d-dda6-b671" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Mountaineer Kit" id="111a-02f4-8014-be04" hidden="false" typeId="7079-589c-df69-fa7e" typeName="Battlekit">
+          <characteristics>
+            <characteristic name="Type" typeId="3f15-74a1-4d35-3642">Equipment</characteristic>
+            <characteristic name="Range" typeId="2b32-2f45-9c06-7a77"/>
+            <characteristic name="Keywords" typeId="5093-5528-b08f-1496"/>
+            <characteristic name="Rules" typeId="4834-43a9-1c93-9062">**Ropes and Pitons**: Add +1 DICE to Risky Success Rolls for friendly models with this special rule that are attempting to climb a sheer surface.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Musical Instrument" id="d6b0-fb63-288a-420a" hidden="false" import="true" type="upgrade">
+      <constraints>
+        <constraint id="b35c-7505-09f3-9f11" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Held" id="27f6-3527-bc04-17bd" hidden="false" targetId="1220-c65a-89ed-96a7" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Musical Instrument" id="ed7c-0353-5a9d-b903" hidden="false" typeId="7079-589c-df69-fa7e" typeName="Battlekit">
+          <characteristics>
+            <characteristic name="Type" typeId="3f15-74a1-4d35-3642">Equipment</characteristic>
+            <characteristic name="Range" typeId="2b32-2f45-9c06-7a77"/>
+            <characteristic name="Keywords" typeId="5093-5528-b08f-1496">HELD</characteristic>
+            <characteristic name="Rules" typeId="4834-43a9-1c93-9062">**Fanfare**: Add +1 DICE to Risky Success Rolls for friendly models that are taking a Dash ACTION and are within 4” of one or more models with a Musical Instrument.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Shovel" id="d0a8-ad68-ad47-83f5" hidden="false" import="true" type="upgrade">
+      <constraints>
+        <constraint id="895e-ce14-ba6b-a6be" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+      </constraints>
+      <profiles>
+        <profile name="Shovel" id="41f3-4b8e-6736-1db8" hidden="false" typeId="7079-589c-df69-fa7e" typeName="Battlekit">
+          <characteristics>
+            <characteristic name="Type" typeId="3f15-74a1-4d35-3642">Equipment</characteristic>
+            <characteristic name="Range" typeId="2b32-2f45-9c06-7a77"/>
+            <characteristic name="Keywords" typeId="5093-5528-b08f-1496"/>
+            <characteristic name="Rules" typeId="4834-43a9-1c93-9062">**Dug In**: A model equipped with a Shovel that starts the game on Open terrain has the COVER Keyword until it moves away from its starting position. In addition, a model equipped with a Shovel can use it as a 2-Handed Melee Weapon instead of using any other Melee Weapons it has.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry name="Include Weapon Profile?" id="920b-d2b1-8145-0c60" hidden="false" import="true" type="upgrade">
+          <constraints>
+            <constraint id="0257-a91d-e534-6961" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <profiles>
+            <profile name="Weaponized Shovel" id="169e-7bba-028c-72a5" hidden="false" typeId="090c-b12e-592a-9874" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Type" typeId="f90e-171a-4ca6-3845">1-Handed</characteristic>
+                <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">Melee</characteristic>
+                <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">-</characteristic>
+                <characteristic name="Rules" typeId="87f0-637b-734a-22eb"/>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry name="Tracer Bullets" id="cc0d-7daf-d822-83ee" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Ammunition (Keyword)" id="8d20-17e0-6108-7159" hidden="false" targetId="9a05-7b7b-6023-5523" type="rule"/>
+        <infoLink name="Consumable" id="450f-8eb3-270f-60a4" hidden="false" targetId="e98d-4bd1-3870-27b9" type="rule"/>
+        <infoLink name="+/- Dice" id="2ada-9a83-1f61-2222" hidden="false" targetId="8b7a-8f2d-dda6-b671" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Tracer Bullets" id="a00a-6279-d459-1641" hidden="false" typeId="7079-589c-df69-fa7e" typeName="Battlekit">
+          <characteristics>
+            <characteristic name="Type" typeId="3f15-74a1-4d35-3642">Equipment</characteristic>
+            <characteristic name="Range" typeId="2b32-2f45-9c06-7a77"/>
+            <characteristic name="Keywords" typeId="5093-5528-b08f-1496">AMMUNITION (+1 DICE), CONSUMABLE</characteristic>
+            <characteristic name="Rules" typeId="4834-43a9-1c93-9062"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Troop Flag" id="98cd-8361-8cc4-81ea" hidden="false" import="true" type="upgrade">
+      <constraints>
+        <constraint id="97bc-8a47-41ab-2b8e" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Leader" id="f1a6-3760-fe09-13cd" hidden="false" targetId="9130-09e0-3351-8c4c" type="rule"/>
+        <infoLink name="Held" id="8d32-0393-bafd-cedf" hidden="false" targetId="1220-c65a-89ed-96a7" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Troop Flag" id="2b17-59ef-7e74-fd47" hidden="false" typeId="7079-589c-df69-fa7e" typeName="Battlekit">
+          <characteristics>
+            <characteristic name="Type" typeId="3f15-74a1-4d35-3642">Equipment</characteristic>
+            <characteristic name="Range" typeId="2b32-2f45-9c06-7a77"/>
+            <characteristic name="Keywords" typeId="5093-5528-b08f-1496">LEADER, HELD</characteristic>
+            <characteristic name="Rules" typeId="4834-43a9-1c93-9062"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Unholy Relic" id="cc52-3402-19d6-ffeb" hidden="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink name="Fear" id="2328-deaf-2fc3-d0db" primary="false" targetId="4f5c-027d-253c-ffa3"/>
+      </categoryLinks>
+      <constraints>
+        <constraint id="b497-eb13-cfde-10f3" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Fear" id="887e-cdab-1507-6edd" hidden="false" targetId="8c95-78a1-d88d-5f8e" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Unholy Relic" id="411f-228a-4117-3784" hidden="false" typeId="7079-589c-df69-fa7e" typeName="Battlekit">
+          <characteristics>
+            <characteristic name="Type" typeId="3f15-74a1-4d35-3642">Equipment</characteristic>
+            <characteristic name="Range" typeId="2b32-2f45-9c06-7a77"/>
+            <characteristic name="Keywords" typeId="5093-5528-b08f-1496">FEAR</characteristic>
+            <characteristic name="Rules" typeId="4834-43a9-1c93-9062"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Unholy Trinket" id="11ce-c3bb-7246-14af" hidden="false" import="true" type="upgrade">
+      <constraints>
+        <constraint id="81c2-b80e-2b16-c9ca" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Consumable" id="d513-aa21-dbe5-ce81" hidden="false" targetId="e98d-4bd1-3870-27b9" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Unholy Trinket" id="ab23-2c25-8507-9ca3" hidden="false" typeId="7079-589c-df69-fa7e" typeName="Battlekit">
+          <characteristics>
+            <characteristic name="Type" typeId="3f15-74a1-4d35-3642">Equipment</characteristic>
+            <characteristic name="Range" typeId="2b32-2f45-9c06-7a77"/>
+            <characteristic name="Keywords" typeId="5093-5528-b08f-1496">CONSUMABLE</characteristic>
+            <characteristic name="Rules" typeId="4834-43a9-1c93-9062">**Talisman**: Once during a game, when a Risky Success Roll for a model with an Unholy Trinket is a Failure, you can say that the model will use it. If you do, the model’s Activation does not end.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Incendiary Ammuntion (Loaded)" id="cf01-321c-4dd0-79a4" hidden="true" import="true" type="upgrade">
+      <constraints>
+        <constraint id="e422-61f7-20a8-8e49" field="selections" scope="self" shared="true" type="max" value="1"/>
+        <constraint id="1b8b-76ce-7688-606b" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="max" value="0"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Fire" id="b702-66c9-d31d-65c7" hidden="false" targetId="3f12-9eb3-07f7-03bb" type="rule"/>
+      </infoLinks>
+      <modifiers>
+        <modifier affects="profiles.Weapon" field="8cd6-8018-f2da-5ede" join=", " scope="parent" type="append" value="FIRE"/>
+        <modifier field="hidden" type="set" value="false">
+          <conditions>
+            <condition childId="c837-cb9f-bfbb-fabc" childName="Incendiary Ammunition" field="selections" includeChildForces="true" includeChildSelections="true" scope="model" shared="true" type="atLeast" value="1"/>
+          </conditions>
+        </modifier>
+        <modifier field="1b8b-76ce-7688-606b" type="increment" value="1">
+          <repeats>
+            <repeat childId="c837-cb9f-bfbb-fabc" childName="Incendiary Ammunition" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="roster" shared="true" value="1"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry name="Dum-Dum Ammunition (Loaded)" id="3cc8-6ca0-9a71-6fce" hidden="true" import="true" type="upgrade">
+      <constraints>
+        <constraint id="534e-234f-e22a-352c" field="selections" scope="self" shared="true" type="max" value="1"/>
+        <constraint id="0c1a-4b0d-fc15-d40c" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="max" value="0"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Critical" id="088f-82d2-9335-eddb" hidden="false" targetId="7c40-254f-6d33-854c" type="rule"/>
+      </infoLinks>
+      <modifiers>
+        <modifier field="hidden" type="set" value="false">
+          <conditions>
+            <condition childId="8b0b-b48b-c82a-f71e" field="selections" includeChildForces="true" includeChildSelections="true" scope="model" shared="true" type="atLeast" value="1"/>
+          </conditions>
+        </modifier>
+        <modifier field="0c1a-4b0d-fc15-d40c" type="increment" value="1">
+          <repeats>
+            <repeat childId="8b0b-b48b-c82a-f71e" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="roster" shared="true" value="1"/>
+          </repeats>
+        </modifier>
+        <modifier affects="profiles.Weapon" field="8cd6-8018-f2da-5ede" join=", " scope="parent" type="append" value="CRITICAL"/>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry name="Armour-Piercing Ammunition (Loaded)" id="9ba7-ace7-d1a9-b292" hidden="true" import="true" type="upgrade">
+      <constraints>
+        <constraint id="1952-8f9d-7661-55e5" field="selections" scope="self" shared="true" type="max" value="1"/>
+        <constraint id="7c5e-8edc-4288-14da" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="max" value="0"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Armour Piercing" id="9be2-4bf4-0fbb-f4b3" hidden="false" targetId="ba7a-64b6-e87b-0ecd" type="rule"/>
+      </infoLinks>
+      <modifiers>
+        <modifier field="hidden" type="set" value="false">
+          <conditions>
+            <condition childId="9f51-3782-6026-46a6" childName="Armour Piercing Bullets" field="selections" includeChildForces="true" includeChildSelections="true" scope="model" shared="true" type="atLeast" value="1"/>
+          </conditions>
+        </modifier>
+        <modifier field="7c5e-8edc-4288-14da" type="increment" value="1">
+          <repeats>
+            <repeat childId="9f51-3782-6026-46a6" childName="Armour Piercing Bullets" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="roster" shared="true" value="1"/>
+          </repeats>
+        </modifier>
+        <modifier affects="profiles.Weapon" field="8cd6-8018-f2da-5ede" join=", " scope="parent" type="append" value="ARMOUR-PIERCING"/>
+      </modifiers>
+    </selectionEntry>
+  </sharedSelectionEntries>
+</catalogue>
