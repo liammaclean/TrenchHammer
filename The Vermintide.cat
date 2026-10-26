@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="The Vermintide" id="12f6-3e46-28a9-c0c8" battleScribeVersion="2.03" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="18" library="false" revision="2" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="The Vermintide" id="12f6-3e46-28a9-c0c8" battleScribeVersion="2.03" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="18" library="false" revision="3" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink name="Campaign Rules" id="a2ae-418c-f2bf-d502" targetId="ba52-3616-d7f9-8d0c" type="catalogue"/>
     <catalogueLink name="Battlekits" id="77f8-fb82-7c0a-00dd" targetId="f044-03b4-6607-1152" type="catalogue"/>
@@ -147,12 +147,12 @@
           <modifiers>
             <modifier field="hidden" type="set" value="true">
               <localConditionGroups>
-                <localConditionGroup field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" scope="parent" type="atLeast" value="1">
+                <localConditionGroup field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" scope="self" type="atLeast" value="1">
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition childId="3de0-192c-3ec2-51be" childName="Elite" field="selections" includeChildSelections="false" scope="self" shared="true" type="notInstanceOf" value="1"/>
-                        <condition childId="f24b-1e0d-d64f-44da" childName="Rat Ogre" field="selections" includeChildSelections="false" scope="unit" shared="true" type="notInstanceOf" value="1"/>
+                        <condition childId="3de0-192c-3ec2-51be" childName="Elite" field="selections" includeChildSelections="false" scope="model" shared="true" type="notInstanceOf" value="1"/>
+                        <condition childId="f24b-1e0d-d64f-44da" childName="Rat Ogre" field="selections" includeChildSelections="false" scope="model" shared="true" type="notInstanceOf" value="1"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
