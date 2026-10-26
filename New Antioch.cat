@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="New Antioch" id="707d-5bdf-586e-f704" battleScribeVersion="2.03" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="10" library="false" revision="13" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="New Antioch" id="707d-5bdf-586e-f704" battleScribeVersion="2.03" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="10" library="false" revision="14" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink name="Campaign Rules" id="cbfd-f9fc-8cfb-227d" importRootEntries="true" targetId="ba52-3616-d7f9-8d0c" type="catalogue"/>
     <catalogueLink name="Mercenaries" id="8a7e-3d5e-5449-fe83" importRootEntries="true" targetId="f569-e9dd-327a-5735" type="catalogue"/>
@@ -5058,7 +5058,7 @@ For the purpose of Battle Demolition on Combat Engineers, this item counts as a 
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="6"/>
           </costs>
         </entryLink>
-        <entryLink name="Automatic Pistol" id="967c-6555-a460-6957" hidden="false" import="true" targetId="f294-f3b2-5577-bc17" type="selectionEntry">
+        <entryLink name="Autopistol" id="967c-6555-a460-6957" hidden="false" import="true" targetId="f294-f3b2-5577-bc17" type="selectionEntry">
           <constraints>
             <constraint id="06cf-1b97-bf4b-7df6" field="selections" includeChildSelections="true" scope="roster" shared="true" type="max" value="3"/>
           </constraints>
@@ -5100,7 +5100,7 @@ For the purpose of Battle Demolition on Combat Engineers, this item counts as a 
     </selectionEntryGroup>
     <selectionEntryGroup name="Ranged (Two-Handed)" id="c9b2-e724-2130-02d8" hidden="false">
       <entryLinks>
-        <entryLink name="Bolt-Action Rifle" id="299c-d1ce-293a-d7d9" hidden="false" import="true" sortIndex="1" targetId="4c87-312e-7aa1-4de0" type="selectionEntry">
+        <entryLink name="Bolt Carbine" id="299c-d1ce-293a-d7d9" hidden="false" import="true" sortIndex="1" targetId="4c87-312e-7aa1-4de0" type="selectionEntry">
           <costs>
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
           </costs>
@@ -5121,7 +5121,7 @@ For the purpose of Battle Demolition on Combat Engineers, this item counts as a 
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
           </costs>
         </entryLink>
-        <entryLink name="Flamethrower" id="dd04-f0f2-0e13-7fc8" hidden="false" import="true" sortIndex="3" targetId="985f-e0c3-b0e9-5f89" type="selectionEntry">
+        <entryLink name="Flamer" id="dd04-f0f2-0e13-7fc8" hidden="false" import="true" sortIndex="3" targetId="985f-e0c3-b0e9-5f89" type="selectionEntry">
           <constraints>
             <constraint id="32a8-ed4b-fa5b-0816" field="selections" includeChildSelections="true" scope="roster" shared="true" type="max" value="3"/>
           </constraints>
@@ -5214,7 +5214,7 @@ For the purpose of Battle Demolition on Combat Engineers, this item counts as a 
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink name="Automatic Rifle" id="b110-7128-319d-5762" hidden="false" import="true" sortIndex="6" targetId="46cb-36ae-c7ea-cdd0" type="selectionEntry">
+        <entryLink name="Autogun" id="b110-7128-319d-5762" hidden="false" import="true" sortIndex="6" targetId="46cb-36ae-c7ea-cdd0" type="selectionEntry">
           <constraints>
             <constraint id="edb2-fddc-dba8-2b9a" field="selections" includeChildSelections="true" scope="roster" shared="true" type="max" value="1"/>
           </constraints>
@@ -5281,7 +5281,7 @@ For the purpose of Battle Demolition on Combat Engineers, this item counts as a 
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink name="Heavy Flamethrower" id="5b05-912f-8ea4-2972" hidden="false" import="true" sortIndex="8" targetId="b754-bcf6-152f-69e7" type="selectionEntry">
+        <entryLink name="Heavy Flamer" id="5b05-912f-8ea4-2972" hidden="false" import="true" sortIndex="8" targetId="b754-bcf6-152f-69e7" type="selectionEntry">
           <constraints>
             <constraint id="ca58-4bbd-acc8-76b9" field="selections" includeChildSelections="true" scope="roster" shared="true" type="max" value="1"/>
           </constraints>
@@ -5864,51 +5864,7 @@ For the purpose of Battle Demolition on Combat Engineers, this item counts as a 
       </constraints>
       <entryLinks>
         <entryLink name="Ducal Winged Armour" id="6370-4f92-3d31-84e4" hidden="true" import="true" targetId="03eb-5358-03ae-8046" type="selectionEntry"/>
-        <entryLink name="Reinforced Armour" id="7ab3-49d1-4294-3f83" hidden="false" import="true" sortIndex="2" targetId="a535-4fb6-c587-691a" type="selectionEntry">
-          <costs>
-            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="40"/>
-          </costs>
-          <modifiers>
-            <modifier field="8d43-33fd-332d-17a6" type="decrement" value="5">
-              <conditions>
-                <condition childId="42b0-5239-0e23-6203" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
-              </conditions>
-            </modifier>
-            <modifier field="1d07-a4db-bb42-fcb0" type="increment" value="1">
-              <repeats>
-                <repeat childId="aefa-e63f-8e48-28a5" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="roster" shared="true" value="1"/>
-                <repeat childId="e6ef-68d4-a0e4-379d" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="roster" shared="true" value="1"/>
-              </repeats>
-            </modifier>
-            <modifier field="hidden" type="set" value="false">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition childId="a911-0ba3-a9f7-17b7" field="selections" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
-                            <condition childId="c92f-74bc-9acb-69b4" field="selections" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
-                            <condition childId="440a-e3aa-60d7-7d9c" field="selections" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                      <conditions>
-                        <condition childId="e578-1122-47cb-10ad" field="selections" scope="model" shared="true" type="instanceOf" value="1"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                  <conditions>
-                    <condition childId="3de0-192c-3ec2-51be" field="selections" scope="model" shared="true" type="instanceOf" value="1"/>
-                    <condition childId="6aa4-b38b-5146-4106" field="selections" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-        </entryLink>
-        <entryLink name="Standard Armour" id="e8e7-1db2-6be3-d1b7" hidden="false" import="true" sortIndex="1" targetId="fc21-c383-cc54-c15c" type="selectionEntry">
+        <entryLink name="Standard Armour" id="e8e7-1db2-6be3-d1b7" hidden="false" import="true" sortIndex="1" targetId="76d5-9a33-914c-ce7e" type="selectionEntry">
           <costs>
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
           </costs>

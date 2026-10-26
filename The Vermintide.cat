@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="The Vermintide" id="12f6-3e46-28a9-c0c8" battleScribeVersion="2.03" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="18" library="false" revision="4" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="The Vermintide" id="12f6-3e46-28a9-c0c8" battleScribeVersion="2.03" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="18" library="false" revision="5" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink name="Campaign Rules" id="a2ae-418c-f2bf-d502" targetId="ba52-3616-d7f9-8d0c" type="catalogue"/>
     <catalogueLink name="Battlekits" id="77f8-fb82-7c0a-00dd" targetId="f044-03b4-6607-1152" type="catalogue"/>
@@ -36,8 +36,8 @@
         <entryLink name="Advancement" id="b445-7a67-e66e-f910" collapsible="true" hidden="true" import="true" targetId="bc33-e591-8f2e-a847" type="selectionEntryGroup"/>
         <entryLink name="Weapons" id="57f9-f64b-54cb-ecf0" hidden="false" import="true" targetId="435b-0524-27c1-11d8" type="selectionEntryGroup"/>
         <entryLink name="Thrown" id="8f3b-934f-4e67-fcd3" hidden="false" import="true" targetId="daaa-bcc1-8cfa-d6e4" type="selectionEntryGroup"/>
-        <entryLink name="Armour" id="213a-b847-8cb0-2f10" hidden="false" import="true" targetId="e3f9-e0ed-7137-41f1" type="selectionEntryGroup"/>
         <entryLink name="Equipment" id="6caa-0cab-4f0a-69d3" hidden="false" import="true" targetId="bfbf-d3ef-8caf-c06c" type="selectionEntryGroup"/>
+        <entryLink name="Armour" id="900e-84c7-eb91-f698" hidden="false" import="true" targetId="e3f9-e0ed-7137-41f1" type="selectionEntryGroup"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Leader" id="7cb7-252f-b201-4c69" hidden="false" targetId="9130-09e0-3351-8c4c" type="rule"/>
@@ -135,7 +135,7 @@
         <constraint id="fe08-b339-a3cc-18d4" field="selections" includeChildSelections="true" scope="roster" shared="true" type="max" value="1"/>
       </constraints>
       <entryLinks>
-        <entryLink name="Equipment" id="623f-3138-5cff-425d" hidden="false" import="true" targetId="d5c6-bf28-709b-7286" type="selectionEntryGroup"/>
+        <entryLink name="Equipment" id="623f-3138-5cff-425d" hidden="false" import="true" targetId="bfbf-d3ef-8caf-c06c" type="selectionEntryGroup"/>
         <entryLink name="Grenades" id="ea2c-0628-6b91-2626" hidden="false" import="true" targetId="9c37-58de-3fa2-bfd2" type="selectionEntryGroup"/>
         <entryLink name="Weapons" id="dd37-e924-d833-ac8c" hidden="false" import="true" targetId="24ae-224b-0680-a9bd" type="selectionEntryGroup"/>
         <entryLink name="Advancement" id="81d5-7a89-d61a-0fa9" collapsible="true" hidden="true" import="true" targetId="bc33-e591-8f2e-a847" type="selectionEntryGroup"/>
@@ -206,6 +206,34 @@
                 <profile name="Warlock Engineer" id="32eb-7d63-6168-00c0" hidden="false" typeId="058c-866b-6487-ccc4" typeName="Ability">
                   <characteristics>
                     <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">Warp-Power Accumulator. Injuries caused by the Warlock Engineer’s psychic powers, including attacks, have +1 INJURY DICE.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry name="Warband Variant" id="da24-af65-e5dd-70f7" hidden="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink name="Configuration" id="007a-0d95-9a9b-9484" hidden="false" primary="true" targetId="705b-e23f-e9c2-58ab"/>
+      </categoryLinks>
+      <constraints>
+        <constraint id="b1d9-b027-530d-8264" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+      </constraints>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Variant Selection" id="b962-7a96-0ab0-e243" hidden="false">
+          <selectionEntries>
+            <selectionEntry name="Plague Vermin" id="a1c3-7bfe-5eb0-34b0" hidden="false" import="true" type="upgrade">
+              <profiles>
+                <profile name="Rats of Nurgle" id="23ec-6619-c9dd-51e6" hidden="false" typeId="058c-866b-6487-ccc4" typeName="Ability">
+                  <characteristics>
+                    <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">All of your non-mercenary models gain the NURGLE Keyword. Your Patron must be the Nurgle Shared Patron.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Priesthood of Rot" id="519b-867a-08d0-e9fa" hidden="false" typeId="058c-866b-6487-ccc4" typeName="Ability">
+                  <characteristics>
+                    <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">You cannot recruit a Clawlord or Warlock. Instead, you can recruit up to 2 Plague Priest mercenaries, which count as Elites in your Warband instead of mercenaries. They lose MERCENARY and gain ELITE. You must recruit at least 1 as your Warband leader, which gains the LEADER and TOUGH Keywords.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1662,7 +1690,7 @@ For the purpose of Battle Demolition on Combat Engineers, this item counts as a 
               <characteristics>
                 <characteristic name="Type" typeId="f90e-171a-4ca6-3845"/>
                 <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">16&quot;</characteristic>
-                <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede"> -1 INJURY DICE, AUTOMATIC 2, RISKY, STUN, TWO-HANDED</characteristic>
+                <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">-1 INJURY DICE, AUTOMATIC 2, RISKY, STUN, TWO-HANDED</characteristic>
                 <characteristic name="Rules" typeId="87f0-637b-734a-22eb"/>
               </characteristics>
             </profile>
@@ -1686,7 +1714,7 @@ For the purpose of Battle Demolition on Combat Engineers, this item counts as a 
               <characteristics>
                 <characteristic name="Type" typeId="f90e-171a-4ca6-3845"/>
                 <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">24&quot;</characteristic>
-                <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede"> -1 DICE, +1 INJURY DICE, IGNORE COVER, BLAST 2”, SCATTER, SHRAPNEL, HEAVY, TWO-HANDED</characteristic>
+                <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">-1 DICE, +1 INJURY DICE, IGNORE COVER, BLAST 2”, SCATTER, SHRAPNEL, HEAVY, TWO-HANDED</characteristic>
                 <characteristic name="Rules" typeId="87f0-637b-734a-22eb">On a roll of 2, the attack hits the attacker’s location instead of normal scatter</characteristic>
               </characteristics>
             </profile>
@@ -2386,7 +2414,7 @@ For the purpose of Battle Demolition on Combat Engineers, this item counts as a 
               <characteristics>
                 <characteristic name="Type" typeId="f90e-171a-4ca6-3845"/>
                 <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">12&quot;</characteristic>
-                <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede"> AUTOMATIC 2, INFECTION MARKERS, PSYCHIC, RISKY</characteristic>
+                <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">AUTOMATIC 2, INFECTION MARKERS, PSYCHIC, RISKY</characteristic>
                 <characteristic name="Rules" typeId="87f0-637b-734a-22eb"/>
               </characteristics>
             </profile>
@@ -2479,7 +2507,7 @@ For the purpose of Battle Demolition on Combat Engineers, this item counts as a 
           <profiles>
             <profile name="Wither" id="b5d7-5b38-6de7-89ca" hidden="false" typeId="058c-866b-6487-ccc4" typeName="Ability">
               <characteristics>
-                <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2"> -1 DICE, 12”, One Enemy, Immediate, the target gains D3 BLOOD MARKERS.</characteristic>
+                <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">-1 DICE, 12”, One Enemy, Immediate, the target gains D3 BLOOD MARKERS.</characteristic>
               </characteristics>
             </profile>
           </profiles>
