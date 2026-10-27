@@ -621,7 +621,7 @@
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
           </costs>
         </entryLink>
-        <entryLink name="Power Armour" id="bee7-210d-f1be-1018" hidden="false" import="true" targetId="26b6-bca0-cad4-7ac2" type="selectionEntry">
+        <entryLink name="Power Armour" id="bee7-210d-f1be-1018" hidden="false" import="true" sortIndex="3" targetId="26b6-bca0-cad4-7ac2" type="selectionEntry">
           <costs>
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="40"/>
           </costs>
