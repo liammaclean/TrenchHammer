@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="The Vermintide" id="12f6-3e46-28a9-c0c8" battleScribeVersion="2.03" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="18" library="false" revision="5" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="The Vermintide" id="12f6-3e46-28a9-c0c8" battleScribeVersion="2.03" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="18" library="false" revision="6" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink name="Campaign Rules" id="a2ae-418c-f2bf-d502" targetId="ba52-3616-d7f9-8d0c" type="catalogue"/>
     <catalogueLink name="Battlekits" id="77f8-fb82-7c0a-00dd" targetId="f044-03b4-6607-1152" type="catalogue"/>
     <catalogueLink name="Melee Weapons" id="0226-3b27-7ef6-b32d" targetId="7595-974a-7451-6c2e" type="catalogue"/>
     <catalogueLink name="Ranged Weapons" id="6e80-c36f-d1ae-46f5" targetId="8ef4-3a38-8adb-53ba" type="catalogue"/>
+    <catalogueLink name="Thrown Weapons" id="ffae-1bd2-0498-0bcb" targetId="4d13-832c-3d8c-70be" type="catalogue"/>
   </catalogueLinks>
   <categoryEntries>
-    <categoryEntry name="Master" id="0f60-83a1-92c7-0ba8" hidden="false"/>
-    <categoryEntry name="Skaven" id="1312-011c-42a3-09b0" hidden="false"/>
-    <categoryEntry name="Beast" id="e7b2-3073-3afd-6203" hidden="false"/>
-    <categoryEntry name="Large" id="bd72-3973-d1cd-5ccc" hidden="false"/>
-    <categoryEntry name="Psyker 1" id="f1af-fa19-88a0-9766" hidden="false"/>
+    <categoryEntry name="Vehicle" id="2c2e-edbf-9d3f-6546" hidden="false"/>
   </categoryEntries>
   <selectionEntries>
     <selectionEntry name="Clawlord" id="d712-1bac-a3c5-9d64" hidden="false" import="true" type="unit">
@@ -66,7 +63,7 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry name="Rat Ogre" id="4879-2b8f-4493-5ece" hidden="false" import="true" type="unit">
+    <selectionEntry name="Rat Ogryn" id="4879-2b8f-4493-5ece" hidden="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink name="Tough" id="831f-690e-6011-a481" hidden="false" primary="false" targetId="914f-0020-0d97-e217"/>
         <categoryLink name="Skaven" id="1e70-73d2-cb14-37a5" hidden="false" primary="false" targetId="1312-011c-42a3-09b0"/>
@@ -79,21 +76,19 @@
         <constraint id="3de4-e6b8-995c-92d5" field="selections" includeChildSelections="false" scope="force" shared="true" type="max" value="2"/>
       </constraints>
       <costs>
-        <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="60"/>
+        <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="65"/>
         <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
       </costs>
       <entryLinks>
         <entryLink name="Advancement" id="1597-4c70-a1c9-fdd9" collapsible="true" hidden="true" import="true" targetId="bc33-e591-8f2e-a847" type="selectionEntryGroup"/>
-        <entryLink name="Fireteams" id="bc7c-f9b1-010c-cb9b" hidden="false" import="true" targetId="ef6c-46c2-70ec-568e" type="selectionEntryGroup"/>
-        <entryLink name="Weapons" id="523d-0d6a-507b-7f8c" hidden="false" import="true" targetId="24ae-224b-0680-a9bd" type="selectionEntryGroup"/>
-        <entryLink name="Grenades" id="ab01-3cec-fe1b-a163" hidden="false" import="true" targetId="9c37-58de-3fa2-bfd2" type="selectionEntryGroup"/>
+        <entryLink name="Weapons" id="523d-0d6a-507b-7f8c" hidden="false" import="true" targetId="435b-0524-27c1-11d8" type="selectionEntryGroup"/>
+        <entryLink name="Thrown" id="ab01-3cec-fe1b-a163" hidden="false" import="true" targetId="daaa-bcc1-8cfa-d6e4" type="selectionEntryGroup"/>
         <entryLink name="Armour" id="9dcd-420b-e593-6ae6" hidden="false" import="true" targetId="e3f9-e0ed-7137-41f1" type="selectionEntryGroup"/>
-        <entryLink name="Equipment" id="75cc-1db9-82da-0007" hidden="false" import="true" targetId="d5c6-bf28-709b-7286" type="selectionEntryGroup"/>
+        <entryLink name="Equipment" id="75cc-1db9-82da-0007" hidden="false" import="true" targetId="bfbf-d3ef-8caf-c06c" type="selectionEntryGroup"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Leader" id="d78c-658b-c0c5-d931" hidden="false" targetId="9130-09e0-3351-8c4c" type="rule"/>
         <infoLink name="Tough" id="b5cc-bcd3-f120-9a8d" hidden="false" targetId="3c75-701d-e708-1438" type="rule"/>
-        <infoLink name="New Info (link)" id="a5ad-7925-91a8-1349" hidden="false" type="rule"/>
       </infoLinks>
       <modifiers>
         <modifier field="3de4-e6b8-995c-92d5" type="set" value="3">
@@ -110,11 +105,6 @@
             <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5">+2</characteristic>
             <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
             <characteristic name="Base" typeId="73ae-cc17-596e-0481">25-32mm</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Lead From the Back" id="c5e5-5896-1456-37c0" hidden="false" typeId="058c-866b-6487-ccc4" typeName="Ability">
-          <characteristics>
-            <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">While it is within 3” of a friendly SKAVEN model, if that model is a valid target for such an attack, the Clawlord cannot be chosen as the target of any ranged attack.</characteristic>
           </characteristics>
         </profile>
         <profile name="Scurry Away" id="6c7f-87bf-c19a-da65" hidden="false" typeId="058c-866b-6487-ccc4" typeName="Ability">
@@ -134,10 +124,14 @@
       <constraints>
         <constraint id="fe08-b339-a3cc-18d4" field="selections" includeChildSelections="true" scope="roster" shared="true" type="max" value="1"/>
       </constraints>
+      <costs>
+        <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="45"/>
+        <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+      </costs>
       <entryLinks>
         <entryLink name="Equipment" id="623f-3138-5cff-425d" hidden="false" import="true" targetId="bfbf-d3ef-8caf-c06c" type="selectionEntryGroup"/>
-        <entryLink name="Grenades" id="ea2c-0628-6b91-2626" hidden="false" import="true" targetId="9c37-58de-3fa2-bfd2" type="selectionEntryGroup"/>
-        <entryLink name="Weapons" id="dd37-e924-d833-ac8c" hidden="false" import="true" targetId="24ae-224b-0680-a9bd" type="selectionEntryGroup"/>
+        <entryLink name="Thrown" id="ea2c-0628-6b91-2626" hidden="false" import="true" targetId="daaa-bcc1-8cfa-d6e4" type="selectionEntryGroup"/>
+        <entryLink name="Weapons" id="dd37-e924-d833-ac8c" hidden="false" import="true" targetId="435b-0524-27c1-11d8" type="selectionEntryGroup"/>
         <entryLink name="Advancement" id="81d5-7a89-d61a-0fa9" collapsible="true" hidden="true" import="true" targetId="bc33-e591-8f2e-a847" type="selectionEntryGroup"/>
         <entryLink name="Armour" id="233c-fe9d-23c3-a3b6" hidden="false" import="true" targetId="e3f9-e0ed-7137-41f1" type="selectionEntryGroup"/>
         <entryLink name="Ruin Psychic Discipline" id="2f4b-c565-7917-710d" hidden="false" import="true" targetId="55a9-ea83-e815-8a18" type="selectionEntryGroup">
@@ -241,6 +235,374 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry name="Deathmaster" id="c100-7f16-5e62-853a" hidden="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink name="Elite" id="48dd-cbee-11a7-db6e" hidden="false" primary="false" targetId="3de0-192c-3ec2-51be"/>
+        <categoryLink name="Infiltrator" id="d34b-d569-a42e-00da" hidden="false" primary="false" targetId="9b36-57f6-1887-7bea"/>
+        <categoryLink name="Master" id="b651-0100-50c7-e7f2" hidden="false" primary="false" targetId="0f60-83a1-92c7-0ba8"/>
+        <categoryLink name="Skaven" id="89f9-00f1-fa5d-8878" hidden="false" primary="false" targetId="1312-011c-42a3-09b0"/>
+        <categoryLink name="Stealth" id="d578-0b26-68be-de0f" hidden="false" primary="false" targetId="6341-6193-5a04-13b7"/>
+      </categoryLinks>
+      <constraints>
+        <constraint id="088c-9fc3-ccfd-e320" field="selections" includeChildSelections="true" scope="roster" shared="true" type="max" value="1"/>
+      </constraints>
+      <costs>
+        <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="85"/>
+        <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+      </costs>
+      <entryLinks>
+        <entryLink name="Advancement" id="43f6-2487-a1b1-96c3" collapsible="true" hidden="true" import="true" targetId="bc33-e591-8f2e-a847" type="selectionEntryGroup"/>
+        <entryLink name="Armour" id="9066-68b8-a1d5-1d68" hidden="false" import="true" targetId="e3f9-e0ed-7137-41f1" type="selectionEntryGroup"/>
+        <entryLink name="Equipment" id="8593-5928-0ddf-cb10" hidden="false" import="true" targetId="bfbf-d3ef-8caf-c06c" type="selectionEntryGroup"/>
+        <entryLink name="Thrown" id="0c19-59f1-ead7-c960" hidden="false" import="true" targetId="daaa-bcc1-8cfa-d6e4" type="selectionEntryGroup"/>
+        <entryLink name="Weapons" id="3645-fa85-53e4-23f2" hidden="false" import="true" targetId="435b-0524-27c1-11d8" type="selectionEntryGroup"/>
+      </entryLinks>
+      <profiles>
+        <profile name="Deathmaster" id="dd4d-980c-49a9-3232" hidden="false" typeId="b3af-94f9-2e35-d1c5" typeName="Unit">
+          <characteristics>
+            <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2">6&quot;</characteristic>
+            <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">+1</characteristic>
+            <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5">+2</characteristic>
+            <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
+            <characteristic name="Base" typeId="73ae-cc17-596e-0481">25-32mm</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Scurry Away" id="e014-3194-7869-67e1" hidden="false" typeId="058c-866b-6487-ccc4" typeName="Ability">
+          <characteristics>
+            <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">Enemies do not get to make a free attack when the Clawlord Retreats.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Tunneljack" id="00d7-4928-4329-941e" hidden="false" typeId="058c-866b-6487-ccc4" typeName="Ability">
+          <characteristics>
+            <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">As an Action with a Risky Success Roll with +1 DICE, the Deathmaster can attempt to teleport. On a success, you can pick up the Deathmaster and deploy it on the battlefield anywhere within 6&quot; of the location it originally occupied (measured from the centre of its base to the centre of its base). If this is impossible for any reason, the Deathmaster must stay in its original position. Note that the Deathmaster can redeploy even if it is down or within 1&quot; of an enemy model (in which case the enemy model cannot make a Melee Attack before the Deathmaster is redeployed), and can deploy within 1&quot; of an enemy model. In addition, if the Deathmaster is within 1&quot; of any enemy models that are not LARGE, then the Deathmaster can take 1 of the enemy models with them. If they do so, you must deploy the Deathmaster first and then deploy the enemy model within 1&quot; of the Deathmaster. If you cannot deploy the enemy model within 1&quot; of the Deathmaster, then the enemy model stays in its original position.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Running Death" id="58fa-f27d-2324-2a79" hidden="false" typeId="058c-866b-6487-ccc4" typeName="Ability">
+          <characteristics>
+            <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">The Deathmaster has +1 DICE to all Dash Success Rolls.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Skavenslave" id="fcfc-e872-8dea-7b92" hidden="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink name="No Promotion" id="97c9-9421-866e-8df3" hidden="false" primary="false" targetId="748f-312f-19c7-d446"/>
+        <categoryLink name="Skaven" id="f5a5-3273-40b1-1fa4" hidden="false" primary="false" targetId="1312-011c-42a3-09b0"/>
+        <categoryLink name="Fireteam" id="eac1-bcbb-c542-8e60" hidden="false" primary="false" targetId="83c8-b351-cb96-119e"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="20"/>
+        <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="Skavenslave" id="8c45-4f7e-81d9-73e2" hidden="false" typeId="b3af-94f9-2e35-d1c5" typeName="Unit">
+          <characteristics>
+            <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2"/>
+            <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200"/>
+            <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5"/>
+            <characteristic name="Armour" typeId="5de9-d70e-9021-6f71"/>
+            <characteristic name="Base" typeId="73ae-cc17-596e-0481"/>
+          </characteristics>
+        </profile>
+        <profile name="Scurry Away" id="6f83-b8ec-9c05-7002" hidden="false" typeId="058c-866b-6487-ccc4" typeName="Ability">
+          <characteristics>
+            <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">Enemies do not get to make a free attack when the Clawlord Retreats.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Cowerdice" id="c7f6-4f77-5641-204a" hidden="false" typeId="058c-866b-6487-ccc4" typeName="Ability">
+          <characteristics>
+            <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">The Charge Action is always a Risky Success Roll for the Skavenslave unless a friendly MASTER SKAVEN model is within 6” of the Skavenslave.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Many" id="8f9f-a800-e5d9-7500" hidden="false" typeId="058c-866b-6487-ccc4" typeName="Ability">
+          <characteristics>
+            <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">When you activate a Skavenslave, activate another unactivated Skavenslave, treating them as a Fireteam, if one is available (this does not cause this ability to trigger again). The Skavenslave counts for only half of a model for the purpose of Field Strength and Morale. Round up after counting all Skavenslaves.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Armour" id="c2e6-0f9a-cc28-96a3" hidden="false"/>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry name="Clanrat" id="e07c-efa0-8c4f-62c3" hidden="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink name="No Promotion" id="563f-841e-12fb-62fe" hidden="false" primary="false" targetId="748f-312f-19c7-d446"/>
+        <categoryLink name="Skaven" id="b5dc-6621-bdb6-cc7d" hidden="false" primary="false" targetId="1312-011c-42a3-09b0"/>
+        <categoryLink name="Skirmisher" id="2377-8f1e-1f69-19a5" hidden="false" primary="false" targetId="73cd-d90d-7e4f-8e86"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="35"/>
+        <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+      </costs>
+      <entryLinks>
+        <entryLink name="Armour" id="9c81-4556-891f-08ea" hidden="false" import="true" targetId="e3f9-e0ed-7137-41f1" type="selectionEntryGroup"/>
+        <entryLink name="Equipment" id="17e4-c12d-f494-363c" hidden="false" import="true" targetId="bfbf-d3ef-8caf-c06c" type="selectionEntryGroup"/>
+        <entryLink name="Thrown" id="c4d6-75d3-c549-99f3" hidden="false" import="true" targetId="daaa-bcc1-8cfa-d6e4" type="selectionEntryGroup"/>
+        <entryLink name="Weapons" id="068c-b7d6-b407-e7c5" hidden="false" import="true" targetId="435b-0524-27c1-11d8" type="selectionEntryGroup"/>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="No Promotion" id="35ea-acff-18ad-d9a0" hidden="false" targetId="f920-f996-1f41-37ef" type="rule"/>
+        <infoLink name="Skirmisher" id="ce80-e4e5-ad63-2438" hidden="false" targetId="6ed7-68e8-34f7-393b" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Clanrat" id="42e3-bd37-b4e4-64d7" hidden="false" typeId="b3af-94f9-2e35-d1c5" typeName="Unit">
+          <characteristics>
+            <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2">6&quot;</characteristic>
+            <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">+0</characteristic>
+            <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5">+0</characteristic>
+            <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
+            <characteristic name="Base" typeId="73ae-cc17-596e-0481">25mm</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Scurry Away" id="2935-cd0f-262d-5f08" hidden="false" typeId="058c-866b-6487-ccc4" typeName="Ability">
+          <characteristics>
+            <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">Enemies do not get to make a free attack when the Clawlord Retreats.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Cowerdice" id="b826-9372-562d-d98e" hidden="false" typeId="058c-866b-6487-ccc4" typeName="Ability">
+          <characteristics>
+            <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">The Charge Action is always a Risky Success Roll for the Skavenslave unless a friendly MASTER SKAVEN model is within 6” of the Skavenslave.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Strength in Numbers" id="7704-0a7d-79c9-98a0" hidden="false" typeId="058c-866b-6487-ccc4" typeName="Ability">
+          <characteristics>
+            <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">The Clanrat has +1 DICE to Hit with melee attacks made against any enemy that has at least 2 of the Clanrat’s SKAVEN allies within 1” of it. In addition, it ignores its Cowardice Ability if the target of its Charge is already in melee with at least 1 of the Clanrat’s SKAVEN allies.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="84de-d92c-8501-0a61" hidden="false">
+          <constraints>
+            <constraint id="9bdf-2714-99ac-207c" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry name="Night Runner" id="b1dd-6f5d-e903-4835" hidden="false" import="true" type="upgrade">
+              <constraints>
+                <constraint id="71c0-60ca-238f-8414" field="selections" includeChildSelections="true" scope="roster" shared="true" type="max" value="2"/>
+              </constraints>
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+              </costs>
+              <modifiers>
+                <modifier field="71c0-60ca-238f-8414" type="set" value="3">
+                  <conditions>
+                    <condition field="limit::8d43-33fd-332d-17a6" scope="parent" shared="true" type="atLeast" value="1200"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Night Runner" id="913a-bd16-503d-9728" hidden="false" typeId="058c-866b-6487-ccc4" typeName="Ability">
+                  <characteristics>
+                    <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">Up to 2 Clanrats, or 3 in a Warband worth 1,200 or more credits, can be upgraded to Night Runners at a cost of +15 credits each, granting them the INFILTRATOR and STEALTH Keywords, and the Slinking Advance Ability.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Slinking Advance" id="e128-1372-7d21-7b04" hidden="false" typeId="058c-866b-6487-ccc4" typeName="Ability">
+                  <characteristics>
+                    <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">The Night Runner can Charge an enemy it cannot see, and when it does so, it ignores its Cowardice Ability.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry name="Pack Master" id="9edb-cc08-ad18-0981" hidden="false" import="true" type="upgrade">
+              <constraints>
+                <constraint id="ec6e-bbcb-81c0-74d7" field="selections" includeChildSelections="true" scope="roster" shared="true" type="max" value="1"/>
+              </constraints>
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="5"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Pack Master" id="4742-c287-8032-7cd0" hidden="false" typeId="058c-866b-6487-ccc4" typeName="Ability">
+                  <characteristics>
+                    <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">Up to 1 Clanrat can be upgraded to a Packmaster at a cost of +5 credits, granting it the MASTER Keyword.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry name="Plague Monk" id="04fb-0f1d-d076-5abf" hidden="false" import="true" type="upgrade">
+              <constraints>
+                <constraint id="45b8-f669-fa0b-a471" field="selections" includeChildSelections="true" scope="roster" shared="true" type="max" value="2"/>
+              </constraints>
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+              </costs>
+              <modifiers>
+                <modifier field="45b8-f669-fa0b-a471" type="set" value="3">
+                  <conditions>
+                    <condition childId="any" field="limit::8d43-33fd-332d-17a6" scope="parent" shared="true" type="atLeast" value="1200"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Plague Monk" id="3b55-afe3-3508-db20" hidden="false" typeId="058c-866b-6487-ccc4" typeName="Ability">
+                  <characteristics>
+                    <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">Up to 2 Clanrats, or 3 in a Warband worth 1,200 or more credits, can be upgraded to Plague Monks at a cost of +10 credits each, granting them the Frenzied Assault Ability.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Frenzied Assault" id="cdf9-b037-fd5c-78ec" hidden="false" typeId="058c-866b-6487-ccc4" typeName="Ability">
+                  <characteristics>
+                    <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">The Plague Monk ignores its Cowardice Ability, and it has +2” movement speed when it Charges.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry name="Globodier" id="ba49-0c22-9761-4202" hidden="false" import="true" type="upgrade">
+              <constraints>
+                <constraint id="ac1a-651d-6fe4-c746" field="selections" includeChildSelections="true" scope="roster" shared="true" type="max" value="2"/>
+              </constraints>
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+              </costs>
+              <modifiers>
+                <modifier field="ac1a-651d-6fe4-c746" type="set" value="3">
+                  <conditions>
+                    <condition childId="any" field="limit::8d43-33fd-332d-17a6" scope="parent" shared="true" type="atLeast" value="1200"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Globodier" id="b3eb-015b-f348-dc62" hidden="false" typeId="058c-866b-6487-ccc4" typeName="Ability">
+                  <characteristics>
+                    <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">Up to 2 Clanrats, or 3 in a Warband worth 1,200 or more credits, can be upgraded to Globodiers at a cost of +10 credits each, granting them the Lobber Ability.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Lober" id="b9c0-2965-32d9-71b5" hidden="false" typeId="058c-866b-6487-ccc4" typeName="Ability">
+                  <characteristics>
+                    <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">Increase the range of any THROWN weapon the Globodier is equipped with by 4”. It has +1 DICE to Hit with any such weapon, but attacks made beyond the weapon’s normal range, before this benefit, are made at -1 DICE.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry name="Stormvermin" id="0c95-c115-2b11-41de" hidden="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink name="Master" id="c5c5-3581-3a5a-ac81" hidden="false" primary="false" targetId="0f60-83a1-92c7-0ba8"/>
+        <categoryLink name="Skaven" id="db97-693f-05b3-1483" hidden="false" primary="false" targetId="1312-011c-42a3-09b0"/>
+      </categoryLinks>
+      <constraints>
+        <constraint id="c71e-d012-a29d-b42d" field="selections" includeChildSelections="true" scope="roster" shared="true" type="max" value="5"/>
+      </constraints>
+      <costs>
+        <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="45"/>
+        <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+      </costs>
+      <entryLinks>
+        <entryLink name="Weapons" id="cb24-d5a2-ce49-346f" hidden="false" import="true" targetId="435b-0524-27c1-11d8" type="selectionEntryGroup"/>
+        <entryLink name="Advancement" id="15f2-2894-4770-dc0c" collapsible="true" hidden="true" import="true" targetId="bc33-e591-8f2e-a847" type="selectionEntryGroup"/>
+        <entryLink name="Armour" id="71ec-3be0-cd17-1603" hidden="false" import="true" targetId="e3f9-e0ed-7137-41f1" type="selectionEntryGroup"/>
+        <entryLink name="Equipment" id="f78f-ad8a-ae2c-de6e" hidden="false" import="true" targetId="bfbf-d3ef-8caf-c06c" type="selectionEntryGroup"/>
+        <entryLink name="Thrown" id="7411-5821-3c78-732f" hidden="false" import="true" targetId="daaa-bcc1-8cfa-d6e4" type="selectionEntryGroup"/>
+      </entryLinks>
+      <profiles>
+        <profile name="Stormvermin" id="70ce-7eb8-132d-5ede" hidden="false" typeId="b3af-94f9-2e35-d1c5" typeName="Unit">
+          <characteristics>
+            <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2">6&quot;</characteristic>
+            <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">+1</characteristic>
+            <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5">+1</characteristic>
+            <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
+            <characteristic name="Base" typeId="73ae-cc17-596e-0481">25-32mm</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Elite Bodyguard" id="d323-0886-92ce-12be" hidden="false" typeId="058c-866b-6487-ccc4" typeName="Ability">
+          <characteristics>
+            <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">If any ally within 1” of the Stormvermin is hit by a ranged or melee weapon (excluding BLAST weapons), you can choose to redirect the hit to the Stormvermin instead. Determine the injuries exactly as if the weapon just hit the Stormvermin.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Skaven Weapons Team" id="ee5e-e68b-dcae-5cbe" hidden="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink name="Skaven" id="5db7-9c3c-410a-4444" hidden="false" primary="false" targetId="1312-011c-42a3-09b0"/>
+        <categoryLink name="Large" id="e7ee-e563-5f1f-fae9" hidden="false" primary="false" targetId="bd72-3973-d1cd-5ccc"/>
+      </categoryLinks>
+      <constraints>
+        <constraint id="8c69-6d6a-b05b-a896" field="selections" includeChildSelections="true" scope="roster" shared="true" type="max" value="3"/>
+      </constraints>
+      <costs>
+        <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="40"/>
+        <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+      </costs>
+      <entryLinks>
+        <entryLink name="Advancement" id="a3c6-11c1-830b-885e" collapsible="true" hidden="true" import="true" targetId="bc33-e591-8f2e-a847" type="selectionEntryGroup"/>
+        <entryLink name="Armour" id="997f-cf29-aaa4-0f1c" hidden="false" import="true" targetId="e3f9-e0ed-7137-41f1" type="selectionEntryGroup"/>
+        <entryLink name="Equipment" id="0a1a-0f48-3edf-0560" hidden="false" import="true" targetId="bfbf-d3ef-8caf-c06c" type="selectionEntryGroup"/>
+        <entryLink name="Thrown" id="c0ee-a454-3b35-187f" hidden="false" import="true" targetId="daaa-bcc1-8cfa-d6e4" type="selectionEntryGroup"/>
+        <entryLink name="Weapons" id="ed2b-3c74-1408-a91f" hidden="false" import="true" targetId="435b-0524-27c1-11d8" type="selectionEntryGroup"/>
+      </entryLinks>
+      <profiles>
+        <profile name="Skaven Weapons Team" id="7d96-c899-22ce-068f" hidden="false" typeId="b3af-94f9-2e35-d1c5" typeName="Unit">
+          <characteristics>
+            <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2">6&quot;</characteristic>
+            <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">+1</characteristic>
+            <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5">+0</characteristic>
+            <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
+            <characteristic name="Base" typeId="73ae-cc17-596e-0481">60x35mm</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Weapon Team" id="466c-2cd3-bc63-3858" hidden="false" typeId="058c-866b-6487-ccc4" typeName="Ability">
+          <characteristics>
+            <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">The Skaven Weapons Team can ignore the HEAVY property of one ranged weapon.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Doom Flayer" id="c082-e73e-eef0-b3c3" hidden="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink name="Large" id="1652-207c-c647-da47" hidden="false" primary="false" targetId="bd72-3973-d1cd-5ccc"/>
+        <categoryLink name="Vehicle" id="3d11-d0cb-e76b-d1ea" hidden="false" primary="false" targetId="2c2e-edbf-9d3f-6546"/>
+        <categoryLink name="No Promotion" id="3d88-864e-3058-48cf" hidden="false" primary="false" targetId="748f-312f-19c7-d446"/>
+        <categoryLink name="Skaven" id="527e-ae8a-4de5-7310" hidden="false" primary="false" targetId="1312-011c-42a3-09b0"/>
+        <categoryLink name="Tough" id="0f69-22a2-8b7e-04d6" hidden="false" primary="false" targetId="914f-0020-0d97-e217"/>
+      </categoryLinks>
+      <constraints>
+        <constraint id="670a-f46e-0d98-624e" field="selections" includeChildSelections="true" scope="roster" shared="true" type="max" value="1"/>
+      </constraints>
+      <costs>
+        <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="140"/>
+        <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+      </costs>
+      <entryLinks>
+        <entryLink name="Weapons" id="30b1-0b48-fff0-13e8" hidden="false" import="true" targetId="435b-0524-27c1-11d8" type="selectionEntryGroup"/>
+        <entryLink name="Thrown" id="253a-258a-0911-5e19" hidden="false" import="true" targetId="daaa-bcc1-8cfa-d6e4" type="selectionEntryGroup"/>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Tough" id="ecaa-f091-ed8f-4368" hidden="false" targetId="3c75-701d-e708-1438" type="rule"/>
+        <infoLink name="No Promotion" id="ab20-8881-84a8-2746" hidden="false" targetId="f920-f996-1f41-37ef" type="rule"/>
+        <infoLink name="Large" id="3cb1-7314-6c41-8bf5" hidden="false" targetId="96b1-0f02-3141-9db8" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Doom Flayer" id="2065-de82-1a94-319e" hidden="false" typeId="b3af-94f9-2e35-d1c5" typeName="Unit">
+          <characteristics>
+            <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2">10&quot;</characteristic>
+            <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">+1</characteristic>
+            <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5">+1</characteristic>
+            <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">-2</characteristic>
+            <characteristic name="Base" typeId="73ae-cc17-596e-0481">40-50mm</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="More-More Whirling Death!" id="2461-8b8a-9a0e-fd55" hidden="false" typeId="058c-866b-6487-ccc4" typeName="Ability">
+          <characteristics>
+            <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">The Doom Flayer has +2 DICE to all Dash Success Rolls, but suffers a BLOOD MARKER after taking the Dash Action.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Weapon Mount" id="f711-b4a2-bf8a-2804" hidden="false" typeId="058c-866b-6487-ccc4" typeName="Ability">
+          <characteristics>
+            <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">The Doom Flayer can be equipped with either Whirling Blades, or a single additional TWO-HANDED ranged weapon, and ignores hand requirements and the HEAVY Keyword for that weapon. When it takes the Fight or Shoot Action, it can attack with this weapon in addition to any other attacks it makes, without off-hand penalties.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Whirling Doom" id="c4d5-423f-80b9-257b" hidden="false" typeId="058c-866b-6487-ccc4" typeName="Ability">
+          <characteristics>
+            <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">When the Doom Flayer successfully Charges one or more enemies, one of those enemies suffers 1 BLOOD MARKER.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntryGroups>
@@ -476,7 +838,30 @@
             </modifier>
           </modifiers>
         </entryLink>
+        <entryLink name="Shield" id="1e44-7435-553a-9ce3" hidden="false" import="true" targetId="ab45-1e00-df56-dbda" type="selectionEntry">
+          <constraints>
+            <constraint id="d6c7-36e1-8ee6-834c" field="selections" includeChildSelections="true" scope="roster" shared="true" type="max" value="5"/>
+          </constraints>
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
+          </costs>
+          <modifiers>
+            <modifier affects="unit.profiles.Unit" field="5de9-d70e-9021-6f71" position="1" scope="unit" type="increment" value="-1"/>
+          </modifiers>
+        </entryLink>
       </entryLinks>
+      <modifiers>
+        <modifier field="hidden" type="set" value="true">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition childId="fcfc-e872-8dea-7b92" childName="Skavenslave" field="selections" scope="model-or-unit" shared="true" type="instanceOf" value="1"/>
+                <condition field="8d43-33fd-332d-17a6" scope="8593-5928-0ddf-cb10" shared="true" type="atLeast" value="1"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <selectionEntries>
         <selectionEntry name="Holy Water of Lalibela" id="a2e9-1032-dad2-62fc" hidden="true" import="true" sortIndex="17" type="upgrade">
           <constraints>
@@ -958,185 +1343,86 @@
         <constraint id="2672-5e09-8c09-a77d" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
       </constraints>
       <entryLinks>
-        <entryLink name="Molotov Cocktail" id="6a41-e9cc-592f-efd7" hidden="true" import="true" sortIndex="1" targetId="6e1a-f31f-a4a9-58df" type="selectionEntry">
+        <entryLink name="Throwing Knives" id="2d79-144b-9851-43d2" hidden="false" import="true" targetId="32e1-9c1b-d11a-731a" type="selectionEntry">
           <costs>
-            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="5"/>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="7"/>
           </costs>
           <modifiers>
-            <modifier field="hidden" type="set" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition childId="a911-0ba3-a9f7-17b7" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
-                    <condition childId="ea95-2310-99f0-6e97" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-        </entryLink>
-        <entryLink name="Incendiary Grenades" id="58d3-c2fb-c9a0-5476" hidden="false" import="true" targetId="8adc-0183-0ef9-12a4" type="selectionEntry">
-          <constraints>
-            <constraint id="93c7-95e2-ebef-d29e" field="selections" includeChildSelections="true" scope="roster" shared="true" type="max" value="2"/>
-          </constraints>
-          <costs>
-            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
-          </costs>
-          <modifiers>
-            <modifier field="93c7-95e2-ebef-d29e" type="increment" value="1">
-              <repeats>
-                <repeat childId="c8f3-1e8b-6a3c-b453" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="roster" shared="true" value="1"/>
-                <repeat childId="a32d-ebfc-2926-aa1e" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="roster" shared="true" value="1"/>
-              </repeats>
-            </modifier>
             <modifier field="hidden" type="set" value="true">
-              <conditions>
-                <condition childId="a911-0ba3-a9f7-17b7" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
-              </conditions>
+              <localConditionGroups>
+                <localConditionGroup field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" scope="parent" type="atLeast" value="1">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition childId="e07c-efa0-8c4f-62c3" childName="Clanrat" field="selections" scope="model-or-unit" shared="true" type="atLeast" value="1"/>
+                            <condition childId="b1dd-6f5d-e903-4835" childName="b1dd-6f5d-e903-4835" field="selections" includeChildForces="true" includeChildSelections="true" scope="ancestor" shared="true" traverseAssociationGroup="false" type="instanceOf" value="1"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                      <conditions>
+                        <condition childId="c100-7f16-5e62-853a" childName="Deathmaster" field="selections" includeChildSelections="false" scope="model-or-unit" shared="true" type="notInstanceOf" value="1"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </localConditionGroup>
+              </localConditionGroups>
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink name="Satchel Charge" id="3ba0-4d28-f1ab-0aa1" hidden="false" import="true" targetId="f58e-81b4-c972-ed32" type="selectionEntry">
-          <constraints>
-            <constraint id="1e45-2a95-b99a-ae4b" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
-            <constraint id="42f7-1268-3e7f-e5fa" field="selections" includeChildSelections="true" scope="roster" shared="true" type="max" value="3"/>
-          </constraints>
+        <entryLink name="Toxin Grenades" id="93b6-b3c8-0fa1-1e04" hidden="false" import="true" targetId="ed69-d081-68a5-999e" type="selectionEntry">
           <costs>
-            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="20"/>
           </costs>
+          <modifiers>
+            <modifier field="hidden" type="set" value="true">
+              <localConditionGroups>
+                <localConditionGroup field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" scope="parent" type="atLeast" value="1">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition childId="e07c-efa0-8c4f-62c3" childName="Clanrat" field="selections" scope="model-or-unit" shared="true" type="atLeast" value="1"/>
+                            <condition childId="ba49-0c22-9761-4202" childName="ba49-0c22-9761-4202" field="selections" includeChildForces="true" includeChildSelections="true" scope="ancestor" shared="true" traverseAssociationGroup="false" type="instanceOf" value="1"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                      <conditions>
+                        <condition childId="3de0-192c-3ec2-51be" childName="Elite" field="selections" includeChildSelections="false" scope="model-or-unit" shared="true" type="notInstanceOf" value="1"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </localConditionGroup>
+              </localConditionGroups>
+            </modifier>
+          </modifiers>
         </entryLink>
       </entryLinks>
-      <selectionEntries>
-        <selectionEntry name="Greek Fire" id="10bb-372e-5414-6673" hidden="true" import="true" type="upgrade">
-          <categoryLinks>
-            <categoryLink name="Heavy" id="9265-8ee5-5e1b-c709" hidden="false" primary="false" targetId="70c9-988d-71a7-7654"/>
-          </categoryLinks>
-          <constraints>
-            <constraint id="359f-b7de-aa03-8f35" field="selections" includeChildSelections="true" scope="roster" shared="true" type="max" value="3"/>
-            <constraint id="afd1-eac3-4858-b7f6" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
-          </constraints>
-          <costs>
-            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
-            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
-          </costs>
-          <infoLinks>
-            <infoLink name="Blast" id="ae81-c0b8-d64a-3362" hidden="false" targetId="263d-6520-5629-c027" type="rule"/>
-            <infoLink name="Fire" id="db26-6d0c-44b4-7f12" hidden="false" targetId="3f12-9eb3-07f7-03bb" type="rule"/>
-            <infoLink name="Grenade" id="8728-fc96-9184-88bf" hidden="false" targetId="1c58-0dce-e86e-b0dc" type="rule"/>
-            <infoLink name="Heavy" id="2a60-826c-92d6-ffbc" hidden="false" targetId="fbac-638f-ff95-d704" type="rule"/>
-            <infoLink name="Consumable" id="25e7-b053-a531-4e6e" hidden="false" targetId="e98d-4bd1-3870-27b9" type="rule"/>
-            <infoLink name="Scatter" id="ad67-6921-9d89-6508" hidden="false" targetId="9ee3-1276-01cc-fefb" type="rule"/>
-          </infoLinks>
-          <modifiers>
-            <modifier field="hidden" type="set" value="false">
-              <conditions>
-                <condition childId="a911-0ba3-a9f7-17b7" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
-              </conditions>
-            </modifier>
-            <modifier field="category" type="remove" value="70c9-988d-71a7-7654">
-              <conditions>
-                <condition childId="50d8-f63e-e01d-2698" field="selections" includeChildForces="false" scope="model" shared="true" type="instanceOf" value="1"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <profiles>
-            <profile name="Greek Fire" id="5acf-b7c0-709b-04b8" hidden="false" typeId="090c-b12e-592a-9874" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Type" typeId="f90e-171a-4ca6-3845">GRENADE</characteristic>
-                <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">6&quot;</characteristic>
-                <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">HEAVY, BLAST 3&quot;, FIRE, CONSUMABLE, SCATTER</characteristic>
-                <characteristic name="Rules" typeId="87f0-637b-734a-22eb">Rolls Injuries with 3d6 on a direct hit, or with +1 DICE for every other model caught in the blast.
-
-
-For the purpose of Battle Demolition on Combat Engineers, this item counts as a Satchel Charge.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-      </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup name="Melee (One-Handed)" id="e9b9-a9f0-0ce3-94d7" collective="false" hidden="false">
       <entryLinks>
-        <entryLink name="Trench Knife" id="fa36-92b9-4c98-6325" hidden="false" import="true" sortIndex="1" targetId="daaa-b1ef-7908-82a7" type="selectionEntry">
+        <entryLink name="Bludgeon" id="fa36-92b9-4c98-6325" hidden="false" import="true" sortIndex="1" targetId="daaa-b1ef-7908-82a7" type="selectionEntry">
           <costs>
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="1"/>
           </costs>
         </entryLink>
-        <entryLink name="Trench Club" id="7229-f69b-e089-4623" hidden="false" import="true" sortIndex="2" targetId="bd07-8e58-85a3-71f0" type="selectionEntry">
+        <entryLink name="Close Combat Weapon" id="7229-f69b-e089-4623" hidden="false" import="true" sortIndex="2" targetId="bd07-8e58-85a3-71f0" type="selectionEntry">
           <costs>
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="3"/>
           </costs>
         </entryLink>
-        <entryLink name="Sword/Axe" id="8807-289e-d42d-4f9a" hidden="false" import="true" sortIndex="3" targetId="8ad7-a2d8-fa56-0a09" type="selectionEntry">
+        <entryLink name="Blade" id="8807-289e-d42d-4f9a" hidden="false" import="true" sortIndex="3" targetId="8ad7-a2d8-fa56-0a09" type="selectionEntry">
           <costs>
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="4"/>
           </costs>
         </entryLink>
-        <entryLink name="Misericordia" id="3314-95a8-512c-09ff" hidden="true" import="true" targetId="1fac-60d6-f476-9c4d" type="selectionEntry">
-          <constraints>
-            <constraint id="31cf-ff76-0b2c-47ce" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="max" value="1"/>
-          </constraints>
-          <costs>
-            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
-          </costs>
-          <modifiers>
-            <modifier field="hidden" type="set" value="false">
-              <conditions>
-                <condition childId="3523-c775-3603-dbeb" field="selections" scope="model" shared="true" type="instanceOf" value="1"/>
-              </conditions>
-            </modifier>
-            <modifier field="31cf-ff76-0b2c-47ce" type="set" value="2">
-              <conditions>
-                <condition childId="9b8f-4361-5f23-2e20" field="selections" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </entryLink>
       </entryLinks>
-      <selectionEntries>
-        <selectionEntry name="Shotel" id="5c41-ec10-e905-c9fa" collective="false" hidden="true" import="true" sortIndex="4" type="upgrade">
-          <costs>
-            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="5"/>
-            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
-          </costs>
-          <infoLinks>
-            <infoLink name="Critical" id="633a-9aa5-3add-b000" hidden="false" targetId="7c40-254f-6d33-854c" type="rule"/>
-          </infoLinks>
-          <modifiers>
-            <modifier field="hidden" type="set" value="false">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition childId="f5cc-8e5a-445d-bc09" field="selections" includeChildSelections="true" scope="model" shared="true" type="atLeast" value="1"/>
-                        <condition childId="3de0-192c-3ec2-51be" field="selections" scope="model" shared="true" type="instanceOf" value="1"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                  <conditions>
-                    <condition childId="9b8f-4361-5f23-2e20" field="selections" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <profiles>
-            <profile name="Shotel" id="d12c-566c-b374-e6b8" hidden="false" typeId="090c-b12e-592a-9874" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Type" typeId="f90e-171a-4ca6-3845">1-Handed</characteristic>
-                <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">Melee</characteristic>
-                <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">CRITICAL</characteristic>
-                <characteristic name="Rules" typeId="87f0-637b-734a-22eb"/>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-      </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup name="Melee (Two-Handed)" id="d322-a0f6-afe7-38b7" hidden="false">
       <entryLinks>
-        <entryLink name="Great Hammer/Maul" id="6760-39b6-c427-4e41" hidden="false" import="true" sortIndex="1" targetId="df88-b7a2-1a01-1b56" type="selectionEntry">
+        <entryLink name="Two-Handed Hammer" id="6760-39b6-c427-4e41" hidden="false" import="true" sortIndex="1" targetId="df88-b7a2-1a01-1b56" type="selectionEntry">
           <costs>
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
           </costs>
@@ -1184,109 +1470,10 @@ For the purpose of Battle Demolition on Combat Engineers, this item counts as a 
           </modifiers>
         </entryLink>
       </entryLinks>
-      <selectionEntries>
-        <selectionEntry name="Lochaber Axe" id="d71e-d348-f1a5-514f" hidden="true" import="true" sortIndex="3" type="upgrade">
-          <costs>
-            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="20"/>
-            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
-          </costs>
-          <infoLinks>
-            <infoLink name="Critical" id="394a-0519-98dd-dd3b" hidden="false" targetId="7c40-254f-6d33-854c" type="rule"/>
-            <infoLink name="Cumbersome" id="45f2-b471-8a8f-9033" hidden="false" targetId="5613-c861-daeb-156a" type="rule"/>
-            <infoLink name="Heavy" id="bbdf-5874-647a-0693" hidden="false" targetId="fbac-638f-ff95-d704" type="rule"/>
-          </infoLinks>
-          <modifiers>
-            <modifier field="hidden" type="set" value="false">
-              <conditions>
-                <condition childId="c92f-74bc-9acb-69b4" field="selections" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <profiles>
-            <profile name="Lochaber Axe" id="17de-c834-7301-b710" hidden="false" typeId="090c-b12e-592a-9874" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Type" typeId="f90e-171a-4ca6-3845">2-handed</characteristic>
-                <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">Melee</characteristic>
-                <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">+2 INJURY DICE, BLOCK, CRITICAL, CUMBERSOME, HEAVY</characteristic>
-                <characteristic name="Rules" typeId="87f0-637b-734a-22eb"/>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry name="Tank-Splitter Sword" id="a624-a8f7-3d98-fd2e" hidden="true" import="true" sortIndex="4" type="upgrade">
-          <constraints>
-            <constraint id="12d3-0ced-8bd6-e0fe" field="selections" includeChildSelections="true" scope="roster" shared="true" type="max" value="2"/>
-          </constraints>
-          <costs>
-            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
-            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
-          </costs>
-          <infoLinks>
-            <infoLink name="Critical" id="0420-2cb8-42d9-f093" hidden="false" targetId="7c40-254f-6d33-854c" type="rule"/>
-            <infoLink name="Cumbersome" id="0416-3fe6-5fcd-001f" hidden="false" targetId="5613-c861-daeb-156a" type="rule"/>
-          </infoLinks>
-          <modifiers>
-            <modifier field="hidden" type="set" value="false">
-              <conditions>
-                <condition childId="440a-e3aa-60d7-7d9c" field="selections" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
-              </conditions>
-            </modifier>
-            <modifier field="12d3-0ced-8bd6-e0fe" type="increment" value="1">
-              <repeats>
-                <repeat childId="a163-1321-9e47-eb08" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="roster" shared="true" value="1"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-          <profiles>
-            <profile name="Tank-Splitter Sword" id="6502-5181-0ccf-d016" hidden="false" typeId="090c-b12e-592a-9874" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Type" typeId="f90e-171a-4ca6-3845">2-handed</characteristic>
-                <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">Melee</characteristic>
-                <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">+1 INJURY DICE, CRITICAL, CUMBERSOME</characteristic>
-                <characteristic name="Rules" typeId="87f0-637b-734a-22eb">When you make an Injury Roll for an attack made with a Tank-Splitter Sword, determine if the target has an Armour Characteristic that is -1 or greater, or if it is wearing Armour or carrying a Shield. If it does, before rolling the dice for the Injury Roll, put one dice aside and turn it so that it shows a “6”. Roll the rest of the dice, then return the dice you put to one side; it counts as having rolled a 6. In addition, attacks made with a Tank-Splitter Sword are not affected by the Dragonslayer Patron Skill.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry name="Dane Axe" id="5d00-0d93-594d-5dae" hidden="true" import="true" sortIndex="5" type="upgrade">
-          <categoryLinks>
-            <categoryLink name="Heavy" id="372c-3165-87ca-2005" hidden="false" primary="false" targetId="70c9-988d-71a7-7654"/>
-          </categoryLinks>
-          <constraints>
-            <constraint id="6620-73d2-a2bc-3dfc" field="selections" includeChildSelections="true" scope="roster" shared="true" type="max" value="3"/>
-          </constraints>
-          <costs>
-            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
-            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
-          </costs>
-          <infoLinks>
-            <infoLink name="Critical" id="14e1-31e7-fe0c-13b4" hidden="false" targetId="7c40-254f-6d33-854c" type="rule"/>
-            <infoLink name="Heavy" id="f28f-9564-b023-2987" hidden="false" targetId="fbac-638f-ff95-d704" type="rule"/>
-            <infoLink name="Armour Piercing" id="cb22-01d4-3079-6a8a" hidden="false" targetId="ba7a-64b6-e87b-0ecd" type="rule"/>
-          </infoLinks>
-          <modifiers>
-            <modifier field="hidden" type="set" value="false">
-              <conditions>
-                <condition childId="a911-0ba3-a9f7-17b7" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <profiles>
-            <profile name="Dane Axe" id="6881-1be4-63c2-809d" hidden="false" typeId="090c-b12e-592a-9874" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Type" typeId="f90e-171a-4ca6-3845">2-handed</characteristic>
-                <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">Melee</characteristic>
-                <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">ARMOUR PIERCING 2, HEAVY, CRITICAL, +1 INJURY DICE</characteristic>
-                <characteristic name="Rules" typeId="87f0-637b-734a-22eb"/>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup name="Shield Combo" id="79d7-9e7a-b80c-42a7" hidden="false">
           <entryLinks>
-            <entryLink name="Polearm" id="b14b-ce7b-0c38-b32f" hidden="false" import="true" targetId="80dd-5d7c-c33e-a950" type="selectionEntry">
+            <entryLink name="Halberd" id="d657-d633-f589-6584" hidden="false" import="true" targetId="3d2c-5496-2b56-58e9" type="selectionEntry">
               <costs>
                 <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="7"/>
               </costs>
@@ -1556,28 +1743,11 @@ For the purpose of Battle Demolition on Combat Engineers, this item counts as a 
         </entryLink>
       </entryLinks>
       <selectionEntries>
-        <selectionEntry name="Warpfire Gauntlet" id="9dee-fe0e-4795-3061" hidden="false" import="true" type="upgrade">
-          <infoLinks>
-            <infoLink name="Held" id="1db7-86ab-5e2e-b91c" hidden="false" targetId="1220-c65a-89ed-96a7" type="rule"/>
-            <infoLink name="Flamethrower" id="757b-3518-290b-5bf9" hidden="false" targetId="78ca-3b42-f65a-3db6" type="rule"/>
-            <infoLink name="Ignore Armour" id="89eb-1101-10db-d810" hidden="false" targetId="f745-3388-e51a-0637" type="rule"/>
-            <infoLink name="+/- Injury Dice" id="e7fd-a5b5-9e64-1819" hidden="false" targetId="9880-1ec6-9767-4698" type="rule"/>
-            <infoLink name="Fire" id="6c24-2bbe-f6bf-74a1" hidden="false" targetId="3f12-9eb3-07f7-03bb" type="rule"/>
-            <infoLink name="Pistol" id="888d-5652-7c72-7e85" hidden="false" targetId="845a-d3e1-69b8-687e" type="rule"/>
-            <infoLink name="Psychic" id="d5cc-0048-ed40-1669" hidden="false" targetId="20bd-18d1-0018-6723" type="rule"/>
-          </infoLinks>
-          <profiles>
-            <profile name="Warpfire Gauntlet" id="0a1d-9665-d126-eaf8" hidden="false" typeId="090c-b12e-592a-9874" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Type" typeId="f90e-171a-4ca6-3845"/>
-                <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">8&quot;</characteristic>
-                <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">HELD, FLAMETHROWER, IGNORE ARMOUR, -1 INJURY DICE, FIRE, PISTOL, PSYCHIC, loses FLAMETHROWER when attacking in melee</characteristic>
-                <characteristic name="Rules" typeId="87f0-637b-734a-22eb"/>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
         <selectionEntry name="Warpfuel Pistol" id="f9c6-e50c-9d90-03b3" hidden="false" import="true" type="upgrade">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="6"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
           <infoLinks>
             <infoLink name="+/- Dice" id="176e-bb4f-3c51-7809" hidden="false" targetId="8b7a-8f2d-dda6-b671" type="rule"/>
             <infoLink name="Pistol" id="13a1-b05a-6fd0-67e3" hidden="false" targetId="845a-d3e1-69b8-687e" type="rule"/>
@@ -1679,7 +1849,7 @@ For the purpose of Battle Demolition on Combat Engineers, this item counts as a 
               <localConditionGroups>
                 <localConditionGroup field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" scope="parent" type="atLeast" value="1">
                   <conditions>
-                    <condition childId="any" field="selections" includeChildSelections="false" scope="self" shared="true" type="notInstanceOf" value="1"/>
+                    <condition childId="319c-2375-1aa3-feb1" childName="Warlock" field="selections" includeChildSelections="false" scope="model-or-unit-self" shared="true" type="notInstanceOf" value="1"/>
                   </conditions>
                 </localConditionGroup>
               </localConditionGroups>
@@ -1691,140 +1861,6 @@ For the purpose of Battle Demolition on Combat Engineers, this item counts as a 
                 <characteristic name="Type" typeId="f90e-171a-4ca6-3845"/>
                 <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">16&quot;</characteristic>
                 <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">-1 INJURY DICE, AUTOMATIC 2, RISKY, STUN, TWO-HANDED</characteristic>
-                <characteristic name="Rules" typeId="87f0-637b-734a-22eb"/>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry name="Doomrocket" id="1871-6e2f-92b7-547b" hidden="false" import="true" type="upgrade">
-          <categoryLinks>
-            <categoryLink name="Heavy" id="4ee9-aa64-d2fd-b969" hidden="false" primary="false" targetId="70c9-988d-71a7-7654"/>
-          </categoryLinks>
-          <infoLinks>
-            <infoLink name="+/- Dice" id="2fdc-70d4-9854-0ff5" hidden="false" targetId="8b7a-8f2d-dda6-b671" type="rule"/>
-            <infoLink name="+/- Injury Dice" id="6830-d2b4-7793-a50c" hidden="false" targetId="9880-1ec6-9767-4698" type="rule"/>
-            <infoLink name="Ignore [Modifier]" id="a3d6-b65a-dc77-0e12" hidden="false" targetId="fd2f-4a14-7db4-8ec9" type="rule"/>
-            <infoLink name="Blast" id="abae-ede0-51e1-b5d8" hidden="false" targetId="263d-6520-5629-c027" type="rule"/>
-            <infoLink name="Scatter" id="a285-eb21-264f-b409" hidden="false" targetId="9ee3-1276-01cc-fefb" type="rule"/>
-            <infoLink name="Shrapnel" id="9ab8-d605-74c2-6f34" hidden="false" targetId="200f-a7a6-f8a7-8232" type="rule"/>
-            <infoLink name="Heavy" id="e7fa-405d-12bd-a14a" hidden="false" targetId="fbac-638f-ff95-d704" type="rule"/>
-          </infoLinks>
-          <profiles>
-            <profile name="Doomrocket" id="6562-29ef-9be4-8f2f" hidden="false" typeId="090c-b12e-592a-9874" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Type" typeId="f90e-171a-4ca6-3845"/>
-                <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">24&quot;</characteristic>
-                <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">-1 DICE, +1 INJURY DICE, IGNORE COVER, BLAST 2”, SCATTER, SHRAPNEL, HEAVY, TWO-HANDED</characteristic>
-                <characteristic name="Rules" typeId="87f0-637b-734a-22eb">On a roll of 2, the attack hits the attacker’s location instead of normal scatter</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry name="Ratling Cannons" id="bc8f-8118-c0cd-72f5" hidden="false" import="true" type="upgrade">
-          <categoryLinks>
-            <categoryLink name="Heavy" id="6066-20b0-aa66-f5f8" hidden="false" primary="false" targetId="70c9-988d-71a7-7654"/>
-          </categoryLinks>
-          <infoLinks>
-            <infoLink name="Automatic" id="b436-bd93-66aa-a754" hidden="false" targetId="c435-c893-2c72-e7c6" type="rule"/>
-            <infoLink name="+/- Dice" id="d499-41dc-6d0e-6841" hidden="false" targetId="8b7a-8f2d-dda6-b671" type="rule"/>
-            <infoLink name="Held" id="895c-40ec-1022-9218" hidden="false" targetId="1220-c65a-89ed-96a7" type="rule"/>
-            <infoLink name="Risky" id="e180-dafc-5b67-5823" hidden="false" targetId="df23-62bc-775e-fca1" type="rule"/>
-            <infoLink name="Heavy" id="37f1-6d43-eccc-ebce" hidden="false" targetId="fbac-638f-ff95-d704" type="rule"/>
-          </infoLinks>
-          <profiles>
-            <profile name="Ratling Cannons" id="9609-edb4-1c9c-00fe" hidden="false" typeId="090c-b12e-592a-9874" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Type" typeId="f90e-171a-4ca6-3845"/>
-                <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">16&quot;</characteristic>
-                <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">HELD, +1 DICE, AUTOMATIC 3, RISKY, HEAVY, TWO-HANDED</characteristic>
-                <characteristic name="Rules" typeId="87f0-637b-734a-22eb"/>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry name="Ratling Gun" id="a66e-deb4-4787-2a8c" hidden="false" import="true" type="upgrade">
-          <categoryLinks>
-            <categoryLink name="Heavy" id="1822-af94-8337-acd3" hidden="false" primary="false" targetId="70c9-988d-71a7-7654"/>
-          </categoryLinks>
-          <infoLinks>
-            <infoLink name="Automatic" id="b518-673a-9e26-1800" hidden="false" targetId="c435-c893-2c72-e7c6" type="rule"/>
-            <infoLink name="Risky" id="cd89-850a-2e5b-4f74" hidden="false" targetId="df23-62bc-775e-fca1" type="rule"/>
-            <infoLink name="Heavy" id="b210-1dc8-a98e-a6af" hidden="false" targetId="fbac-638f-ff95-d704" type="rule"/>
-          </infoLinks>
-          <profiles>
-            <profile name="Ratling Gun" id="e580-8653-3314-5e84" hidden="false" typeId="090c-b12e-592a-9874" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Type" typeId="f90e-171a-4ca6-3845"/>
-                <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">36&quot;</characteristic>
-                <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">AUTOMATIC 3, RISKY, HEAVY, TWO-HANDED</characteristic>
-                <characteristic name="Rules" typeId="87f0-637b-734a-22eb"/>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry name="Warpfire Projectors" id="7c87-f1d9-4bfd-90a0" hidden="false" import="true" type="upgrade">
-          <categoryLinks>
-            <categoryLink name="Heavy" id="a5f6-1d95-8c7c-29dc" hidden="false" primary="false" targetId="70c9-988d-71a7-7654"/>
-          </categoryLinks>
-          <infoLinks>
-            <infoLink name="Held" id="9179-4f55-781a-d552" hidden="false" targetId="1220-c65a-89ed-96a7" type="rule"/>
-            <infoLink name="Flamethrower" id="dc6d-fad3-36ff-b2e5" hidden="false" targetId="78ca-3b42-f65a-3db6" type="rule"/>
-            <infoLink name="Ignore Armour" id="bd3b-8ea4-5085-1d5c" hidden="false" targetId="f745-3388-e51a-0637" type="rule"/>
-            <infoLink name="Fire" id="75d2-305b-187e-fe5a" hidden="false" targetId="3f12-9eb3-07f7-03bb" type="rule"/>
-            <infoLink name="Heavy" id="e615-9fd4-7b35-72d0" hidden="false" targetId="fbac-638f-ff95-d704" type="rule"/>
-          </infoLinks>
-          <profiles>
-            <profile name="Warpfire Projectors" id="dfba-5729-fe45-844c" hidden="false" typeId="090c-b12e-592a-9874" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Type" typeId="f90e-171a-4ca6-3845"/>
-                <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">10&quot;</characteristic>
-                <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">HELD, FLAMETHROWER, IGNORE ARMOUR, FIRE, HEAVY, TWO-HANDED, HEAVY, TWO-HANDED</characteristic>
-                <characteristic name="Rules" typeId="87f0-637b-734a-22eb"/>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry name="Warpvolt Scourger" id="c74f-95f4-cf47-2156" hidden="false" import="true" type="upgrade">
-          <categoryLinks>
-            <categoryLink name="Heavy" id="a07f-30a5-1e81-b142" hidden="false" primary="false" targetId="70c9-988d-71a7-7654"/>
-          </categoryLinks>
-          <infoLinks>
-            <infoLink name="Automatic" id="de17-cf97-f737-bbb3" hidden="false" targetId="c435-c893-2c72-e7c6" type="rule"/>
-            <infoLink name="Heavy" id="5a02-914e-b9f3-6c2e" hidden="false" targetId="fbac-638f-ff95-d704" type="rule"/>
-            <infoLink name="Risky" id="e5c2-dfba-ec99-d535" hidden="false" targetId="df23-62bc-775e-fca1" type="rule"/>
-            <infoLink name="Stun" id="11c7-e6e5-4c35-4af3" hidden="false" targetId="07dd-07e7-d909-339a" type="rule"/>
-          </infoLinks>
-          <profiles>
-            <profile name="Warpvolt Scourger" id="c383-5146-a17c-0401" hidden="false" typeId="090c-b12e-592a-9874" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Type" typeId="f90e-171a-4ca6-3845"/>
-                <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">18&quot;</characteristic>
-                <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">AUTOMATIC 2, HEAVY, RISKY, STUN, TWO-HANDED</characteristic>
-                <characteristic name="Rules" typeId="87f0-637b-734a-22eb"/>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry name="Windlaunchers" id="675c-2d18-f4ea-5008" hidden="false" import="true" type="upgrade">
-          <categoryLinks>
-            <categoryLink name="Heavy" id="1b3f-c1d8-69f4-1ecf" hidden="false" primary="false" targetId="70c9-988d-71a7-7654"/>
-          </categoryLinks>
-          <infoLinks>
-            <infoLink name="Held" id="90bc-25fa-f033-8748" hidden="false" targetId="1220-c65a-89ed-96a7" type="rule"/>
-            <infoLink name="+/- Dice" id="ccc8-a7e6-6225-0593" hidden="false" targetId="8b7a-8f2d-dda6-b671" type="rule"/>
-            <infoLink name="+/- Injury Dice" id="7e9b-c6d2-26b9-f2e8" hidden="false" targetId="9880-1ec6-9767-4698" type="rule"/>
-            <infoLink name="Blast" id="b93a-dcae-6a91-cfe2" hidden="false" targetId="263d-6520-5629-c027" type="rule"/>
-            <infoLink name="Gas" id="5bfc-7208-d75c-1360" hidden="false" targetId="2c6e-81c8-6c20-b5b7" type="rule"/>
-            <infoLink name="Ignore Armour" id="dfb9-74dc-3a35-229f" hidden="false" targetId="f745-3388-e51a-0637" type="rule"/>
-            <infoLink name="Ignore [Modifier]" id="ad1c-f753-0756-cb94" hidden="false" targetId="fd2f-4a14-7db4-8ec9" type="rule"/>
-            <infoLink name="Heavy" id="35d1-3505-7888-028f" hidden="false" targetId="fbac-638f-ff95-d704" type="rule"/>
-          </infoLinks>
-          <profiles>
-            <profile name="Windlaunchers" id="d132-6213-e2f2-3077" hidden="false" typeId="090c-b12e-592a-9874" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Type" typeId="f90e-171a-4ca6-3845"/>
-                <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">36&quot;</characteristic>
-                <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">HELD, +1 DICE, -1 INJURY DICE, BLAST 3”, GAS, IGNORE ARMOUR, IGNORE COVER, HEAVY, TWO-HANDED</characteristic>
                 <characteristic name="Rules" typeId="87f0-637b-734a-22eb"/>
               </characteristics>
             </profile>
@@ -1859,29 +1895,6 @@ For the purpose of Battle Demolition on Combat Engineers, this item counts as a 
                 </profile>
               </profiles>
             </selectionEntry>
-            <selectionEntry name="Warpfuel Jezzail" id="3b53-77db-ca63-c173" hidden="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink name="Heavy" id="195c-230a-8f2a-8ce2" hidden="false" primary="false" targetId="70c9-988d-71a7-7654"/>
-              </categoryLinks>
-              <infoLinks>
-                <infoLink name="+/- Dice" id="8d7d-591d-a6b8-9087" hidden="false" targetId="8b7a-8f2d-dda6-b671" type="rule"/>
-                <infoLink name="+/- Injury Dice" id="6771-4e08-6b28-6907" hidden="false" targetId="9880-1ec6-9767-4698" type="rule"/>
-                <infoLink name="Critical" id="03a1-c6d7-7be9-66fb" hidden="false" targetId="7c40-254f-6d33-854c" type="rule"/>
-                <infoLink name="Heavy" id="b997-2c4c-1083-c5eb" hidden="false" targetId="fbac-638f-ff95-d704" type="rule"/>
-                <infoLink name="Risky" id="5009-4c80-b28f-ff29" hidden="false" targetId="df23-62bc-775e-fca1" type="rule"/>
-                <infoLink name="Dangerous (X)" id="7121-f7aa-1519-3187" hidden="false" targetId="589e-07fa-d952-96da" type="rule"/>
-              </infoLinks>
-              <profiles>
-                <profile name="Warpfuel Jezzail" id="e4f0-d5fb-7bc4-46e4" hidden="false" typeId="090c-b12e-592a-9874" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Type" typeId="f90e-171a-4ca6-3845"/>
-                    <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">36&quot;</characteristic>
-                    <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">+2 DICE, +1 INJURY DICE, CRITICAL, HEAVY, RISKY, TWO-HANDED, DANGEROUS, Shield Combo, Scope Capable</characteristic>
-                    <characteristic name="Rules" typeId="87f0-637b-734a-22eb"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -1897,9 +1910,6 @@ For the purpose of Battle Demolition on Combat Engineers, this item counts as a 
           <constraints>
             <constraint id="4101-e4b1-508b-f7a0" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
-          <entryLinks>
-            <entryLink name="Flamer" id="4e8a-523e-896b-7560" hidden="false" import="true" targetId="985f-e0c3-b0e9-5f89" type="selectionEntry"/>
-          </entryLinks>
           <modifiers>
             <modifier field="4101-e4b1-508b-f7a0" type="decrement" value="1">
               <conditions>
@@ -2339,7 +2349,27 @@ For the purpose of Battle Demolition on Combat Engineers, this item counts as a 
         <constraint id="f188-08d1-df5b-23f0" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="4"/>
       </constraints>
       <entryLinks>
-        <entryLink name="Melee Weapons" id="9509-bc33-2cbb-e30d" collapsible="false" hidden="false" import="true" targetId="f2ab-58c0-68cb-5997" type="selectionEntryGroup"/>
+        <entryLink name="Melee Weapons" id="9509-bc33-2cbb-e30d" collapsible="false" hidden="false" import="true" targetId="f2ab-58c0-68cb-5997" type="selectionEntryGroup">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Pyschic Weapon" id="3008-2f34-fcf4-c484" hidden="false">
+              <constraints>
+                <constraint id="1c15-8b4c-ff17-ba79" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+              </constraints>
+              <entryLinks>
+                <entryLink name="Force Rod" id="e148-612f-778d-15e9" hidden="false" import="true" targetId="47e5-418f-f09d-ef35" type="selectionEntry">
+                  <costs>
+                    <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="3"/>
+                  </costs>
+                </entryLink>
+                <entryLink name="Force Staff" id="3b0a-537c-0f06-edf0" hidden="false" import="true" targetId="4aa2-c33a-0760-6333" type="selectionEntry">
+                  <costs>
+                    <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </entryLink>
         <entryLink name="Ranged Weapons" id="4791-aa08-fc31-5227" collapsible="false" hidden="false" import="true" sortIndex="1" targetId="7602-5baf-759d-9c9b" type="selectionEntryGroup"/>
         <entryLink name="Utility Hand" id="49fe-8159-807a-1b04" collapsible="true" hidden="false" import="true" targetId="162d-ee62-c9da-4687" type="selectionEntryGroup">
           <constraints>

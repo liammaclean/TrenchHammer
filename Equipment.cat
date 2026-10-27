@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Battlekits" id="f044-03b4-6607-1152" battleScribeVersion="2.03" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="16" library="true" revision="4" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Battlekits" id="f044-03b4-6607-1152" battleScribeVersion="2.03" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="16" library="true" revision="5" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
-    <selectionEntry name="Trench Shield" id="ab45-1e00-df56-dbda" hidden="false" import="true" type="upgrade">
+    <selectionEntry name="Shield" id="ab45-1e00-df56-dbda" hidden="false" import="true" type="upgrade">
       <constraints>
         <constraint id="8a59-6ce2-41f3-94c5" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
       </constraints>
@@ -9,12 +9,12 @@
         <infoLink name="+/- Injury Modifier" id="47d6-8d0d-b439-778a" hidden="false" targetId="3f79-aee7-2c3d-828f" type="rule"/>
       </infoLinks>
       <profiles>
-        <profile name="Trench Shield" id="0691-b648-ac01-3dc7" hidden="false" typeId="7079-589c-df69-fa7e" typeName="Battlekit">
+        <profile name="Shield" id="0691-b648-ac01-3dc7" hidden="false" typeId="7079-589c-df69-fa7e" typeName="Battlekit">
           <characteristics>
             <characteristic name="Type" typeId="3f15-74a1-4d35-3642">Shield</characteristic>
             <characteristic name="Range" typeId="2b32-2f45-9c06-7a77"/>
-            <characteristic name="Keywords" typeId="5093-5528-b08f-1496">-1 INJURY MODIFIER</characteristic>
-            <characteristic name="Rules" typeId="4834-43a9-1c93-9062"/>
+            <characteristic name="Keywords" typeId="5093-5528-b08f-1496">-1 INJURY MODIFIER, HELD</characteristic>
+            <characteristic name="Rules" typeId="4834-43a9-1c93-9062">A model can equip only one Shield.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -488,7 +488,7 @@
         <infoLink name="+/- Injury Modifier" id="c686-2a28-682d-69df" hidden="false" targetId="3f79-aee7-2c3d-828f" type="rule"/>
       </infoLinks>
       <modifiers>
-        <modifier affects="unit.profiles.Unit" field="5de9-d70e-9021-6f71" position="0" type="increment" value="-2"/>
+        <modifier affects="unit.profiles.Unit" field="5de9-d70e-9021-6f71" position="1" scope="model-or-unit" type="increment" value="-2"/>
       </modifiers>
       <profiles>
         <profile name="Heavy Armour" id="504c-42b8-c5d1-d29c" hidden="false" typeId="7079-589c-df69-fa7e" typeName="Battlekit">

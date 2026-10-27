@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem name="Trench Hammer" id="sys-4f3d-c5c9-7df1-ad01" authorName="Goober, Liam MacLean" authorUrl="https://github.com/liammaclean/TrenchHammer" battleScribeVersion="2.03" revision="18" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem name="Trench Hammer" id="sys-4f3d-c5c9-7df1-ad01" authorName="Goober, Liam MacLean" authorUrl="https://github.com/liammaclean/TrenchHammer" battleScribeVersion="2.03" revision="19" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <categoryEntries>
     <categoryEntry name="Artificial" id="4180-5377-2d83-48ba" hidden="false" publicationId="c658-4a10-e1fe-befc"/>
     <categoryEntry name="Elite" id="3de0-192c-3ec2-51be" hidden="false" publicationId="c658-4a10-e1fe-befc"/>
@@ -45,6 +45,13 @@
       <description>Negate difficult and dangerous terrain caused by barbed wire</description>
     </categoryEntry>
     <categoryEntry name="Ignore Off-Hand" id="1091-f053-40a4-1681" hidden="false"/>
+    <categoryEntry name="Large" id="bd72-3973-d1cd-5ccc" hidden="false"/>
+    <categoryEntry name="Beast" id="e7b2-3073-3afd-6203" hidden="false"/>
+    <categoryEntry name="Master" id="0f60-83a1-92c7-0ba8" hidden="false"/>
+    <categoryEntry name="No Promotion" id="748f-312f-19c7-d446" hidden="false"/>
+    <categoryEntry name="Psyker 1" id="f1af-fa19-88a0-9766" hidden="false"/>
+    <categoryEntry name="Skaven" id="1312-011c-42a3-09b0" hidden="false"/>
+    <categoryEntry name="Stealth" id="6341-6193-5a04-13b7" hidden="false"/>
   </categoryEntries>
   <costTypes>
     <costType name="Ducats" id="8d43-33fd-332d-17a6" defaultCostLimit="-1"/>

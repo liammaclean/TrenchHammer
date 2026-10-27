@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Thrown Weapons" id="4d13-832c-3d8c-70be" battleScribeVersion="2.03" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="18" library="true" revision="1" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Thrown Weapons" id="4d13-832c-3d8c-70be" battleScribeVersion="2.03" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="18" library="true" revision="2" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry name="Frag Grenades" id="7f07-3b1b-85e7-6802" hidden="false" import="true" type="upgrade">
       <infoLinks>
@@ -13,7 +13,7 @@
       <profiles>
         <profile name="Frag Grenades" id="00d3-c557-3993-f094" hidden="false" typeId="090c-b12e-592a-9874" typeName="Weapon">
           <characteristics>
-            <characteristic name="Type" typeId="f90e-171a-4ca6-3845">Grenade</characteristic>
+            <characteristic name="Type" typeId="f90e-171a-4ca6-3845">Thrown</characteristic>
             <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">8&quot;</characteristic>
             <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">ASSAULT, BLAST 2”, IGNORE COVER, IGNORE LONG RANGE, SHRAPNEL, THROWN, FUMBLE</characteristic>
             <characteristic name="Rules" typeId="87f0-637b-734a-22eb"/>
@@ -21,7 +21,7 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry name="Gas Grenades" id="ed69-d081-68a5-999e" hidden="false" import="true" type="upgrade">
+    <selectionEntry name="Toxin Grenades" id="ed69-d081-68a5-999e" hidden="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink name="Assault" id="f307-4bef-23ba-bf87" hidden="false" targetId="3136-7aab-4bde-9583" type="rule"/>
         <infoLink name="Blast" id="3d05-5240-6eac-f1cf" hidden="false" targetId="263d-6520-5629-c027" type="rule"/>
@@ -32,12 +32,66 @@
         <infoLink name="+/- Injury Dice" id="2121-614a-fcb5-816b" hidden="false" targetId="9880-1ec6-9767-4698" type="rule"/>
       </infoLinks>
       <profiles>
-        <profile name="Gas Grenades" id="5f7a-f61c-c4cc-98ad" hidden="false" typeId="090c-b12e-592a-9874" typeName="Weapon">
+        <profile name="Toxin Grenades" id="5f7a-f61c-c4cc-98ad" hidden="false" typeId="090c-b12e-592a-9874" typeName="Weapon">
           <characteristics>
-            <characteristic name="Type" typeId="f90e-171a-4ca6-3845">Grenade</characteristic>
+            <characteristic name="Type" typeId="f90e-171a-4ca6-3845">Thrown</characteristic>
             <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">8&quot;</characteristic>
             <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">IGNORE ARMOUR, -1 INJURY DICE, ASSAULT, BLAST 3”, IGNORE COVER, IGNORE LONG RANGE, GAS, THROWN, FUMBLE</characteristic>
             <characteristic name="Rules" typeId="87f0-637b-734a-22eb"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Gunk Bomb" id="99af-9638-68c6-f37f" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Assault" id="e8a7-7c11-120d-1c71" hidden="false" targetId="3136-7aab-4bde-9583" type="rule"/>
+        <infoLink name="Ignore [Modifier]" id="7cf2-d896-48fe-3cb1" hidden="false" targetId="fd2f-4a14-7db4-8ec9" type="rule"/>
+        <infoLink name="Stun Markers" id="7978-056f-b615-e2d5" hidden="false" targetId="cd75-4561-4477-b416" type="rule"/>
+        <infoLink name="Thrown" id="067c-19f5-a9f1-8bd3" hidden="false" targetId="ddaa-cf33-afe5-4f98" type="rule"/>
+        <infoLink name="Fumble" id="b80b-d90c-6ef1-d02a" hidden="false" targetId="602c-77bd-8199-b17a" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Gunk Bomb" id="dbb8-215c-a082-f9e2" hidden="false" typeId="090c-b12e-592a-9874" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Type" typeId="f90e-171a-4ca6-3845">Thrown</characteristic>
+            <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">8&quot;</characteristic>
+            <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">ASSAULT, BLAST 2”, IGNORE COVER, IGNORE LONG RANGE, STUN MARKERS, THROWN, FUMBLE</characteristic>
+            <characteristic name="Rules" typeId="87f0-637b-734a-22eb"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Throwing Knives" id="32e1-9c1b-d11a-731a" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Ignore [Modifier]" id="5731-b1bb-70a1-05f9" hidden="false" targetId="fd2f-4a14-7db4-8ec9" type="rule"/>
+        <infoLink name="Assault" id="2bc0-6a3b-9495-c2ef" hidden="false" targetId="3136-7aab-4bde-9583" type="rule"/>
+        <infoLink name="Thrown" id="51ef-74fd-bc89-2423" hidden="false" targetId="ddaa-cf33-afe5-4f98" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Throwing Knives" id="8603-6edb-e8c8-31c9" hidden="false" typeId="090c-b12e-592a-9874" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Type" typeId="f90e-171a-4ca6-3845">Thrown</characteristic>
+            <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">8&quot;</characteristic>
+            <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">IGNORE LONG RANGE, ASSAULT, THROWN</characteristic>
+            <characteristic name="Rules" typeId="87f0-637b-734a-22eb"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Smoke Grenade" id="7804-03ca-2b08-ae59" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Assault" id="47d5-8996-e64e-927b" hidden="false" targetId="3136-7aab-4bde-9583" type="rule"/>
+        <infoLink name="Scatter" id="0f7f-1c9e-686e-cac3" hidden="false" targetId="9ee3-1276-01cc-fefb" type="rule"/>
+        <infoLink name="Ignore [Modifier]" id="8301-3f6c-dfc1-052b" hidden="false" targetId="fd2f-4a14-7db4-8ec9" type="rule"/>
+        <infoLink name="Thrown" id="7fe7-c88c-38b4-9a33" hidden="false" targetId="ddaa-cf33-afe5-4f98" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Smoke Grenade" id="f97a-9d11-57ff-76ff" hidden="false" typeId="090c-b12e-592a-9874" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Type" typeId="f90e-171a-4ca6-3845">Thrown</characteristic>
+            <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">8&quot;</characteristic>
+            <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">ASSAULT, SCATTER, IGNORE COVER, IGNORE LONG RANGE, THROWN, usable only once per battle. </characteristic>
+            <characteristic name="Rules" typeId="87f0-637b-734a-22eb">Causes no Injury. Instead, place a Smoke marker at the point hit. All models within 3” of a Smoke marker have the COVER and STEALTH Keywords. Any effect that ignores the STEALTH Keyword also ignores this COVER Keyword. At the end of the Turn, roll a D6. On a 3 or lower, remove the Smoke marker. Otherwise, remove it at the end of the next Turn.</characteristic>
           </characteristics>
         </profile>
       </profiles>

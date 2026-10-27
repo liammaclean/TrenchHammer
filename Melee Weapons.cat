@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Melee Weapons" id="7595-974a-7451-6c2e" battleScribeVersion="2.03" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="16" library="true" revision="2" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Melee Weapons" id="7595-974a-7451-6c2e" battleScribeVersion="2.03" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="16" library="true" revision="3" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <categoryEntries>
+    <categoryEntry name="Shield Combo" id="8b02-a668-a43f-954b" hidden="false"/>
+    <categoryEntry name="Held" id="362b-c846-1524-f912" hidden="false"/>
+    <categoryEntry name="Psychic" id="7d49-49b3-e640-2b3b" hidden="false"/>
+  </categoryEntries>
   <sharedSelectionEntries>
     <selectionEntry name="Anti-Tank Hammer" id="0f6a-12ab-facd-4972" hidden="false" import="true" type="upgrade">
       <infoLinks>
@@ -68,14 +73,17 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry name="Great Sword/Axe" id="43b5-20ac-4f52-3ce5" hidden="false" import="true" type="upgrade">
+    <selectionEntry name="Two-Handed Blade" id="43b5-20ac-4f52-3ce5" hidden="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink name="Heavy" id="26f7-03da-0d20-244c" hidden="false" primary="false" targetId="70c9-988d-71a7-7654"/>
+      </categoryLinks>
       <infoLinks>
         <infoLink name="+/- Injury Dice" id="cc2e-b03e-d0ac-03dd" hidden="false" targetId="9880-1ec6-9767-4698" type="rule"/>
         <infoLink name="Critical" id="081b-7245-b591-132a" hidden="false" targetId="7c40-254f-6d33-854c" type="rule"/>
         <infoLink name="Heavy" id="68a7-f895-a658-78c4" hidden="false" targetId="fbac-638f-ff95-d704" type="rule"/>
       </infoLinks>
       <profiles>
-        <profile name="Great Sword/Axe" id="f11f-a0c6-d658-dcb6" hidden="false" typeId="090c-b12e-592a-9874" typeName="Weapon">
+        <profile name="Two-Handed Blade" id="f11f-a0c6-d658-dcb6" hidden="false" typeId="090c-b12e-592a-9874" typeName="Weapon">
           <characteristics>
             <characteristic name="Type" typeId="f90e-171a-4ca6-3845">2-Handed</characteristic>
             <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">Melee</characteristic>
@@ -176,6 +184,144 @@
           </conditions>
         </modifier>
       </modifiers>
+    </selectionEntry>
+    <selectionEntry name="Halberd" id="3d2c-5496-2b56-58e9" hidden="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink name="Shield Combo" id="1c55-0017-3115-8730" hidden="false" primary="false" targetId="8b02-a668-a43f-954b"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Block" id="adbe-308f-4812-f1bf" hidden="false" targetId="cdfd-aca9-c615-20e1" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Halberd" id="ad84-9e6e-d608-1414" hidden="false" typeId="090c-b12e-592a-9874" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Type" typeId="f90e-171a-4ca6-3845">2-Handed</characteristic>
+            <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">Melee</characteristic>
+            <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">BLOCK, TWO-HANDED, Shield Combo</characteristic>
+            <characteristic name="Rules" typeId="87f0-637b-734a-22eb"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Paired Blades" id="e683-5543-73fb-b915" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Block" id="27e1-2b4b-0df4-c098" hidden="false" targetId="cdfd-aca9-c615-20e1" type="rule"/>
+        <infoLink name="Cleave" id="067e-b622-ca75-b959" hidden="false" targetId="2da7-e6f3-dc9d-4431" type="rule"/>
+        <infoLink name="Cumbersome" id="bcfb-9a7e-e1f2-6a37" hidden="false" targetId="5613-c861-daeb-156a" type="rule"/>
+        <infoLink name="Critical" id="dab3-37d0-6cf5-0061" hidden="false" targetId="7c40-254f-6d33-854c" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Paired Blades" id="ec64-0b1e-696f-e7f8" hidden="false" typeId="090c-b12e-592a-9874" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Type" typeId="f90e-171a-4ca6-3845">2-Handed</characteristic>
+            <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">Melee</characteristic>
+            <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">CLEAVE 2, CRITICAL, CUMBERSOME</characteristic>
+            <characteristic name="Rules" typeId="87f0-637b-734a-22eb"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Force Rod" id="47e5-418f-f09d-ef35" hidden="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink name="Held" id="0077-ce75-3b98-9a25" hidden="false" primary="false" targetId="362b-c846-1524-f912"/>
+        <categoryLink name="Psychic" id="7290-1bc2-b608-4a38" hidden="false" primary="false" targetId="7d49-49b3-e640-2b3b"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="+/- Injury Dice" id="9fd6-7933-b6ed-a6e6" hidden="false" targetId="9880-1ec6-9767-4698" type="rule"/>
+        <infoLink name="Psychic" id="cf0e-9d80-d13e-6e1f" hidden="false" targetId="20bd-18d1-0018-6723" type="rule"/>
+        <infoLink name="Held" id="9dc5-4f23-c2fa-56ea" hidden="false" targetId="1220-c65a-89ed-96a7" type="rule"/>
+        <infoLink name="Main Hand Only" id="51b3-2fef-cb17-c343" hidden="false" targetId="8283-bf26-21eb-9791" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Force Rod" id="ca0a-e336-716c-9842" hidden="false" typeId="090c-b12e-592a-9874" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Type" typeId="f90e-171a-4ca6-3845">1-Handed</characteristic>
+            <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">Melee</characteristic>
+            <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">+1 INJURY DICE against targets with DAEMON or PSYKER Keyword, PSYCHIC, HELD, MAIN HAND ONLY</characteristic>
+            <characteristic name="Rules" typeId="87f0-637b-734a-22eb"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Force Staff" id="4aa2-c33a-0760-6333" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="+/- Injury Dice" id="d9fa-6070-3587-44c1" hidden="false" targetId="9880-1ec6-9767-4698" type="rule"/>
+        <infoLink name="Held" id="1b41-6257-9dda-7d24" hidden="false" targetId="1220-c65a-89ed-96a7" type="rule"/>
+        <infoLink name="Block" id="4ce1-81ad-bad7-31f9" hidden="false" targetId="cdfd-aca9-c615-20e1" type="rule"/>
+        <infoLink name="Cumbersome" id="a3d4-02a7-8675-9302" hidden="false" targetId="5613-c861-daeb-156a" type="rule"/>
+        <infoLink name="Psychic" id="5be5-d499-5ca9-3aa6" hidden="false" targetId="20bd-18d1-0018-6723" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Force Staff" id="0840-3c0a-2140-dc04" hidden="false" typeId="090c-b12e-592a-9874" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Type" typeId="f90e-171a-4ca6-3845">2-Handed</characteristic>
+            <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">Melee</characteristic>
+            <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">BLOCK, CUMBERSOME, PSYCHIC, HELD, TWO-HANDED</characteristic>
+            <characteristic name="Rules" typeId="87f0-637b-734a-22eb">Strike: Melee, +1 INJURY DICE against targets with DAEMON or PSYKER Keyword
+
+
+Smite: 18”</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Goad Lance" id="3e9e-bc8f-5c86-dfa4" hidden="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink name="Shield Combo" id="9ba9-6466-8460-724f" hidden="false" primary="false" targetId="8b02-a668-a43f-954b"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="+/- Injury Dice" id="9b38-7c28-1ba2-bdb6" hidden="false" targetId="9880-1ec6-9767-4698" type="rule"/>
+        <infoLink name="Block" id="136c-4269-3da9-39de" hidden="false" targetId="cdfd-aca9-c615-20e1" type="rule"/>
+        <infoLink name="Stun" id="6458-09cf-1825-9a01" hidden="false" targetId="07dd-07e7-d909-339a" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Goad Lance" id="8199-c8f0-9599-78ae" hidden="false" typeId="090c-b12e-592a-9874" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Type" typeId="f90e-171a-4ca6-3845">2-Handed</characteristic>
+            <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">Melee</characteristic>
+            <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">+1 INJURY DICE during activation in which attacker Charged, BLOCK, STUN, TWO-HANDED, Shield Combo</characteristic>
+            <characteristic name="Rules" typeId="87f0-637b-734a-22eb"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Plasma Blade" id="0b90-2f73-8a4f-0990" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Critical" id="e2c4-978b-4d31-4b02" hidden="false" targetId="7c40-254f-6d33-854c" type="rule"/>
+        <infoLink name="Armour Piercing X" id="e9f0-6f2f-e475-3986" hidden="false" targetId="cea1-4ce3-6aba-aab3" type="rule"/>
+        <infoLink name="Main Hand Only" id="624b-1f1b-5216-3ffb" hidden="false" targetId="8283-bf26-21eb-9791" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Plasma Blade" id="8dcb-7a47-9edd-6ca8" hidden="false" typeId="090c-b12e-592a-9874" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Type" typeId="f90e-171a-4ca6-3845">1-Handed</characteristic>
+            <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">Melee</characteristic>
+            <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">CRITICAL, ARMOUR PIERCING 1, MAIN HAND ONLY</characteristic>
+            <characteristic name="Rules" typeId="87f0-637b-734a-22eb"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Heavy Plasma Blade" id="0f5e-4a67-12d1-5668" hidden="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink name="Heavy" id="7ee2-d524-6875-6b39" hidden="false" primary="false" targetId="70c9-988d-71a7-7654"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="+/- Injury Dice" id="21c5-8a99-116d-6a43" hidden="false" targetId="9880-1ec6-9767-4698" type="rule"/>
+        <infoLink name="Critical" id="c8bb-fecd-5f37-d0fd" hidden="false" targetId="7c40-254f-6d33-854c" type="rule"/>
+        <infoLink name="Heavy" id="8fcb-0f4a-31b0-5b27" hidden="false" targetId="fbac-638f-ff95-d704" type="rule"/>
+        <infoLink name="Armour Piercing X" id="0fc5-bc6c-debb-eeb4" hidden="false" targetId="cea1-4ce3-6aba-aab3" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Heavy Plasma Blade" id="9974-be8c-fd54-2c35" hidden="false" typeId="090c-b12e-592a-9874" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Type" typeId="f90e-171a-4ca6-3845">2-Handed</characteristic>
+            <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">Melee</characteristic>
+            <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">+1 INJURY DICE, CRITICAL, HEAVY, ARMOUR PIERCING 1, TWO-HANDED</characteristic>
+            <characteristic name="Rules" typeId="87f0-637b-734a-22eb"/>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
