@@ -98,7 +98,7 @@
         </modifier>
       </modifiers>
       <profiles>
-        <profile name="Rat Ogre" id="f24b-1e0d-d64f-44da" hidden="false" typeId="b3af-94f9-2e35-d1c5" typeName="Unit">
+        <profile name="Rat Ogryn" id="f24b-1e0d-d64f-44da" hidden="false" typeId="b3af-94f9-2e35-d1c5" typeName="Unit">
           <characteristics>
             <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2">6&quot;</characteristic>
             <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">+2</characteristic>
@@ -628,12 +628,12 @@
           <modifiers>
             <modifier field="hidden" type="set" value="true">
               <localConditionGroups>
-                <localConditionGroup field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" scope="self" type="atLeast" value="1">
+                <localConditionGroup field="selections" includeChildForces="false" includeChildSelections="false" repeats="1" scope="self" type="atLeast" value="1">
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
                         <condition childId="3de0-192c-3ec2-51be" childName="Elite" field="selections" includeChildSelections="false" scope="model" shared="true" type="notInstanceOf" value="1"/>
-                        <condition childId="f24b-1e0d-d64f-44da" childName="Rat Ogre" field="selections" includeChildSelections="false" scope="model" shared="true" type="notInstanceOf" value="1"/>
+                        <condition childId="unit" childName="unit" field="selections" includeChildSelections="false" scope="model-or-unit-self" shared="true" type="notInstanceOf" value="1"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
