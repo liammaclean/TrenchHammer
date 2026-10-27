@@ -39,7 +39,6 @@
       <infoLinks>
         <infoLink name="Leader" id="7cb7-252f-b201-4c69" hidden="false" targetId="9130-09e0-3351-8c4c" type="rule"/>
         <infoLink name="Tough" id="c588-169e-2e11-a433" hidden="false" targetId="3c75-701d-e708-1438" type="rule"/>
-        <infoLink name="New Info (link)" id="815b-98ae-ca36-b2a9" hidden="false" type="rule"/>
       </infoLinks>
       <profiles>
         <profile name="Clawlord" id="ff74-212e-4950-140a" hidden="false" typeId="b3af-94f9-2e35-d1c5" typeName="Unit">
@@ -2349,27 +2348,7 @@
         <constraint id="f188-08d1-df5b-23f0" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="4"/>
       </constraints>
       <entryLinks>
-        <entryLink name="Melee Weapons" id="9509-bc33-2cbb-e30d" collapsible="false" hidden="false" import="true" targetId="f2ab-58c0-68cb-5997" type="selectionEntryGroup">
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Pyschic Weapon" id="3008-2f34-fcf4-c484" hidden="false">
-              <constraints>
-                <constraint id="1c15-8b4c-ff17-ba79" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
-              </constraints>
-              <entryLinks>
-                <entryLink name="Force Rod" id="e148-612f-778d-15e9" hidden="false" import="true" targetId="47e5-418f-f09d-ef35" type="selectionEntry">
-                  <costs>
-                    <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="3"/>
-                  </costs>
-                </entryLink>
-                <entryLink name="Force Staff" id="3b0a-537c-0f06-edf0" hidden="false" import="true" targetId="4aa2-c33a-0760-6333" type="selectionEntry">
-                  <costs>
-                    <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
-                  </costs>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-        </entryLink>
+        <entryLink name="Melee Weapons" id="9509-bc33-2cbb-e30d" collapsible="false" hidden="false" import="true" targetId="f2ab-58c0-68cb-5997" type="selectionEntryGroup"/>
         <entryLink name="Ranged Weapons" id="4791-aa08-fc31-5227" collapsible="false" hidden="false" import="true" sortIndex="1" targetId="7602-5baf-759d-9c9b" type="selectionEntryGroup"/>
         <entryLink name="Utility Hand" id="49fe-8159-807a-1b04" collapsible="true" hidden="false" import="true" targetId="162d-ee62-c9da-4687" type="selectionEntryGroup">
           <constraints>
